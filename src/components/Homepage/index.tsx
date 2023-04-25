@@ -24,14 +24,16 @@ export function Intro(): JSX.Element {
           </p>
           <p>
             DAA first began production in 2021 for a 2022 calendar (confusing we
-            know) and are now in the process of ramping up for our 2024 calendar
+            know) and are now in process of ramping up for our 2024 calendar
             production period. If you did not opt-in to our newsletter during
-            our 2024 Interest Check, you can sign-up below. Our
-            newsletters will be sent to let you know when applications open and
-            when pre-orders open. We may also send occasional production
-            updates!
+            our 2024 Interest Check, you can sign-up below. Our newsletters will
+            be sent to let you know when applications and pre-orders open. We
+            may also send occasional production updates!
           </p>
-					<p>For the even more updates, we encourage you to follow-us on tumblr or twitter.</p>
+          <p>
+            For even more updates, we encourage you to follow us on tumblr or
+            twitter.
+          </p>
         </div>
       </div>
     </section>
