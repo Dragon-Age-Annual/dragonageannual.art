@@ -25,6 +25,7 @@
   --ifm-background-surface-color: #faf8f7;
   --ifm-navbar-background-color: var(--ifm-background-color);
   --ifm-font-color-base: #343339;
+	--ifm-font-size-base: 1.15rem;
   --ifm-code-font-size: 95%;
   --ifm-navbar-shadow: none;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);

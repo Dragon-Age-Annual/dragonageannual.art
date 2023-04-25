@@ -16,3 +16,9 @@
 	font-size: xx-large;
 	gap: 30px;
 }
+
+.paragraphs {
+	width: 75em;
+	max-width: 90vw;
+	margin: 0 auto;
+}
