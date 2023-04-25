@@ -1,0 +1,121 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Anonymous+Pro&display=swap");
+
+@font-face {
+  font-family: "Rousseau Deco";
+  src: url("/fonts/RousseauDeco.eot");
+  src: url("/fonts/RousseauDeco.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/RousseauDeco.woff") format("woff"),
+    url("/fonts/RousseauDeco.woff2") format("woff2"),
+    url("/fonts/RousseauDeco.ttf") format("truetype"),
+    url("/fonts/RousseauDeco.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --ifm-color-primary: #477460;
+  --ifm-color-primary-dark: #406856;
+  --ifm-color-primary-darker: #3c6352;
+  --ifm-color-primary-darkest: #325143;
+  --ifm-color-primary-light: #4e806a;
+  --ifm-color-primary-lighter: #52856e;
+  --ifm-color-primary-lightest: #5c977d;
+  --ifm-background-color: #f1edec;
+  --ifm-background-surface-color: #faf8f7;
+  --ifm-navbar-background-color: var(--ifm-background-color);
+  --ifm-font-color-base: #343339;
+  --ifm-code-font-size: 95%;
+  --ifm-navbar-shadow: none;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: "Montserrat", sans-serif;
+  --ifm-font-family-monospace: "Anonymous Pro", "Courier New", monospace;
+  --ifm-heading-font-family: "Rousseau Deco", "Impact", sans-serif;
+	--ifm-h1-font-size: 3rem;
+	--ifm-h2-font-size: 2rem;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #e0bf60;
+  --ifm-color-primary-dark: #dbb445;
+  --ifm-color-primary-darker: #d8af38;
+  --ifm-color-primary-darkest: #bb9525;
+  --ifm-color-primary-light: #e5ca7b;
+  --ifm-color-primary-lighter: #e8cf88;
+  --ifm-color-primary-lightest: #f0dfb0;
+  --ifm-background-color: #343339;
+  --ifm-background-surface-color: #3e3d44;
+  --ifm-navbar-background-color: var(--ifm-background-color);
+  --ifm-font-color-base: #f1edec;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Removes Docusaurus external link icon */
+[class*="iconExternalLink"] {
+  display: none;
+}
+
+/* Header Styling */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+	font-weight: normal;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: var(--ifm-background-color);
+  --ifm-footer-color: var(--ifm-font-color-base);
+  --ifm-footer-link-color: var(--ifm-color-primary);
+  --ifm-footer-title-color: var(--ifm-font-color-base);
+  margin-top: 30px;
+  border-top: 2px solid;
+  border-image: linear-gradient(
+      to left,
+      var(--ifm-background-color),
+      var(--ifm-color-primary),
+      var(--ifm-background-color)
+    )
+    1;
+}
+
+.footer__bottom {
+  margin-top: 15px;
+}
+
+.navbar {
+  border-bottom: 2px solid;
+  border-image: linear-gradient(
+      to left,
+      var(--ifm-background-color),
+      var(--ifm-color-primary),
+      var(--ifm-background-color)
+    )
+    1;
+}
+
+.navbar__title {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-top: 3px;
+}
+
+.hero--primary {
+  --ifm-hero-background-color: var(--ifm-background-color) !important;
+}
+
+.hero--primary img {
+	max-width: 90vw;
+	margin: 0 auto;
+}
+
+[data-theme="light"] .hero--primary img[class="dark-mode"],
+[data-theme="dark"] .hero--primary img[class="light-mode"] {
+  display: none;
+}

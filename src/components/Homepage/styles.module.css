@@ -1,0 +1,18 @@
+.social {
+  display: flex;
+  align-items: center;
+	justify-content: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icons {
+	font-size: xx-large;
+	gap: 30px;
+}
