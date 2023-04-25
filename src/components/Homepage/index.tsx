@@ -14,7 +14,7 @@ export function Intro(): JSX.Element {
             calendar featuring work from 18 fan artists and 9 fan writers with
             the support of a production team (beta, graphic designers, etc) in
             the Dragon Age fandom. Each year, these fan creators work together
-            to produce a full-color calendar with 12 months, 5 bonus works,
+            to produce a full-colour calendar with 12 months, 5 bonus works,
             cover and more, all for the benefit of a chosen charity.
           </p>
           <p>
