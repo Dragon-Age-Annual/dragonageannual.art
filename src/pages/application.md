@@ -77,7 +77,7 @@ ghosting on the project in past years, or for unprofessional or rude attitudes.
 
 The expectations below are not in any way exhaustive. If you are accepted as a
 contributor, you will receive additional guidelines and information during the
-production process. However, please keep these minimum expectations below when
+production process. However, please keep these minimum expectations in mind when
 deciding whether or not DAA is a good fit for you!
 
 - All contributors (including moderators) are expected to adhere to the Code of
@@ -124,4 +124,5 @@ deciding whether or not DAA is a good fit for you!
 - **Editing:** In addition to receiving feedback from moderators, writers should
   be open to editing their pieces for both space constraints and based on the
   suggestions of betas. Note that this does NOT mean that all suggestions from
-  Betas MUST be followed, but Writers should be open to considering them seriously.
+  Betas MUST be followed, but Writers should be open to considering them
+  seriously.
