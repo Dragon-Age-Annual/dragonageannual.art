@@ -15,3 +15,9 @@
     padding: 2rem;
   }
 }
+
+.social {
+	display: flex;
+	justify-content: flex-start;
+	gap: 20px;
+}
