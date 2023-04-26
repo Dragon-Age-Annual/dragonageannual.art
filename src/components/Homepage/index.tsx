@@ -74,3 +74,9 @@ export function Social(): JSX.Element {
     </section>
   );
 }
+
+// export function Newsletter(): JSX.Element{
+// 	return (
+
+// 	);
+// }

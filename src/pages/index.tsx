@@ -23,6 +23,7 @@ export default function Home(): JSX.Element {
       <main>
 				<Intro />
         <Social />
+				{/* <Newsletter /> */}
       </main>
     </Layout>
   );
