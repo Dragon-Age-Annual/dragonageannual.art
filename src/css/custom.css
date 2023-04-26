@@ -1,5 +1,5 @@
 /* Import fonts */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Anonymous+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Anonymous+Pro&family=Gruppo&display=swap");
 
 @font-face {
   font-family: "Rousseau Deco";
@@ -25,15 +25,19 @@
   --ifm-background-surface-color: #faf8f7;
   --ifm-navbar-background-color: var(--ifm-background-color);
   --ifm-font-color-base: #343339;
-	--ifm-font-size-base: 1.15rem;
+  --ifm-font-size-base: 1.15rem;
   --ifm-code-font-size: 95%;
   --ifm-navbar-shadow: none;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-font-family-base: "Montserrat", sans-serif;
   --ifm-font-family-monospace: "Anonymous Pro", "Courier New", monospace;
   --ifm-heading-font-family: "Rousseau Deco", "Impact", sans-serif;
-	--ifm-h1-font-size: 3rem;
-	--ifm-h2-font-size: 2rem;
+  --ifm-h1-font-size: 3rem;
+  --ifm-h2-font-size: 2.75rem;
+  --ifm-h3-font-size: 2.25rem;
+  --ifm-h4-font-size: 2rem;
+  --ifm-h5-font-size: 1.75rem;
+  --ifm-h6-font-size: 1.5rem;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -65,7 +69,23 @@ h4,
 h5,
 h6 {
   text-transform: uppercase;
-	font-weight: normal;
+  font-weight: normal;
+}
+
+h1 {
+  color: var(--ifm-color-primary);
+  border-bottom: 1px dashed;
+  border-image: linear-gradient(
+      to right,
+      var(--ifm-color-primary),
+      var(--ifm-background-color),
+      transparent 100%
+    )
+    1;
+}
+
+h2 {
+  color: var(--ifm-color-primary-lighter);
 }
 
 .footer--dark {
@@ -112,11 +132,21 @@ h6 {
 }
 
 .hero--primary img {
-	max-width: 90vw;
-	margin: 0 auto;
+  max-width: 90vw;
+  margin: 0 auto;
 }
 
 [data-theme="light"] .hero--primary img[class="dark-mode"],
 [data-theme="dark"] .hero--primary img[class="light-mode"] {
   display: none;
+}
+
+b, strong {
+	color: var(--ifm-color-primary);
+}
+
+em, i {
+	font-family: var(--ifm-font-family-monospace);
+	font-size: var(--ifm-font-size-base);
+	font-style: normal;
 }
