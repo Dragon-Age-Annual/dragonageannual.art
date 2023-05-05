@@ -1,5 +1,6 @@
-import { Intro, Social } from "@site/src/components/Homepage";
+import { Current, Intro, Social } from "@site/src/components/Homepage";
 
+import Form from "@site/src/components/NewsletterSignUp";
 import Layout from "@theme/Layout";
 import React from "react";
 import clsx from "clsx";
@@ -21,9 +22,10 @@ export default function Home(): JSX.Element {
     <Layout description="An Unofficial Fan-Made Charity Dragon Age Calendar.">
       <HomepageHeader />
       <main>
-				<Intro />
+        <Current />
+        <Intro />
         <Social />
-				{/* <Newsletter /> */}
+        <Form />
       </main>
     </Layout>
   );
