@@ -4,125 +4,168 @@ title: Before You Apply
 
 # Before You Apply
 
-As always we welcome repeat applications from prior years' successful
-contributors, but in the interest of fairness the application and judging
-process will be the same for all applicants. We have no set quota for returning
-contributors.
+We thank you for your interest in Dragon Age Annual! Please take the time to
+read the information below carefully before you apply.
 
-All applicants' information will be treated with the utmost confidence.
+DAA is a not-for-profit project, and all contributions are done on a voluntary
+basis. There is no monetary compensation for contributors. All profits will be
+donated to the chosen charity for the year.
 
-Please note that this is a not-for-profit project, and all contributions are
-done on a voluntary basis. **There is no monetary compensation for
-contributors.** Contributors do receive a digital copy of the calendar for free
-and may purchase a single printed copy or merch bundle at cost to help offset
-production costs and ensure as much money as possible can go to our chosen
-charity.
+**We do not accept any applications of AI-generated works or where others’
+fanworks have been traced or used as "bases".** All works should be your own.
+
+As always if you have any questions about the application process, please reach
+out to us via social media or email dragonageannual@gmail.com.
 
 ## Code of Conduct
 
-DAA has a strict anti-harassment stance including harassment of other fans and
-Bioware personnel. As part of our application process, we do review applicants'
-social media for inflammatory posts, dogpiling, suicide-baiting, and other
-harassment techniques.
+1. DAA has a *strict* anti-harassment stance including harassment of other fans
+   and BioWare personnel. As part of our application process, we do review
+   applicants' social media to ensure alignment with this core value. Harassment
+   may include, but is not limited to, any of the following: dogpiling, making
+   intentionally inflammatory posts/hot takes, suicide-baiting, participating in
+   call-outs, etc.
 
-Should we become aware of a contributors' participation in such activities prior
-to or during production, we may take action up to and including removal from the
-project or barring from future participation. Incidents (past and present) are
-evaluated on a case-by-case basis and the action taken may be influenced by many
-factors.
+2. We ask that all contributors conduct themselves with professionalism and
+   kindness throughout their involvement with the Annual. We are grateful to
+   attract a diverse team and ask that you treat your fellow contributors and
+   moderators with respect.
 
-Contributors may also be removed or barred for failures to check-in on time,
-ghosting on the project in past years, or for unprofessional or rude attitudes.
+3. Because a calendar has a fixed minimum number of pages that must be
+   produced, each piece is critical to production. Therefore, we ask that you
+   only apply if you are confident in your ability to deliver your assigned
+   piece(s) within the project’s deadline.
 
-## Portfolio Reviews
-
-- **We give preference to Dragon Age fans.** When choosing between two
-  contributors with similar scoring during our reviews, preference is given to
-  someone who has submitted Dragon Age pieces or has DA fandom accounts. If your
-  portfolio is of your non-DA professional work, but you have a presence in DA
-  under a different username, please let us know in your application!
-
-### Artists
-
-- **There is no minimum or maximum number of pieces to include.** Please provide
-  a sampling of your work which shows the various skills and styles you are
-  capable of and which presents your art at its best.
-- **For the main calendar, we do not have a preference for style.** Our goal
-  with the main calendar is to represent a variety of art styles. Past pieces
-  have ranged from cartoon/anime-inspired to painterly to realism, and
-  everything in between. Instead, we tend to look at things like overall
-  composition, colour choices, and strong backgrounds to make our selections.
-
-  Our selections for merch artists depend on our plans for merch. For example,
-  we may favor a style with strong, clear lines for stickers or pins. Overall,
-  the best plan is to show us _your_ individual style as an artist, and we'll do
-  our best to figure out how we can play to your strengths.
-
-### Writers
-
-- **There is no minimum or maximum number of pieces to include.** Please provide
-  a sampling of your work which shows the various skills and styles you are
-  capable of and presents your writing at its best.
-
-- **We do not have a preference for style.** However, keep in mind that writing
-  flash fic with tight word counts is a different skill set than writing long
-  fic. The more samples you have of 700 word or less writing, the better!
-
-- **We judge on characterization.** We cannot guarantee all three mods will be
-  able to judge this category for non-Dragon Age characters or OCs. Please try
-  to include samples with multiple canon Dragon Age characters or unique voices
-  (i.e. an in universe codex, a character piece, and a descriptive piece.)
+Should we become aware of any breach in our code of conduct we may take action
+up to and including removal from the project or barring from future
+participation.
 
 ## Expectations
 
-The expectations below are not in any way exhaustive. If you are accepted as a
-contributor, you will receive additional guidelines and information during the
-production process. However, please keep these minimum expectations in mind when
-deciding whether or not DAA is a good fit for you!
+If you are accepted as a contributor, you will receive additional guidelines,
+templates, and information during the production process. However, please keep
+these minimum expectations in mind when deciding whether or not DAA is a good
+fit for you!
 
+- **All forms of AI-generated content are strictly prohibited within the
+  project.** All works must be previously unpublished, original, and created for
+  DAA by you.
 - All contributors (including moderators) are expected to adhere to the Code of
   Conduct.
+- **Contributors are expected to be flexible.** This applies to:
 
-- Contributors are expected to be _flexible_. This applies to: choosing topics
-  and pieces, understanding when production changes have to be made, and working
-  with moderators for revisions. In exchange, moderators also pledge to be
-  flexible. Although we do have final say, we promise to be understanding of
-  real life setbacks which might impact your ability to check-in, considerate of
-  your artistic ideas, etc. Please note this is not an exhaustive list of the
-  areas where flexibility are required from contributors and given by
-  moderators.
+  - the selection of subject matter for your piece(s)
+  - understanding when production changes must be made
+  - working with moderators for revisions <br /><br />
 
-- Contributors are expected to meet check-in requirements and production
-  deadlines.
+  In exchange, moderators also pledge to be flexible. Although we do have final
+  say, we promise to be understanding of real life setbacks which might impact
+  your ability to check in and will always give weight to contributors' artistic
+  ideas.
 
-- All contributors are expected to behave professionally and courteously to
-  other contributors and to moderators.
+- **Contributors are expected to meet check-in requirements and production
+  deadlines.** In the event an extension is needed or you have to drop out of
+  the project, you are expected to contact a moderator as soon as possible.
 
-- All contributors must be open to review and feedback of their work from
-  moderators.
+- **All contributors must be open to review and feedback on their work from
+  moderators.**
+
+- **Contributors will have 2-4 months to produce their work(s). Detailed
+  timelines to follow.**
 
 ### Artists
 
-- **Main Calendar:** Artists are expected to produce one A4-sized piece adhering
-  to guidelines and theme. Broad strokes of the theme and expectations are
-  listed in the application each year, with more details being received upon
-  acceptance.
+- **Wall Calendar:** Artists are expected to produce one Landscape A4-sized
+  piece adhering to guidelines and theme.
+
+- **We select the cover artist from among other artist applications.** The cover
+  artist will be expected to create _two_ A4-sized pieces (one for the front and
+  one for the back) fitting the theme.
 
 - **Merch:** Guidelines for merch will vary based on the items being produced.
+  We are very happy to consider your creative requests for items!
 
-- **Artists may pull double duty.** If artists are up to it, they may pull
-  double duty for both the main calendar and merch. Artists pulling double duty
-  may have altered check-ins from normal. These artists are expected to work
-  closely with moderators!
+- **Artists may apply for both the Wall Calendar and Merch roles.** If an Artist
+  is selected for both roles, they are encouraged to work with moderators if
+  they find they will need flexibility in meeting deadlines for all their
+  pieces.
+
+- **Detailed concepts will be reviewed and approved by the mod team during the
+  earliest stages of production.** Please do not begin earnest work on your
+  piece until your concept has been approved.
 
 ### Writers
 
 - **Pieces:** Writers will produce two works related to two different art
-  pieces. Pieces will vary from approximately 200 words to approximately 500
+  pieces. Pieces will vary from approximately 200 words to approximately 600
   words depending on calendar space and layout.
 
-- **Editing:** In addition to receiving feedback from moderators, writers should
-  be open to editing their pieces for both space constraints and based on the
-  suggestions of betas. Note that this does NOT mean that all suggestions from
-  Betas MUST be followed, but Writers should be open to considering them
-  seriously.
+- **Editing:** In addition to receiving feedback from moderators, writers will
+  also receive feedback from betas. Note that this does NOT mean that all
+  suggestions from betas MUST be followed, but writers should be open to
+  considering them seriously.
+
+- **Due to space constraints, writers will also need to be flexible concerning
+  their pieces' length to ensure proper printing.**
+
+- **The matching of writers to artists will take place after the artists'
+  concepts have been approved during the earliest stages of production.**
+
+### SUPPORT ROLES
+
+- **Graphics:** Assist in the design, marketing and assembly of the Annual. This
+  can include but is not limited to contributor spotlights, social media posts,
+  merchandising imagery and pages of the calendar.
+- **Betas:** Review and verify accuracy of all copy produced for the Annual.
+  This can include but is not limited to writer’s stories, cover copy, website
+  text, contributor spotlights, and credits pages.
+
+## Portfolio Reviews
+
+_As always we welcome repeat applications from prior years' successful
+contributors, but in the interest of fairness the application and judging
+process will be the same for all applicants. We have no set quota for returning
+contributors._
+
+All applicants' information will be treated with the utmost confidence.
+
+**We give preference to Dragon Age fans when choosing between two contributors
+with similar scoring during our reviews.** If your portfolio is of your non-DA
+professional work, but you have a presence in DA under a different username,
+please let us know in your application!
+
+### Artists
+
+- Please provide a sampling of your work (minimum 5 pieces) which shows the
+  various skills and styles you are capable of and which presents your art at
+  its best.
+- For the wall calendar, we do not have a preference for style. Past pieces have
+  ranged from cartoon/anime-inspired to painterly to realism, and everything in
+  between.
+- Scoring will be based on overall composition, colour choices, strong
+  backgrounds, and technique.
+- Overall, the best plan is to show us _your_ individual style as an artist, and
+  we'll do our best to figure out how we can play to your strengths.
+
+### Writers
+
+- Please provide a sampling of your work (minimum 3) that shows the various
+  skills and styles you are capable of and presents your writing at its best.
+
+- We do not have a preference for style. However, keep in mind that writing
+  flash fic with tight word counts is a different skill set than writing long
+  fic. The more samples you have of 700 word or less writing, the better!
+
+- We judge on grammar, characterization, and technique. We cannot guarantee all
+  three mods will be able to judge characterization for non-Dragon Age
+  characters or OCs. Please try to include samples with multiple canon Dragon
+  Age characters or unique voices (i.e. an in universe codex, a character piece,
+  and a descriptive piece).
+
+### Support Roles
+
+- Please provide a few examples of your work whether completed professionally or
+  in a fandom setting.
+
+- It is also helpful if you’re able to describe a little about your practical
+  experience
