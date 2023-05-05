@@ -1,5 +1,5 @@
 /* Import fonts */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Anonymous+Pro&family=Gruppo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Anonymous+Pro&family=PT+Serif:ital@1&display=swap");
 
 @font-face {
   font-family: "Rousseau Deco";
@@ -146,7 +146,11 @@ b, strong {
 }
 
 em, i {
-	font-family: var(--ifm-font-family-monospace);
-	font-size: var(--ifm-font-size-base);
-	font-style: normal;
+	font-family: 'PT Serif', serif;
+	font-size: 1.05rem;
+	color: var(--ifm-color-emphasis-600);
+}
+
+[data-theme="dark"] em, [data-theme="dark"] i {
+	color: var(--ifm-color-emphasis-400);
 }

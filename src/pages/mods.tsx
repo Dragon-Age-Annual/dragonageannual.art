@@ -9,7 +9,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 export default function Mods(): JSX.Element {
   const {} = useDocusaurusContext();
   return (
-    <Layout description="An Unofficial Fan-Made Charity Dragon Age Calendar.">
+    <Layout description="Meet the Mods of the Dragon Age Annual.">
       <main className="container container--fluid margin-vert--lg">
         <div className="row">
           <div className="col col--10">

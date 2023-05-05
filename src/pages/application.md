@@ -19,7 +19,7 @@ out to us via social media or email dragonageannual@gmail.com.
 
 ## Code of Conduct
 
-1. DAA has a *strict* anti-harassment stance including harassment of other fans
+1. DAA has a _strict_ anti-harassment stance including harassment of other fans
    and BioWare personnel. As part of our application process, we do review
    applicants' social media to ensure alignment with this core value. Harassment
    may include, but is not limited to, any of the following: dogpiling, making
@@ -31,10 +31,10 @@ out to us via social media or email dragonageannual@gmail.com.
    attract a diverse team and ask that you treat your fellow contributors and
    moderators with respect.
 
-3. Because a calendar has a fixed minimum number of pages that must be
-   produced, each piece is critical to production. Therefore, we ask that you
-   only apply if you are confident in your ability to deliver your assigned
-   piece(s) within the project’s deadline.
+3. Because a calendar has a fixed minimum number of pages that must be produced,
+   each piece is critical to production. Therefore, we ask that you only apply
+   if you are confident in your ability to deliver your assigned piece(s) within
+   the project’s deadline.
 
 Should we become aware of any breach in our code of conduct we may take action
 up to and including removal from the project or barring from future
@@ -52,7 +52,7 @@ fit for you!
   DAA by you.
 - All contributors (including moderators) are expected to adhere to the Code of
   Conduct.
-- **Contributors are expected to be flexible.** This applies to:
+- Contributors are expected to be flexible. This applies to:
 
   - the selection of subject matter for your piece(s)
   - understanding when production changes must be made
@@ -63,62 +63,62 @@ fit for you!
   your ability to check in and will always give weight to contributors' artistic
   ideas.
 
-- **Contributors are expected to meet check-in requirements and production
-  deadlines.** In the event an extension is needed or you have to drop out of
-  the project, you are expected to contact a moderator as soon as possible.
+- Contributors are expected to meet check-in requirements and production
+  deadlines. In the event an extension is needed or you have to drop out of the
+  project, you are expected to contact a moderator as soon as possible.
 
-- **All contributors must be open to review and feedback on their work from
-  moderators.**
+- All contributors must be open to review and feedback on their work from
+  moderators.
 
-- **Contributors will have 2-4 months to produce their work(s). Detailed
-  timelines to follow.**
+- Contributors will have 2-4 months to produce their work(s). Detailed timelines
+  to follow.
 
 ### Artists
 
-- **Wall Calendar:** Artists are expected to produce one Landscape A4-sized
-  piece adhering to guidelines and theme.
+- _Wall Calendar:_ Artists are expected to produce one Landscape A4-sized piece
+  adhering to guidelines and theme.
 
-- **We select the cover artist from among other artist applications.** The cover
-  artist will be expected to create _two_ A4-sized pieces (one for the front and
-  one for the back) fitting the theme.
+- We select the cover artist from among other artist applications. The cover
+  artist will be expected to create **two** A4-sized pieces (one for the front
+  and one for the back) fitting the theme.
 
-- **Merch:** Guidelines for merch will vary based on the items being produced.
-  We are very happy to consider your creative requests for items!
+- _Merch:_ Guidelines for merch will vary based on the items being produced. We
+  are very happy to consider your creative requests for items!
 
 - **Artists may apply for both the Wall Calendar and Merch roles.** If an Artist
   is selected for both roles, they are encouraged to work with moderators if
   they find they will need flexibility in meeting deadlines for all their
   pieces.
 
-- **Detailed concepts will be reviewed and approved by the mod team during the
-  earliest stages of production.** Please do not begin earnest work on your
-  piece until your concept has been approved.
+- Detailed concepts will be reviewed and approved by the mod team during the
+  earliest stages of production. Please do not begin earnest work on your piece
+  until your concept has been approved.
 
 ### Writers
 
-- **Pieces:** Writers will produce two works related to two different art
-  pieces. Pieces will vary from approximately 200 words to approximately 600
-  words depending on calendar space and layout.
+- _Pieces:_ Writers will produce two works related to two different art pieces.
+  Pieces will vary from approximately 200 words to approximately 600 words
+  depending on calendar space and layout.
 
-- **Editing:** In addition to receiving feedback from moderators, writers will
+- _Editing:_ In addition to receiving feedback from moderators, writers will
   also receive feedback from betas. Note that this does NOT mean that all
   suggestions from betas MUST be followed, but writers should be open to
   considering them seriously.
 
-- **Due to space constraints, writers will also need to be flexible concerning
-  their pieces' length to ensure proper printing.**
+- Due to space constraints, writers will also need to be flexible concerning
+  their pieces' length to ensure proper printing.
 
-- **The matching of writers to artists will take place after the artists'
-  concepts have been approved during the earliest stages of production.**
+- The matching of writers to artists will take place after the artists' concepts
+  have been approved during the earliest stages of production.
 
-### SUPPORT ROLES
+### Support Roles
 
-- **Graphics:** Assist in the design, marketing and assembly of the Annual. This
+- _Graphics:_ Assist in the design, marketing and assembly of the Annual. This
   can include but is not limited to contributor spotlights, social media posts,
   merchandising imagery and pages of the calendar.
-- **Betas:** Review and verify accuracy of all copy produced for the Annual.
-  This can include but is not limited to writer’s stories, cover copy, website
-  text, contributor spotlights, and credits pages.
+- _Betas:_ Review and verify accuracy of all copy produced for the Annual. This
+  can include but is not limited to writer’s stories, cover copy, website text,
+  contributor spotlights, and credits pages.
 
 ## Portfolio Reviews
 

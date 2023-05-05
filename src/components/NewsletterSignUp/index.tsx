@@ -28,7 +28,7 @@ const SignUp = ({ onSuccess }: { onSuccess: () => void }) => (
             defaultValue={"example@email.com"}
             required
           />
-          <button type="submit" className={styles.newsletter}>
+          <button type="submit" className={clsx(styles.newsletter)}>
             Subscribe
           </button>
         </form>

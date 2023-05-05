@@ -49,6 +49,21 @@ const config = {
       navbar: {
         title: "Dragon Age Annual",
         items: [
+					{
+            to: 'application',
+            label: 'Before You Apply',
+            position: 'left'
+          },
+					{
+            to: 'mods',
+            label: 'Meet the Mods',
+            position: 'left'
+          },
+					{
+            to: 'past',
+            label: 'Past Years',
+            position: 'left'
+          },
           {
             type: "dropdown",
             label: "Community",
