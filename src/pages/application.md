@@ -106,7 +106,7 @@ fit for you!
   considering them seriously.
 
 - Due to space constraints, writers will also need to be flexible concerning
-  their pieces' length to ensure proper printing.
+  their pieces' length and formatting to ensure proper printing.
 
 - The matching of writers to artists will take place after the artists' concepts
   have been approved during the earliest stages of production.
