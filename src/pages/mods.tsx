@@ -1,5 +1,7 @@
-import { FaLink, FaMastodon, FaTumblr, FaTwitter } from "react-icons/fa";
+import { FaLink, FaMastodon, FaRedditAlien, FaTwitter } from "react-icons/fa";
 
+import { BsInstagram } from "react-icons/bs";
+import { ImTumblr } from "react-icons/im";
 import Layout from "@theme/Layout";
 import React from "react";
 import clsx from "clsx";
@@ -9,7 +11,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 export default function Mods(): JSX.Element {
   const {} = useDocusaurusContext();
   return (
-    <Layout description="An Unofficial Fan-Made Charity Dragon Age Calendar.">
+    <Layout description="Meet the Mods of the Dragon Age Annual.">
       <main className="container container--fluid margin-vert--lg">
         <div className="row">
           <div className="col col--10">
@@ -49,10 +51,25 @@ export default function Mods(): JSX.Element {
                     </em>
                   </small>
                   <div className={clsx("avatar__subtitle", styles.social)}>
-                    <a href="">
-                      <FaTumblr />
+                    <a
+                      href="https://www.reddit.com/user/Kemvee"
+                      aria-label="Reddit"
+                      title="Reddit"
+                    >
+                      <FaRedditAlien />
                     </a>
-                    <a href="">
+                    <a
+                      href="https://kemvee.tumblr.com/"
+                      aria-label="Tumblr"
+                      title="Tumblr"
+                    >
+                      <ImTumblr />
+                    </a>
+                    <a
+                      href="https://twitter.com/kemvee_art"
+                      aria-label="Twitter"
+                      title="Twitter"
+                    >
                       <FaTwitter />
                     </a>
                   </div>
@@ -84,27 +101,35 @@ export default function Mods(): JSX.Element {
                     <em>Artist, Graphics, Fox</em>
                   </small>
                   <div className={clsx("avatar__subtitle", styles.social)}>
-                    <a href="">
-                      <FaTumblr />
+                    <a
+                      href="https://thefoxinboots.tumblr.com"
+                      aria-label="Tumblr"
+                      title="Tumblr"
+                    >
+                      <ImTumblr />
                     </a>
-                    <a href="">
+                    <a href="https://twitter.com/thefoxinboots">
                       <FaTwitter />
                     </a>
-                    <a href="">
-                      <FaMastodon />
+                    <a href="https://www.instagram.com/foxinboots/"
+                      aria-label="Instagram"
+                      title="Instagram">
+                      <BsInstagram />
                     </a>
                   </div>
                 </div>
               </div>
               <div className="avatar__subtitle margin-bottom--xl">
                 <p>
-                  I have loved Dragon Age since Origins was first released, but
-                  I didn't become an active participant in fandom until 2019.
-                  From that point on, DA has been my one true obsession.
+                  I have loved Dragon Age since Origins was released when I
+                  played my first Surana, but I didn't become an active
+                  participant in fandom until 2019 while desperate for more
+                  Solavellan content. From that point on, DA has been my one
+                  true obsession.
                 </p>
                 <p>
-                  I'm mainly an artist who also helps run a couple of Dragon Age
-                  exchanges and servers. The Annual is probably the biggest
+                  I'm mainly an artist who also runs a couple of Dragon Age
+                  exchanges and servers. The Annual is probably the largest
                   project I've taken a leading part in, and I'm thrilled that we
                   can continue its production. It's always a joy to witness the
                   amazing creations our contributors put together each year.
@@ -121,13 +146,25 @@ export default function Mods(): JSX.Element {
                     <em>Writer, Graphics, Shipping</em>
                   </small>
                   <div className={clsx("avatar__subtitle", styles.social)}>
-                    <a href="https://www.enigmalea.quest/">
+                    <a
+                      href="https://www.enigmalea.quest/"
+                      aria-label="enigmalea.quest website"
+                      title="enigmalea.quest website"
+                    >
                       <FaLink />
                     </a>
-                    <a href="https://enigmalea.tumblr.com/">
-                      <FaTumblr />
+                    <a
+                      href="https://enigmalea.tumblr.com/"
+                      aria-label="Tumblr"
+                      title="Tumblr"
+                    >
+                      <ImTumblr />
                     </a>
-                    <a href="https://indiepocalypse.social/@enigmalea/">
+                    <a
+                      href="https://indiepocalypse.social/@enigmalea/"
+                      aria-label="Mastodon"
+                      title="Mastodon"
+                    >
                       <FaMastodon />
                     </a>
                   </div>
@@ -144,11 +181,11 @@ export default function Mods(): JSX.Element {
                 </p>
                 <p>
                   I'm primarily a writer, but I also love to run projects,
-                  events, and communities. I also dabble in coding and graphic
-                  design on the side. At any given time I have a chaotic mass of
-                  projects and deadlines happening all at once, but the Annual
-                  is always a favourite. I'm immensely proud of the work we
-                  manage to accomplish each year!
+                  events, and communities. I dabble in coding and graphic
+                  design. At any given time I have a chaotic mass of projects
+                  and deadlines happening all at once, but the Annual is always
+                  my favourite. I'm immensely proud of the work we manage to
+                  accomplish each year!
                 </p>
               </div>
             </article>

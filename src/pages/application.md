@@ -7,19 +7,19 @@ title: Before You Apply
 We thank you for your interest in Dragon Age Annual! Please take the time to
 read the information below carefully before you apply.
 
-DAA is a not-for-profit project, and all contributions are done on a voluntary
+DAA is a not-for-profit project and all contributions are done on a voluntary
 basis. There is no monetary compensation for contributors. All profits will be
 donated to the chosen charity for the year.
 
 **We do not accept any applications of AI-generated works or where others’
-fanworks have been traced or used as "bases".** All works should be your own.
+creations have been traced or used as "bases".** All works should be your own.
 
 As always if you have any questions about the application process, please reach
 out to us via social media or email dragonageannual@gmail.com.
 
 ## Code of Conduct
 
-1. DAA has a *strict* anti-harassment stance including harassment of other fans
+1. DAA has a _strict_ anti-harassment stance including harassment of other fans
    and BioWare personnel. As part of our application process, we do review
    applicants' social media to ensure alignment with this core value. Harassment
    may include, but is not limited to, any of the following: dogpiling, making
@@ -31,10 +31,10 @@ out to us via social media or email dragonageannual@gmail.com.
    attract a diverse team and ask that you treat your fellow contributors and
    moderators with respect.
 
-3. Because a calendar has a fixed minimum number of pages that must be
-   produced, each piece is critical to production. Therefore, we ask that you
-   only apply if you are confident in your ability to deliver your assigned
-   piece(s) within the project’s deadline.
+3. Because a calendar has a fixed minimum number of pages that must be produced,
+   each piece is critical to production. Therefore, we ask that you only apply
+   if you are confident in your ability to deliver your assigned piece(s) within
+   the project’s deadline.
 
 Should we become aware of any breach in our code of conduct we may take action
 up to and including removal from the project or barring from future
@@ -52,7 +52,7 @@ fit for you!
   DAA by you.
 - All contributors (including moderators) are expected to adhere to the Code of
   Conduct.
-- **Contributors are expected to be flexible.** This applies to:
+- Contributors are expected to be flexible. This applies to:
 
   - the selection of subject matter for your piece(s)
   - understanding when production changes must be made
@@ -63,62 +63,63 @@ fit for you!
   your ability to check in and will always give weight to contributors' artistic
   ideas.
 
-- **Contributors are expected to meet check-in requirements and production
-  deadlines.** In the event an extension is needed or you have to drop out of
-  the project, you are expected to contact a moderator as soon as possible.
+- Contributors are expected to meet check-in requirements and production
+  deadlines. In the event an extension is needed or you have to drop out of the
+  project, you are expected to contact a moderator as soon as possible.
 
-- **All contributors must be open to review and feedback on their work from
-  moderators.**
+- All contributors must be open to review and feedback on their work from
+  moderators.
 
-- **Contributors will have 2-4 months to produce their work(s). Detailed
-  timelines to follow.**
+- Contributors will need to complete works in 2-4 months to meet production
+  deadlines. Detailed timelines are provided upon acceptance.
 
 ### Artists
 
-- **Wall Calendar:** Artists are expected to produce one Landscape A4-sized
-  piece adhering to guidelines and theme.
+- _Wall Calendar:_ Artists are expected to produce one landscape-oriented,
+  A4-sized piece adhering to guidelines and theme.
 
-- **We select the cover artist from among other artist applications.** The cover
-  artist will be expected to create _two_ A4-sized pieces (one for the front and
-  one for the back) fitting the theme.
+- We select the cover artist from among other artist applications. The cover
+  artist will be expected to create **two** landscape-oriented, A4-sized pieces
+  (one for the front and one for the back) fitting the theme.
 
-- **Merch:** Guidelines for merch will vary based on the items being produced.
-  We are very happy to consider your creative requests for items!
+- _Merch:_ Guidelines for merch will vary based on the items being produced. We
+  are very happy to consider your creative requests for items!
 
 - **Artists may apply for both the Wall Calendar and Merch roles.** If an Artist
   is selected for both roles, they are encouraged to work with moderators if
   they find they will need flexibility in meeting deadlines for all their
   pieces.
 
-- **Detailed concepts will be reviewed and approved by the mod team during the
-  earliest stages of production.** Please do not begin earnest work on your
-  piece until your concept has been approved.
+- Detailed concepts will be reviewed and approved by the mod team during the
+  earliest stages of production. Please do not begin earnest work on your piece
+  until your concept has been approved.
 
 ### Writers
 
-- **Pieces:** Writers will produce two works related to two different art
-  pieces. Pieces will vary from approximately 200 words to approximately 600
-  words depending on calendar space and layout.
+- _Pieces:_ Writers will produce two works related to two different art pieces.
+  Pieces will vary from approximately 200 words to approximately 600 words
+  depending on calendar space and layout.
 
-- **Editing:** In addition to receiving feedback from moderators, writers will
+- _Editing:_ In addition to receiving feedback from moderators, writers will
   also receive feedback from betas. Note that this does NOT mean that all
   suggestions from betas MUST be followed, but writers should be open to
   considering them seriously.
 
-- **Due to space constraints, writers will also need to be flexible concerning
-  their pieces' length to ensure proper printing.**
+- Due to space constraints, writers will also need to be flexible concerning
+  their pieces' length and formatting to ensure proper printing.
 
-- **The matching of writers to artists will take place after the artists'
-  concepts have been approved during the earliest stages of production.**
+- The matching of writers to artists will take place after the artists' concepts
+  have been approved during the earliest stages of production.
 
-### SUPPORT ROLES
+### Support Roles
 
-- **Graphics:** Assist in the design, marketing and assembly of the Annual. This
+- _Graphics:_ Assist in the design, marketing and assembly of the Annual. This
   can include but is not limited to contributor spotlights, social media posts,
-  merchandising imagery and pages of the calendar.
-- **Betas:** Review and verify accuracy of all copy produced for the Annual.
-  This can include but is not limited to writer’s stories, cover copy, website
-  text, contributor spotlights, and credits pages.
+  merchandising imagery and pages of the calendar. We are looking for people who
+  are proactive and can take charge of their responsibilities.<br /><br />
+- _Betas:_ Review and verify accuracy of all copy produced for the Annual. This
+  can include but is not limited to writer’s stories, cover copy, website text,
+  contributor spotlights, and credits pages.
 
 ## Portfolio Reviews
 
@@ -139,9 +140,11 @@ please let us know in your application!
 - Please provide a sampling of your work (minimum 5 pieces) which shows the
   various skills and styles you are capable of and which presents your art at
   its best.
+
 - For the wall calendar, we do not have a preference for style. Past pieces have
   ranged from cartoon/anime-inspired to painterly to realism, and everything in
   between.
+
 - Scoring will be based on overall composition, colour choices, strong
   backgrounds, and technique.
 - Overall, the best plan is to show us _your_ individual style as an artist, and
@@ -156,11 +159,11 @@ please let us know in your application!
   flash fic with tight word counts is a different skill set than writing long
   fic. The more samples you have of 700 word or less writing, the better!
 
-- We judge on grammar, characterization, and technique. We cannot guarantee all
+- We judge on grammar, technique, and characterization. We cannot guarantee all
   three mods will be able to judge characterization for non-Dragon Age
   characters or OCs. Please try to include samples with multiple canon Dragon
-  Age characters or unique voices (i.e. an in universe codex, a character piece,
-  and a descriptive piece).
+  Age characters or unique forms (for example, an in universe codex, a character
+  piece, and a descriptive piece).
 
 ### Support Roles
 
