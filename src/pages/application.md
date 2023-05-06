@@ -115,7 +115,8 @@ fit for you!
 
 - _Graphics:_ Assist in the design, marketing and assembly of the Annual. This
   can include but is not limited to contributor spotlights, social media posts,
-  merchandising imagery and pages of the calendar.
+  merchandising imagery and pages of the calendar. We are looking for people who
+  are proactive and can take charge of their responsibilities.
 - _Betas:_ Review and verify accuracy of all copy produced for the Annual. This
   can include but is not limited to writer’s stories, cover copy, website text,
   contributor spotlights, and credits pages.
