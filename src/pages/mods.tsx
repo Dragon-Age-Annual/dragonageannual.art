@@ -52,6 +52,7 @@ export default function Mods(): JSX.Element {
                   </small>
                   <div className={clsx("avatar__subtitle", styles.social)}>
                     <a
+                      target="_blank"
                       href="https://www.reddit.com/user/Kemvee"
                       aria-label="Reddit"
                       title="Reddit"
@@ -59,6 +60,7 @@ export default function Mods(): JSX.Element {
                       <FaRedditAlien />
                     </a>
                     <a
+                      target="_blank"
                       href="https://kemvee.tumblr.com/"
                       aria-label="Tumblr"
                       title="Tumblr"
@@ -66,6 +68,7 @@ export default function Mods(): JSX.Element {
                       <ImTumblr />
                     </a>
                     <a
+                      target="_blank"
                       href="https://twitter.com/kemvee_art"
                       aria-label="Twitter"
                       title="Twitter"
@@ -102,18 +105,22 @@ export default function Mods(): JSX.Element {
                   </small>
                   <div className={clsx("avatar__subtitle", styles.social)}>
                     <a
+                      target="_blank"
                       href="https://thefoxinboots.tumblr.com"
                       aria-label="Tumblr"
                       title="Tumblr"
                     >
                       <ImTumblr />
                     </a>
-                    <a href="https://twitter.com/thefoxinboots">
+                    <a target="_blank" href="https://twitter.com/thefoxinboots">
                       <FaTwitter />
                     </a>
-                    <a href="https://www.instagram.com/foxinboots/"
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/foxinboots/"
                       aria-label="Instagram"
-                      title="Instagram">
+                      title="Instagram"
+                    >
                       <BsInstagram />
                     </a>
                   </div>
@@ -147,6 +154,7 @@ export default function Mods(): JSX.Element {
                   </small>
                   <div className={clsx("avatar__subtitle", styles.social)}>
                     <a
+                      target="_blank"
                       href="https://www.enigmalea.quest/"
                       aria-label="enigmalea.quest website"
                       title="enigmalea.quest website"
@@ -154,6 +162,7 @@ export default function Mods(): JSX.Element {
                       <FaLink />
                     </a>
                     <a
+                      target="_blank"
                       href="https://enigmalea.tumblr.com/"
                       aria-label="Tumblr"
                       title="Tumblr"
@@ -161,6 +170,7 @@ export default function Mods(): JSX.Element {
                       <ImTumblr />
                     </a>
                     <a
+                      target="_blank"
                       href="https://indiepocalypse.social/@enigmalea/"
                       aria-label="Mastodon"
                       title="Mastodon"
