@@ -147,7 +147,6 @@ please let us know in your application!
 
 - Scoring will be based on overall composition, colour choices, strong
   backgrounds, and technique.
-	
 - Overall, the best plan is to show us _your_ individual style as an artist, and
   we'll do our best to figure out how we can play to your strengths.
 
@@ -160,11 +159,11 @@ please let us know in your application!
   flash fic with tight word counts is a different skill set than writing long
   fic. The more samples you have of 700 word or less writing, the better!
 
-- We judge on grammar, characterization, and technique. We cannot guarantee all
+- We judge on grammar, technique, and characterization. We cannot guarantee all
   three mods will be able to judge characterization for non-Dragon Age
   characters or OCs. Please try to include samples with multiple canon Dragon
-  Age characters or unique voices (i.e. an in universe codex, a character piece,
-  and a descriptive piece).
+  Age characters or unique forms (for example, an in universe codex, a character
+  piece, and a descriptive piece).
 
 ### Support Roles
 
