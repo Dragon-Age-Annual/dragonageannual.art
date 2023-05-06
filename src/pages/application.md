@@ -7,12 +7,12 @@ title: Before You Apply
 We thank you for your interest in Dragon Age Annual! Please take the time to
 read the information below carefully before you apply.
 
-DAA is a not-for-profit project, and all contributions are done on a voluntary
+DAA is a not-for-profit project and all contributions are done on a voluntary
 basis. There is no monetary compensation for contributors. All profits will be
 donated to the chosen charity for the year.
 
 **We do not accept any applications of AI-generated works or where others’
-fanworks have been traced or used as "bases".** All works should be your own.
+creations have been traced or used as "bases".** All works should be your own.
 
 As always if you have any questions about the application process, please reach
 out to us via social media or email dragonageannual@gmail.com.
@@ -75,12 +75,12 @@ fit for you!
 
 ### Artists
 
-- _Wall Calendar:_ Artists are expected to produce one Landscape A4-sized piece
-  adhering to guidelines and theme.
+- _Wall Calendar:_ Artists are expected to produce one landscape-oriented,
+  A4-sized piece adhering to guidelines and theme.
 
 - We select the cover artist from among other artist applications. The cover
-  artist will be expected to create **two** A4-sized pieces (one for the front
-  and one for the back) fitting the theme.
+  artist will be expected to create **two** landscape-oriented, A4-sized pieces
+  (one for the front and one for the back) fitting the theme.
 
 - _Merch:_ Guidelines for merch will vary based on the items being produced. We
   are very happy to consider your creative requests for items!
