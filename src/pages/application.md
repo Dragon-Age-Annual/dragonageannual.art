@@ -70,8 +70,8 @@ fit for you!
 - All contributors must be open to review and feedback on their work from
   moderators.
 
-- Contributors will have 2-4 months to produce their work(s). Detailed timelines
-  to follow.
+- Contributors will need to complete works in 2-4 months to meet production
+  deadlines. Detailed timelines are provided upon acceptance.
 
 ### Artists
 
