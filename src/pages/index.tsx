@@ -1,6 +1,8 @@
+import { Current, Intro, Social } from "@site/src/components/Homepage";
+
+import Form from "@site/src/components/NewsletterSignUp";
 import Layout from "@theme/Layout";
 import React from "react";
-import { Social } from "@site/src/components/Homepage";
 import clsx from "clsx";
 import styles from "./index.module.css";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
@@ -17,13 +19,13 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   const {} = useDocusaurusContext();
   return (
-    <Layout
-      title="Dragon Age Annual"
-      description="An Unofficial Fan-Made Charity Dragon Age Calendar."
-    >
+    <Layout description="An Unofficial Fan-Made Charity Dragon Age Calendar.">
       <HomepageHeader />
       <main>
+        <Current />
+        <Intro />
         <Social />
+        <Form />
       </main>
     </Layout>
   );

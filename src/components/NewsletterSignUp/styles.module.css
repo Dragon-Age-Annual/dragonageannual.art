@@ -1,0 +1,56 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label.newsletter {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: var(--ifm-font-size-base);
+  font-style: normal;
+}
+
+input.newsletter,
+input.newsletter:active,
+input.newsletter:focus {
+  width: 225px;
+  padding: 5px;
+	margin: 10px;
+  font-family: var(--ifm-font-family-base);
+  font-size: 1rem;
+  background: var(--ifm-background-color);
+  border: 2px solid var(--ifm-color-primary);
+  border-radius: 5px;
+}
+
+input.newsletter:focus {
+  outline: 0px none transparent;
+}
+
+button.newsletter {
+	width: 150px;
+  padding: 5px;
+	margin: 10px;
+  font-family: var(--ifm-font-family-base);
+  font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+  background: var(--ifm-color-primary);
+  border-radius: 25px;
+	color: var(--ifm-background-color);
+	box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+}
+
+button.newsletter:hover {
+  background: var(--ifm-color-primary-lightest);
+	cursor: pointer;
+}
+

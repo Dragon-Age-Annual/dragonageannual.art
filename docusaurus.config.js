@@ -80,6 +80,14 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+			metadata: [
+        { name: "theme-color", content: "#e0bf60" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:creator", content: "DragonAgeAnnual" },
+				{ name: "twitter:domain", content: "dragonageannual.art" },
+				{ name: "twitter:url", content: "https://www.dragonageannual.art" },
+        { name: "og:image", content: "/img/favicon.png" },
+      ],
     }),
 };
 
