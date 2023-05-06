@@ -9,18 +9,17 @@ export function Intro(): JSX.Element {
     <section className={styles.social}>
       <div className="container">
         <div className={clsx("row", styles.paragraphs)}>
-          <p>Dragon Age Annual is an unofficial not-for-profit project.</p>
           <p>
-            The Annual is a celebration of all things Thedas created with love
-            by a talented team of fans, Artists and Writers. Each year, these
-            fan creators work together to produce a full-colour calendar with 12
-            months, 5 bonus works, cover and more, all for the benefit of a
-            chosen charity.
+            Dragon Age Annual is an unofficial, not-for-profit project: a labour
+            of love not associated with BioWare or EA. We're just a group of
+            fans who want to give back to our community!
           </p>
           <p>
-            DA Annual is a labour of love and is in no way associated with
-            BioWare or EA. We're just a group of fans who want to give back to
-            our community!
+            The Annual is a celebration of all things Thedas created by a
+            talented team of fans: artists, writers, and more. Each year, these
+            fan creators work together to produce a full-colour calendar with 12
+            months, 5 bonus works, cover plus extras, all for the benefit of a
+            chosen charity.
           </p>
           <p>
             DAA first began production in 2021 for a 2022 calendar (confusing we
@@ -44,17 +43,17 @@ export function Current(): JSX.Element {
   return (
     <section className={styles.social}>
       <div className={clsx(styles.current, "container")}>
-          <h2>Introducing DA Annual 2024</h2>
-          <h4>
-            <strong>Title:</strong> Compendium Pactorum
-          </h4>
-          <h4>
-            <strong>Theme:</strong> Countries & Factions
-					</h4>
-          <h4>
-            <strong>Charity:</strong>{" "}
-            <a href="https://www.warchild.org.uk/">War Child</a>
-          </h4>
+        <h2>Introducing DA Annual 2024</h2>
+        <h4>
+          <strong>Title:</strong> Compendium Pactorum
+        </h4>
+        <h4>
+          <strong>Theme:</strong> Countries & Factions
+        </h4>
+        <h4>
+          <strong>Charity:</strong>{" "}
+          <a href="https://www.warchild.org.uk/">War Child</a>
+        </h4>
       </div>
     </section>
   );

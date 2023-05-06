@@ -116,7 +116,7 @@ fit for you!
 - _Graphics:_ Assist in the design, marketing and assembly of the Annual. This
   can include but is not limited to contributor spotlights, social media posts,
   merchandising imagery and pages of the calendar. We are looking for people who
-  are proactive and can take charge of their responsibilities.
+  are proactive and can take charge of their responsibilities.<br /><br />
 - _Betas:_ Review and verify accuracy of all copy produced for the Annual. This
   can include but is not limited to writer’s stories, cover copy, website text,
   contributor spotlights, and credits pages.
@@ -140,11 +140,14 @@ please let us know in your application!
 - Please provide a sampling of your work (minimum 5 pieces) which shows the
   various skills and styles you are capable of and which presents your art at
   its best.
+
 - For the wall calendar, we do not have a preference for style. Past pieces have
   ranged from cartoon/anime-inspired to painterly to realism, and everything in
   between.
+
 - Scoring will be based on overall composition, colour choices, strong
   backgrounds, and technique.
+	
 - Overall, the best plan is to show us _your_ individual style as an artist, and
   we'll do our best to figure out how we can play to your strengths.
 
