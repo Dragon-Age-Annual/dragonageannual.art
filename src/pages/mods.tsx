@@ -1,4 +1,10 @@
-import { FaLink, FaMastodon, FaTumblr, FaTwitter } from "react-icons/fa";
+import {
+  FaLink,
+  FaMastodon,
+  FaRedditAlien,
+  FaTumblr,
+  FaTwitter,
+} from "react-icons/fa";
 
 import Layout from "@theme/Layout";
 import React from "react";
@@ -49,10 +55,25 @@ export default function Mods(): JSX.Element {
                     </em>
                   </small>
                   <div className={clsx("avatar__subtitle", styles.social)}>
-                    <a href="">
+                    <a
+                      href="https://www.reddit.com/user/Kemvee"
+                      aria-label="Reddit"
+                      title="Reddit"
+                    >
+                      <FaRedditAlien />
+                    </a>
+                    <a
+                      href="https://kemvee.tumblr.com/"
+                      aria-label="Tumblr"
+                      title="Tumblr"
+                    >
                       <FaTumblr />
                     </a>
-                    <a href="">
+                    <a
+                      href="https://twitter.com/kemvee_art"
+                      aria-label="Twitter"
+                      title="Twitter"
+                    >
                       <FaTwitter />
                     </a>
                   </div>
@@ -121,13 +142,25 @@ export default function Mods(): JSX.Element {
                     <em>Writer, Graphics, Shipping</em>
                   </small>
                   <div className={clsx("avatar__subtitle", styles.social)}>
-                    <a href="https://www.enigmalea.quest/">
+                    <a
+                      href="https://www.enigmalea.quest/"
+                      aria-label="enigmalea.quest website"
+                      title="enigmalea.quest website"
+                    >
                       <FaLink />
                     </a>
-                    <a href="https://enigmalea.tumblr.com/">
+                    <a
+                      href="https://enigmalea.tumblr.com/"
+                      aria-label="Tumblr"
+                      title="Tumblr"
+                    >
                       <FaTumblr />
                     </a>
-                    <a href="https://indiepocalypse.social/@enigmalea/">
+                    <a
+                      href="https://indiepocalypse.social/@enigmalea/"
+                      aria-label="Mastodon"
+                      title="Mastodon"
+                    >
                       <FaMastodon />
                     </a>
                   </div>

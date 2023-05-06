@@ -46,23 +46,28 @@ const config = {
     ({
       // Replace with your project's social card
       image: "img/social-card.png",
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
         title: "Dragon Age Annual",
         items: [
-					{
-            to: 'application',
-            label: 'Before You Apply',
-            position: 'left'
+          {
+            to: "application",
+            label: "Before You Apply",
+            position: "left",
           },
-					{
-            to: 'mods',
-            label: 'Meet the Mods',
-            position: 'left'
+          {
+            to: "mods",
+            label: "Meet the Mods",
+            position: "left",
           },
-					{
-            to: 'past',
-            label: 'Past Years',
-            position: 'left'
+          {
+            to: "past",
+            label: "Past Years",
+            position: "left",
           },
           {
             type: "dropdown",
@@ -87,20 +92,19 @@ const config = {
       },
       footer: {
         style: "dark",
-        links: [
-        ],
+        links: [],
         copyright: `Copyright © ${new Date().getFullYear()} Dragon Age Annual. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-			metadata: [
+      metadata: [
         { name: "theme-color", content: "#e0bf60" },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:creator", content: "DragonAgeAnnual" },
-				{ name: "twitter:domain", content: "dragonageannual.art" },
-				{ name: "twitter:url", content: "https://www.dragonageannual.art" },
+        { name: "twitter:domain", content: "dragonageannual.art" },
+        { name: "twitter:url", content: "https://www.dragonageannual.art" },
         { name: "og:image", content: "/img/favicon.png" },
       ],
     }),

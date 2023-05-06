@@ -44,7 +44,7 @@ export function Current(): JSX.Element {
   return (
     <section className={styles.social}>
       <div className={clsx(styles.current, "container")}>
-          <h2>Introducing DAA 2024</h2>
+          <h2>Introducing DA Annual 2024</h2>
           <h4>
             <strong>Title:</strong> Compendium Pactorum
           </h4>
@@ -70,22 +70,22 @@ export function Social(): JSX.Element {
         <div className={clsx(styles.row, styles.icons)}>
           <a
             href="https://twitter.com/DragonAgeAnnual/"
-            aria-label="Twitter Link"
-            title="Twitter Link"
+            aria-label="Twitter"
+            title="Twitter"
           >
             <FaTwitter />
           </a>
           <a
             href="https://dragonageannual.tumblr.com/"
-            aria-label="Tumblr Link"
-            title="Tumblr Link"
+            aria-label="Tumblr"
+            title="Tumblr"
           >
             <FaTumblr />
           </a>
           <a
             href="https://da-annual.itch.io/"
-            aria-label="Itch.io Link"
-            title="Itch.io Link"
+            aria-label="Itch.io"
+            title="Itch.io"
           >
             <FaItchIo />
           </a>
