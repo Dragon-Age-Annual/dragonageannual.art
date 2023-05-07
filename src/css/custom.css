@@ -154,3 +154,19 @@ em, i {
 [data-theme="dark"] em, [data-theme="dark"] i {
 	color: var(--ifm-color-emphasis-400);
 }
+
+[class*="announcementBar"] {
+	background-color: var(--ifm-color-primary);
+	color: var(--ifm-background-color);
+	font-family: var(--ifm-heading-font-family);
+	font-size: 1.15rem !important;
+	text-transform: uppercase;
+	min-height: 35px;
+}
+
+.emoji {
+	display: inline;
+	vertical-align: middle;
+	padding-bottom: 5px;
+	font-size: 1.45rem;
+}
