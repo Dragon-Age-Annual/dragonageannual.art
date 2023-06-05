@@ -107,12 +107,6 @@ const config = {
         { name: "twitter:url", content: "https://www.dragonageannual.art" },
         { name: "og:image", content: "/img/favicon.png" },
       ],
-			announcementBar: {
-				id: 'applications_open',
-				content:
-					'<span class="emoji">👀</span> Applications are open! <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/Y7WE3pe98XMgjnnQ9">Artist</a>, <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/yAfjwA1ZBJRjeYxf7">Writer</a>, & <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/WfjGBJRqY8vF8dBf9">Production Support</a>. <span class="emoji">👀</span>',
-				isCloseable: false,
-			},
     }),
 };
 
