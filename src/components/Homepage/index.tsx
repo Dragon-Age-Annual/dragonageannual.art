@@ -83,8 +83,8 @@ export function Social(): JSX.Element {
           </a>
 					<a
             href="https://www.instagram.com/dragonageannual/"
-            aria-label="Itch.io"
-            title="Itch.io"
+            aria-label="Instagram"
+            title="Instagram"
           >
             <FaInstagram />
           </a>
