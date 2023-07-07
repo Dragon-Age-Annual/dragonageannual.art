@@ -82,6 +82,10 @@ const config = {
                 href: "https://dragonageannual.tumblr.com",
                 label: "Tumblr",
               },
+							{
+                href: "https://www.instagram.com/dragonageannual/",
+                label: "Instagram",
+              },
               {
                 href: "https://da-annual.itch.io/",
                 label: "Itch.io",
