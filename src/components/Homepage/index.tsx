@@ -1,4 +1,4 @@
-import { FaItchIo, FaTumblr, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaItchIo, FaTumblr, FaTwitter } from "react-icons/fa";
 
 import React from "react";
 import clsx from "clsx";
@@ -80,6 +80,13 @@ export function Social(): JSX.Element {
             title="Tumblr"
           >
             <FaTumblr />
+          </a>
+					<a
+            href="https://www.instagram.com/dragonageannual/"
+            aria-label="Itch.io"
+            title="Itch.io"
+          >
+            <FaInstagram />
           </a>
           <a
             href="https://da-annual.itch.io/"
