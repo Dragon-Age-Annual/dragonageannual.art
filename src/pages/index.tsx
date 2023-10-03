@@ -9,9 +9,8 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 function HomepageHeader() {
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <img src="/img/light-hero.png" alt="" className="light-mode" />
-      <img src="/img/dark-hero.png" alt="" className="dark-mode" />
+    <header className={clsx("hero hero--primary")}>
+      <h1 className={styles.title}>Dragon Age Annual 2024</h1>
     </header>
   );
 }
