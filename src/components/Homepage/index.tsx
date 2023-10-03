@@ -43,17 +43,10 @@ export function Current(): JSX.Element {
   return (
     <section className={styles.social}>
       <div className={clsx(styles.current, "container")}>
-        <h2>Introducing DA Annual 2024</h2>
-        <h4>
-          <strong>Title:</strong> Compendium Pactorum
-        </h4>
-        <h4>
-          <strong>Theme:</strong> Countries & Factions
-        </h4>
-        <h4>
-          <strong>Charity:</strong>{" "}
-          <a href="https://www.warchild.org.uk/">War Child</a>
-        </h4>
+						<img src="/img/CoverPreview.png" className={styles.cover} />
+            <strong>Theme:</strong> Countries & Factions<br />
+            <strong>Charity:</strong>{" "}
+            <a href="https://www.warchild.org.uk/">War Child</a>
       </div>
     </section>
   );
@@ -81,7 +74,7 @@ export function Social(): JSX.Element {
           >
             <FaTumblr />
           </a>
-					<a
+          <a
             href="https://www.instagram.com/dragonageannual/"
             aria-label="Instagram"
             title="Instagram"

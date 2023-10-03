@@ -37,3 +37,11 @@
   max-width: 90vw;
   margin: 0 auto;
 }
+
+.cover {
+	display:block;
+	margin: auto;
+	width: 750px;
+	max-width: 90vw;
+	border-radius: 5px;
+}
