@@ -111,12 +111,6 @@ const config = {
         { name: "twitter:url", content: "https://www.dragonageannual.art" },
         { name: "og:image", content: "/img/favicon.png" },
       ],
-			announcementBar: {
-				id: 'coming_soon',
-				content:
-					'🎉 Pre-Orders Coming Soon! 🎉',
-				isCloseable: false,
-			},
     }),
 };
 
