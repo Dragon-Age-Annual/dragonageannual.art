@@ -25,7 +25,7 @@ To give a gift, you will need to know the email address of the person who you
 are gifting to. Please be aware this means they will be alerted to their gift at
 the time of purchase. If you would like to keep the gift a surprise, you will
 need to use your own email address and supply the individual with the digital
-yourself.
+file yourself.
 
 ### How does this impact shipping?
 
