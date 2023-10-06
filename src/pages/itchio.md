@@ -70,7 +70,7 @@ address the day you purchased, you can still add one to your order! Just follow
 the steps below:
 
 1. Locate your purchase confirmation email from itch.io and click on the
-   _Download Page_ link. <p role="note">You will need to sign in and create an
+   _Download Page_ link. <p role="note"><strong>NOTE:</strong>You will need to sign in and create an
    account under the order email otherwise a "mismatched token" error may
    occur.</p>
 

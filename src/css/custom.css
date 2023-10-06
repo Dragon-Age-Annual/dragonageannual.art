@@ -197,15 +197,10 @@ i {
   font-weight: normal;
 }
 
-[role*="note"]::before {
+[role*="note"] strong {
   font-family: var(--ifm-font-family-monospace);
   color: var(--ifm-color-primary-light);
   font-weight: bold;
-  content: "NOTE:";
-}
-
-[role*="note"]::before > img {
-  content: "";
 }
 
 img {
