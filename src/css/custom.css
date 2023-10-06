@@ -204,6 +204,10 @@ i {
   content: "NOTE:";
 }
 
+[role*="note"]::before > img {
+  content: "";
+}
+
 img {
   border-radius: 5px;
 }
