@@ -50,7 +50,7 @@ export default function Mods(): JSX.Element {
                       Project Manager, Shipping & Production, Social Media
                     </em>
                   </small>
-                  <div className={clsx("avatar__subtitle", styles.social)}>
+                  <div className={clsx("avatar__subtitle", styles.icons)}>
                     <a
                       target="_blank"
                       href="https://www.reddit.com/user/Kemvee"
@@ -103,7 +103,7 @@ export default function Mods(): JSX.Element {
                   <small className="avatar__subtitle">
                     <em>Artist, Graphics, Fox</em>
                   </small>
-                  <div className={clsx("avatar__subtitle", styles.social)}>
+                  <div className={clsx("avatar__subtitle", styles.icons)}>
                     <a
                       target="_blank"
                       href="https://thefoxinboots.tumblr.com"
@@ -152,7 +152,7 @@ export default function Mods(): JSX.Element {
                   <small className="avatar__subtitle">
                     <em>Writer, Graphics, Shipping</em>
                   </small>
-                  <div className={clsx("avatar__subtitle", styles.social)}>
+                  <div className={clsx("avatar__subtitle", styles.icons)}>
                     <a
                       target="_blank"
                       href="https://www.enigmalea.quest/"
@@ -171,7 +171,7 @@ export default function Mods(): JSX.Element {
                     </a>
                     <a
                       target="_blank"
-                      href="https://indiepocalypse.social/@enigmalea/"
+                      href="https://easymode.im/@enigmalea/"
                       aria-label="Mastodon"
                       title="Mastodon"
                     >

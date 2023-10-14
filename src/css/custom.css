@@ -176,7 +176,7 @@ i {
 }
 
 [class*="announcementBar"] {
-  background-color: #4a0bbc;
+  background-color: #4a0bbc !important;
   color: #e8e8f2;
   font-family: var(--ifm-heading-font-family);
   font-size: 1.15rem !important;
