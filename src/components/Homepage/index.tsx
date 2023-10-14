@@ -130,7 +130,7 @@ export function Preorder(): JSX.Element {
             about ordering through itch.io, our{" "}
             <a href="/itchio">Itch.io FAQs</a> may be helpful.
           </p>
-          <h2>Limited Signed Copies</h2>
+          <h2>Signed Edition</h2>
           <p>
             We are ecstatic to announce that in connection with our chosen
             charity, War Child UK,{" "}
