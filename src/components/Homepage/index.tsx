@@ -151,8 +151,8 @@ export function Preorder(): JSX.Element {
           </p>
           <h2>Donations</h2>
           Just want to donate to the cause without receiving a copy of the
-          calendar? We welcome donations and have two options. You can donate
-          through paypal below or visit our <a href="https://tiltify.com/@da-annual/dragon-age-annual-2024">tiltify</a>.
+          calendar? We welcome donations and have two options. You can donate to us
+          through Paypal below and we will include your funds with our donation to War Child after calendar sales are settled. You may also donate directly to War Child by visiting our <a href="https://tiltify.com/@da-annual/dragon-age-annual-2024">tiltify</a>.
 					<p className={styles.current}>
             <em>Donate with Paypal</em><br />
               <a
