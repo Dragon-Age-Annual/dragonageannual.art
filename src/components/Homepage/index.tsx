@@ -135,7 +135,7 @@ export function Preorder(): JSX.Element {
             We are ecstatic to announce that in connection with our chosen
             charity, War Child UK,{" "}
             <strong>
-              Indira Varma, Voice Actor for Vivienne from Dragon Age:
+              Indira Varma, Voice Actor for Vivienne de Fer from Dragon Age:
               Inquisition has agreed to sign 5 copies
             </strong>{" "}
             of the 2024 Dragon Age Annual!
@@ -151,20 +151,27 @@ export function Preorder(): JSX.Element {
           </p>
           <h2>Donations</h2>
           Just want to donate to the cause without receiving a copy of the
-          calendar? We welcome donations and have two options. You can donate to us
-          through Paypal below and we will include your funds with our donation to War Child UK after calendar sales are settled. You may also donate directly to War Child UK by visiting our <a href="https://tiltify.com/@da-annual/dragon-age-annual-2024">tiltify</a>.
-					<p className={styles.current}>
-            <em>Donate with Paypal</em><br />
-              <a
-                href="https://www.paypal.com/donate/?hosted_button_id=GAG3M89ZSZC8C"
-                target="_blank"
-              >
-                <img
-                  alt="paypal donate button"
-                  src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-                />
-              </a>
-            </p>
+          calendar? We welcome donations and have two options. You can donate to
+          us through Paypal below and we will include your funds with our
+          donation to War Child UK after calendar sales are settled. You may
+          also donate directly to War Child UK by visiting our{" "}
+          <a href="https://tiltify.com/@da-annual/dragon-age-annual-2024">
+            tiltify
+          </a>
+          .
+          <p className={styles.current}>
+            <em>Donate with Paypal</em>
+            <br />
+            <a
+              href="https://www.paypal.com/donate/?hosted_button_id=GAG3M89ZSZC8C"
+              target="_blank"
+            >
+              <img
+                alt="paypal donate button"
+                src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+              />
+            </a>
+          </p>
         </div>
       </div>
     </section>
