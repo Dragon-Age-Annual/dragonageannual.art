@@ -3,7 +3,7 @@
  * and scoped locally.
  */
 
-.social {
+.icons {
 	display: flex;
 	justify-content: flex-start;
 	gap: 20px;
