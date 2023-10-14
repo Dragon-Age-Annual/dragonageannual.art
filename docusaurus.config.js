@@ -138,7 +138,7 @@ const config = {
 				id: 'coming_soon',
 				content:
 					'✨ <a href="https://da-annual.itch.io/dragon-age-annual-2024">Pre-Order</a> or get your <a href="https://tiltify.com/@da-annual/auctions/da-annual-signed-editions">limited signed copy</a> now! ✨',
-				isCloseable: false,
+				isCloseable: true,
 			},
     }),
 };
