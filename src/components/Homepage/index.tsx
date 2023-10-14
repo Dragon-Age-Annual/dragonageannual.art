@@ -135,7 +135,7 @@ export function Preorder(): JSX.Element {
             We are ecstatic to announce that in connection with our chosen
             charity, War Child UK,{" "}
             <strong>
-              Indira Varma, Voice Actor for Vivienne de Fer from Dragon Age:
+              Indira Varma, voice actor for Vivienne de Fer from Dragon Age:
               Inquisition has agreed to sign 5 copies
             </strong>{" "}
             of the 2024 Dragon Age Annual!
