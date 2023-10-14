@@ -52,7 +52,7 @@ export function Current(): JSX.Element {
         <strong>Theme:</strong> Countries & Factions
         <br />
         <strong>Charity:</strong>{" "}
-        <a href="https://www.warchild.org.uk/">War Child</a>
+        <a href="https://www.warchild.org.uk/">War Child UK</a>
       </div>
     </section>
   );
@@ -133,7 +133,7 @@ export function Preorder(): JSX.Element {
           <h2>Limited Signed Copies</h2>
           <p>
             We are ecstatic to announce that in connection with our chosen
-            charity, War Child,{" "}
+            charity, War Child UK,{" "}
             <strong>
               Indira Varma, Voice Actor for Vivienne from Dragon Age:
               Inquisition has agreed to sign 5 copies
@@ -152,7 +152,7 @@ export function Preorder(): JSX.Element {
           <h2>Donations</h2>
           Just want to donate to the cause without receiving a copy of the
           calendar? We welcome donations and have two options. You can donate to us
-          through Paypal below and we will include your funds with our donation to War Child after calendar sales are settled. You may also donate directly to War Child by visiting our <a href="https://tiltify.com/@da-annual/dragon-age-annual-2024">tiltify</a>.
+          through Paypal below and we will include your funds with our donation to War Child UK after calendar sales are settled. You may also donate directly to War Child UK by visiting our <a href="https://tiltify.com/@da-annual/dragon-age-annual-2024">tiltify</a>.
 					<p className={styles.current}>
             <em>Donate with Paypal</em><br />
               <a
