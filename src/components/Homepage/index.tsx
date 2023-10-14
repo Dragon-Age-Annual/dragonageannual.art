@@ -132,7 +132,7 @@ export function Preorder(): JSX.Element {
           </p>
           <h2>Limited Signed Copies</h2>
           <p>
-            We are super excited to announces that in connection with our chosen
+            We are ecstatic to announce that in connection with our chosen
             charity, War Child,{" "}
             <strong>
               Indira Varma, Voice Actor for Vivienne from Dragon Age:
