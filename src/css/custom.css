@@ -1,5 +1,5 @@
 /* Import fonts */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Anonymous+Pro&family=PT+Serif:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Anonymous+Pro&family=PT+Serif:ital@1&display=swap");
 
 @font-face {
   font-family: "Rousseau Deco";
@@ -29,7 +29,7 @@
   --ifm-code-font-size: 95%;
   --ifm-navbar-shadow: none;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ifm-font-family-base: "Montserrat", sans-serif;
+  --ifm-font-family-base: "Atkinson Hyperlegible", sans-serif;
   --ifm-font-family-monospace: "Anonymous Pro", "Courier New", monospace;
   --ifm-heading-font-family: "Rousseau Deco", "Impact", sans-serif;
   --ifm-h1-font-size: 3rem;
@@ -73,11 +73,11 @@
   text-decoration: none;
 }
 
-a[class*=table-of-contents],
-a[class*=table-of-contents]:link,
-a[class*=table-of-contents]:active,
-a[class*=table-of-contents]:visited {
-	text-decoration: none;
+a[class*="table-of-contents"],
+a[class*="table-of-contents"]:link,
+a[class*="table-of-contents"]:active,
+a[class*="table-of-contents"]:visited {
+  text-decoration: none;
   text-underline-offset: none;
 }
 
@@ -176,19 +176,18 @@ i {
 }
 
 [class*="announcementBar"] {
-  background-color: var(--ifm-color-primary);
-  color: var(--ifm-background-color);
+  background-color: #4a0bbc;
+  color: #e8e8f2;
   font-family: var(--ifm-heading-font-family);
   font-size: 1.15rem !important;
   text-transform: uppercase;
   min-height: 35px;
 }
 
-.emoji {
-  display: inline;
-  vertical-align: middle;
-  padding-bottom: 5px;
-  font-size: 1.45rem;
+[class*="announcementBar"] > [class*="close"],
+[class*="announcementBar"] > [class*="close"]:hover {
+  background-color: #4a0bbc;
+  opacity: 1;
 }
 
 [role*="note"] {

@@ -35,7 +35,7 @@
 .paragraphs {
   width: 75em;
   max-width: 90vw;
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 .cover {
@@ -43,4 +43,8 @@
 	margin: auto;
 	width: 750px;
 	max-width: 90vw;
+}
+
+p {
+	display: block;
 }
