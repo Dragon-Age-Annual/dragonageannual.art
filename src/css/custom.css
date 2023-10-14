@@ -1,5 +1,5 @@
 /* Import fonts */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Anonymous+Pro&family=PT+Serif:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Anonymous+Pro&family=PT+Serif:ital@1&display=swap");
 
 @font-face {
   font-family: "Rousseau Deco";
@@ -29,7 +29,7 @@
   --ifm-code-font-size: 95%;
   --ifm-navbar-shadow: none;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ifm-font-family-base: "Montserrat", sans-serif;
+  --ifm-font-family-base: "Atkinson Hyperlegible", sans-serif;
   --ifm-font-family-monospace: "Anonymous Pro", "Courier New", monospace;
   --ifm-heading-font-family: "Rousseau Deco", "Impact", sans-serif;
   --ifm-h1-font-size: 3rem;
