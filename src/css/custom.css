@@ -184,8 +184,8 @@ i {
   min-height: 35px;
 }
 
-[class*="close"],
-[class*="close"]:hover {
+[class*="announcementBar"] > [class*="close"],
+[class*="announcementBar"] > [class*="close"]:hover {
   background-color: #4a0bbc;
   opacity: 1;
 }

@@ -8,7 +8,7 @@ export function Intro(): JSX.Element {
   return (
     <section className={styles.social}>
       <div className="container">
-        <div className={clsx("row", styles.paragraphs)}>
+        <div className={styles.paragraphs}>
           <h2>Who We Are</h2>
           <p>
             Dragon Age Annual is an unofficial, not-for-profit project: a labour
@@ -104,7 +104,7 @@ export function Preorder(): JSX.Element {
   return (
     <section>
       <div className="container">
-        <div className={clsx("row", styles.paragraphs)}>
+        <div className={styles.paragraphs}>
           <h2>Pre-Order Info</h2>
           <p>
             Pre-orders for the 2024 Dragon Age Annual: Compendium Pactorum are
