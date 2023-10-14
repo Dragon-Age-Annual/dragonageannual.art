@@ -133,12 +133,10 @@ export function Preorder(): JSX.Element {
           <h2>Signed Edition</h2>
           <p>
             We are ecstatic to announce that in connection with our chosen
-            charity, War Child UK,{" "}
-            <strong>
-              Indira Varma, voice actor for Vivienne de Fer from Dragon Age:
-              Inquisition has agreed to sign 5 copies
-            </strong>{" "}
-            of the 2024 Dragon Age Annual!
+            charity, War Child UK, <strong>Indira Varma</strong>, voice actor
+            for <strong>Vivienne de Fer</strong> from Dragon Age: Inquisition
+            has agreed to sign <strong>5 copies</strong> of the 2024 Dragon Age
+            Annual!
           </p>
           <p>
             These limited copies are available through special auctions on{" "}
