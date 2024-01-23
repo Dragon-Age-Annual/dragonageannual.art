@@ -132,20 +132,20 @@ export function Preorder(): JSX.Element {
           </p>
           <h2>Signed Edition</h2>
           <p>
-            We are ecstatic to announce that in connection with our chosen
-            charity, War Child UK, <strong>Indira Varma</strong>, voice actor
-            for <strong>Vivienne de Fer</strong> from Dragon Age: Inquisition
-            has agreed to sign <strong>5 copies</strong> of the 2024 Dragon Age
+            In connection with our chosen charity, War Child UK,{" "}
+            <strong>Indira Varma</strong>, voice actor for{" "}
+            <strong>Vivienne de Fer</strong> from Dragon Age: Inquisition has
+            agreed to sign <strong>5 copies</strong> of the 2024 Dragon Age
             Annual!
           </p>
           <p>
-            These limited copies are available through special auctions on{" "}
+            These limited copies were available through special auctions on{" "}
             <a href="https://tiltify.com/@da-annual/auctions/da-annual-signed-editions">
               tiltify
             </a>
-            . Auctions for the signed copy plus Merch pack will take place from
-            October 14-October 21, 2023 <u>only</u>! These are sure to go
-            quickly, so grab yours today!
+            . Auctions for the signed copy plus Merch pack took place from
+            October 14-October 21, 2023! If you missed out on the auctions, it's
+            not too late to grab an unsigned copy!
           </p>
           <h2>Donations</h2>
           Just want to donate to the cause without receiving a copy of the

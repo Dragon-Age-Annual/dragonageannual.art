@@ -97,10 +97,6 @@ const config = {
             label: "Purchasing",
             position: "left",
             items: [
-							{
-                href: "https://tiltify.com/@da-annual/auctions/da-annual-signed-editions",
-                label: "Signed Edition",
-              },
               {
                 href: "https://da-annual.itch.io/dragon-age-annual-2024",
                 label: "Pre-Order",
@@ -137,7 +133,7 @@ const config = {
 			announcementBar: {
 				id: 'coming_soon',
 				content:
-					'✨ <a href="https://da-annual.itch.io/dragon-age-annual-2024">Pre-Order</a> or get your <a href="https://tiltify.com/@da-annual/auctions/da-annual-signed-editions">Signed Edition</a> now! ✨',
+					'✨ <a href="https://da-annual.itch.io/dragon-age-annual-2024">Pre-Order now</a>! ✨',
 				isCloseable: true,
 			},
     }),
