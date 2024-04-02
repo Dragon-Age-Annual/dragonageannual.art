@@ -49,10 +49,10 @@ export function Current(): JSX.Element {
           className={styles.cover}
           alt="The front cover for the Dragon Age Annual 2024: Compendium Pactorum; the title is placed in the right front foreground in light purple-grey text and the letters have a faded neon-like vibrant purple glow. In the background, a dragon facing the right side of the image looms above a large stone, its claw curling around it. The stone contains carvings of animals representing the countries of Thedas arranged around a veilfire torch bathing the stone in teal light. From upper left circling around to bottom right the animals are: griffin for Anderfels, snake for Tevinter, crow for Antiva, Mabari for Ferelden, and lion for Orlais. The rest of the image is cast in vibrant orange, pink, and yellow from a rising or setting sun which is positioned behind the dragon, the light is reflected in the background on cumulus clouds which add texture to the image. In the foreground discarded on the ground as if left from battle there is a Templar shield and a mage staff; the mage staff is casing very light yellow lightning in the shape of the Circle of Magi symbol. In the midground, to the right of the stone, under the dragon's head, and framing the title are two red banners - one with the Qun symbol and the other with the Chantry symbol. In the upper left and lower right corner there are two art deco style adornments in a metallic sheen used to frame the picture."
         />
-        <strong>Theme:</strong> Countries & Factions
+        {/* <strong>Theme:</strong> Countries & Factions
         <br />
         <strong>Charity:</strong>{" "}
-        <a href="https://www.warchild.org.uk/">War Child UK</a>
+        <a href="https://www.warchild.org.uk/">War Child UK</a> */}
       </div>
     </section>
   );
@@ -69,29 +69,25 @@ export function Social(): JSX.Element {
           <a
             href="https://twitter.com/DragonAgeAnnual/"
             aria-label="Twitter"
-            title="Twitter"
-          >
+            title="Twitter">
             <FaTwitter />
           </a>
           <a
             href="https://dragonageannual.tumblr.com/"
             aria-label="Tumblr"
-            title="Tumblr"
-          >
+            title="Tumblr">
             <FaTumblr />
           </a>
           <a
             href="https://www.instagram.com/dragonageannual/"
             aria-label="Instagram"
-            title="Instagram"
-          >
+            title="Instagram">
             <FaInstagram />
           </a>
           <a
             href="https://da-annual.itch.io/"
             aria-label="Itch.io"
-            title="Itch.io"
-          >
+            title="Itch.io">
             <FaItchIo />
           </a>
         </div>
@@ -162,13 +158,29 @@ export function Preorder(): JSX.Element {
             <br />
             <a
               href="https://www.paypal.com/donate/?hosted_button_id=GAG3M89ZSZC8C"
-              target="_blank"
-            >
+              target="_blank">
               <img
                 alt="paypal donate button"
                 src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
               />
             </a>
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function Thanks(): JSX.Element {
+  return (
+    <section>
+      <div className="container">
+        <div className={styles.paragraphs}>
+          <h2>Thank You!</h2>
+          <p>
+            Thank you for helping us to raise $4657.90 for{" "}
+            <a href="https://www.warchild.org.uk/">WarChild UK</a> with our 2024
+            annual! This would not be possible without all of your support!
           </p>
         </div>
       </div>

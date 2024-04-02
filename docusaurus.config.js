@@ -130,12 +130,12 @@ const config = {
         { name: "twitter:url", content: "https://www.dragonageannual.art" },
         { name: "og:image", content: "/img/favicon.png" },
       ],
-			announcementBar: {
-				id: 'coming_soon',
-				content:
-					'✨ <a href="https://da-annual.itch.io/dragon-age-annual-2024">Pre-Order now</a>! ✨',
-				isCloseable: true,
-			},
+			// announcementBar: {
+			// 	id: 'coming_soon',
+			// 	content:
+			// 		'✨ <a href="https://da-annual.itch.io/dragon-age-annual-2024">Pre-Order now</a>! ✨',
+			// 	isCloseable: true,
+			// },
     }),
 };
 

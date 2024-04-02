@@ -1,4 +1,4 @@
-import { Current, Intro, Preorder, Social } from "@site/src/components/Homepage";
+import { Current, Intro, Preorder, Social, Thanks } from "@site/src/components/Homepage";
 
 import Form from "@site/src/components/NewsletterSignUp";
 import Layout from "@theme/Layout";
@@ -22,7 +22,8 @@ export default function Home(): JSX.Element {
       <HomepageHeader />
       <main>
         <Current />
-				<Preorder />
+				{/* <Preorder /> */}
+				<Thanks />
         <Intro />
         <Social />
         <Form />

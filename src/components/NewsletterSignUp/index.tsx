@@ -4,10 +4,10 @@ import styles from "./styles.module.css";
 
 const SignUp = ({ onSuccess }: { onSuccess: () => void }) => (
   <section className={styles.social}>
-    <div className="container">
+    <div className="container"><a name="newsletter" />
       <div className={clsx(styles.row, "margin-bottom--md")}>
         <h2>Join Our Newsletter</h2>
-      </div>
+      a</div>
       <div className={clsx(styles.row, "margin-bottom--md")}>
         <form
           name="newsletter-subscribe"
