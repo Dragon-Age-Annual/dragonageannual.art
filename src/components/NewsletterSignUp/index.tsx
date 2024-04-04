@@ -7,7 +7,7 @@ const SignUp = ({ onSuccess }: { onSuccess: () => void }) => (
     <div className="container"><a name="newsletter" />
       <div className={clsx(styles.row, "margin-bottom--md")}>
         <h2>Join Our Newsletter</h2>
-      a</div>
+      </div>
       <div className={clsx(styles.row, "margin-bottom--md")}>
         <form
           name="newsletter-subscribe"
