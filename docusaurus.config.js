@@ -74,6 +74,10 @@ const config = {
             label: "Community",
             position: "left",
             items: [
+							{
+                href: "https://bsky.app/profile/dragonageannual.bsky.social",
+                label: "Bluesky",
+              },
               {
                 href: "https://twitter.com/DragonAgeAnnual/",
                 label: "Twitter",
@@ -97,10 +101,10 @@ const config = {
             label: "Purchasing",
             position: "left",
             items: [
-              {
-                href: "https://da-annual.itch.io/dragon-age-annual-2024",
-                label: "Pre-Order",
-              },
+              // {
+              //   href: "https://da-annual.itch.io/dragon-age-annual-2024",
+              //   label: "Pre-Order",
+              // },
 							{
 								to: "terms",
 								label: "Terms and Conditions",
@@ -130,12 +134,12 @@ const config = {
         { name: "twitter:url", content: "https://www.dragonageannual.art" },
         { name: "og:image", content: "/img/favicon.png" },
       ],
-			// announcementBar: {
-			// 	id: 'coming_soon',
-			// 	content:
-			// 		'✨ <a href="https://da-annual.itch.io/dragon-age-annual-2024">Pre-Order now</a>! ✨',
-			// 	isCloseable: true,
-			// },
+			announcementBar: {
+				id: 'interest_checked',
+				content:
+					'✨ Complete the 2025 <a href="https://docs.google.com/forms/d/1EcjQTgKNZVrutTB6vQ8CI6Uu3rGHt3CNB9a4xNOiA6o/viewform">Interest Check</a>! ✨',
+				isCloseable: true,
+			},
     }),
 };
 
