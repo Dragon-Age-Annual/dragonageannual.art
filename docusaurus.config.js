@@ -134,12 +134,12 @@ const config = {
         { name: "twitter:url", content: "https://www.dragonageannual.art" },
         { name: "og:image", content: "/img/favicon.png" },
       ],
-			announcementBar: {
-				id: 'interest_checked',
-				content:
-					'✨ Complete the 2025 <a href="https://docs.google.com/forms/d/1EcjQTgKNZVrutTB6vQ8CI6Uu3rGHt3CNB9a4xNOiA6o/viewform">Interest Check</a>! ✨',
-				isCloseable: true,
-			},
+			// announcementBar: {
+			// 	id: 'interest_checked',
+			// 	content:
+			// 		'✨ Complete the 2025 <a href="https://docs.google.com/forms/d/1EcjQTgKNZVrutTB6vQ8CI6Uu3rGHt3CNB9a4xNOiA6o/viewform">Interest Check</a>! ✨',
+			// 	isCloseable: true,
+			// },
     }),
 };
 
