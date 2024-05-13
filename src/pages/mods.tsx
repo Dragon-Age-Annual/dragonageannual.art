@@ -1,5 +1,6 @@
 import { FaLink, FaMastodon, FaRedditAlien, FaTwitter } from "react-icons/fa";
 import { SiArchiveofourown, SiFirefish } from "react-icons/si";
+
 import { BsInstagram } from "react-icons/bs";
 import { ImTumblr } from "react-icons/im";
 import Layout from "@theme/Layout";
@@ -206,52 +207,6 @@ export default function Mods(): JSX.Element {
                   accomplish each year!
                 </p>
               </div>
-							<div className="avatar">
-                <img
-                  className="avatar__photo avatar__photo--xl"
-                  src="/img/mods/inquisimer.png"
-                />
-                <div className="avatar__intro">
-                  <div className="avatar__name">Inquisimer</div>
-                  <small className="avatar__subtitle">
-                    <em>Organizaation, Social Media</em>
-                  </small>
-                  <div className={clsx("avatar__subtitle", styles.icons)}>
-                    <a
-                      target="_blank"
-                      href="https://ao3.org/users/inquisimer"
-                      aria-label="AO3"
-                      title="AO3"
-                    >
-                      <SiArchiveofourown />
-                    </a>
-										<a
-                      target="_blank"
-                      href="https://inquisimer.tumblr.com/"
-                      aria-label="Tumblr"
-                      title="Tumblr"
-                    >
-                      <ImTumblr />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="avatar__subtitle margin-bottom--xl">
-                <p>
-								I face-planted into the Dragon Age fandom back in 2021 after my
-								best friend showed me a PowerPoint about how Solas broke their 
-								heart and I haven’t left since. The community is what keeps me 
-								here and I’m thrilled to be part of events that keep that 
-								supporitve spirit of creation alive!
-								</p>
-								<p>
-								I’m a fanfiction writer and avid multishipper with enough OCs 
-								and world states that I need a spreadsheet to keep them organized.
-								I’m excited to join the Dragon Age Annual mod team this year and
-								can’t wait to see what everyone creates!
-                </p>
-              </div>
-
             </article>
           </div>
         </div>

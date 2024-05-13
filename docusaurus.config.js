@@ -79,6 +79,11 @@ const config = {
                 label: "Bluesky",
               },
               {
+							{
+                href: "https://bsky.app/profile/dragonageannual.bsky.social",
+                label: "Bluesky",
+              },
+              {
                 href: "https://twitter.com/DragonAgeAnnual/",
                 label: "Twitter",
               },
@@ -135,9 +140,9 @@ const config = {
         { name: "og:image", content: "/img/favicon.png" },
       ],
 			// announcementBar: {
-			// 	id: 'interest_checked',
+			// 	id: 'coming_soon',
 			// 	content:
-			// 		'✨ Complete the 2025 <a href="https://docs.google.com/forms/d/1EcjQTgKNZVrutTB6vQ8CI6Uu3rGHt3CNB9a4xNOiA6o/viewform">Interest Check</a>! ✨',
+			// 		'✨ <a href="https://da-annual.itch.io/dragon-age-annual-2024">Pre-Order now</a>! ✨',
 			// 	isCloseable: true,
 			// },
     }),
