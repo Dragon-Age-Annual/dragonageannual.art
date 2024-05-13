@@ -78,7 +78,6 @@ const config = {
                 href: "https://bsky.app/profile/dragonageannual.bsky.social",
                 label: "Bluesky",
               },
-              {
 							{
                 href: "https://bsky.app/profile/dragonageannual.bsky.social",
                 label: "Bluesky",
