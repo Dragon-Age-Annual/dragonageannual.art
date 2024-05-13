@@ -56,24 +56,21 @@ export default function Mods(): JSX.Element {
                       target="_blank"
                       href="https://www.reddit.com/user/Kemvee"
                       aria-label="Reddit"
-                      title="Reddit"
-                    >
+                      title="Reddit">
                       <FaRedditAlien />
                     </a>
                     <a
                       target="_blank"
                       href="https://kemvee.tumblr.com/"
                       aria-label="Tumblr"
-                      title="Tumblr"
-                    >
+                      title="Tumblr">
                       <ImTumblr />
                     </a>
                     <a
                       target="_blank"
                       href="https://twitter.com/kemvee_art"
                       aria-label="Twitter"
-                      title="Twitter"
-                    >
+                      title="Twitter">
                       <FaTwitter />
                     </a>
                   </div>
@@ -109,8 +106,7 @@ export default function Mods(): JSX.Element {
                       target="_blank"
                       href="https://thefoxinboots.tumblr.com"
                       aria-label="Tumblr"
-                      title="Tumblr"
-                    >
+                      title="Tumblr">
                       <ImTumblr />
                     </a>
                     <a target="_blank" href="https://twitter.com/thefoxinboots">
@@ -120,8 +116,7 @@ export default function Mods(): JSX.Element {
                       target="_blank"
                       href="https://www.instagram.com/foxinboots/"
                       aria-label="Instagram"
-                      title="Instagram"
-                    >
+                      title="Instagram">
                       <BsInstagram />
                     </a>
                   </div>
@@ -158,32 +153,28 @@ export default function Mods(): JSX.Element {
                       target="_blank"
                       href="https://www.enigmalea.quest/"
                       aria-label="enigmalea.quest website"
-                      title="enigmalea.quest website"
-                    >
+                      title="enigmalea.quest website">
                       <FaLink />
                     </a>
                     <a
                       target="_blank"
                       href="https://ao3.org/users/enigmalea"
                       aria-label="AO3"
-                      title="AO3"
-                    >
+                      title="AO3">
                       <SiArchiveofourown />
                     </a>
-										<a
+                    <a
                       target="_blank"
                       href="https://enigmalea.tumblr.com/"
                       aria-label="Tumblr"
-                      title="Tumblr"
-                    >
+                      title="Tumblr">
                       <ImTumblr />
                     </a>
                     <a
                       target="_blank"
                       href="https://easymode.im/@enigmalea/"
                       aria-label="Firefish"
-                      title="Firefish"
-                    >
+                      title="Firefish">
                       <SiFirefish />
                     </a>
                   </div>
@@ -205,6 +196,49 @@ export default function Mods(): JSX.Element {
                   and deadlines happening all at once, but the Annual is always
                   my favourite. I'm immensely proud of the work we manage to
                   accomplish each year!
+                </p>
+              </div>
+              <div className="avatar">
+                <img
+                  className="avatar__photo avatar__photo--xl"
+                  src="/img/mods/inquisimer.png"
+                />
+                <div className="avatar__intro">
+                  <div className="avatar__name">Inquisimer</div>
+                  <small className="avatar__subtitle">
+                    <em>Organization, Social Media</em>
+                  </small>
+                  <div className={clsx("avatar__subtitle", styles.icons)}>
+                    <a
+                      target="_blank"
+                      href="https://ao3.org/users/inquisimer"
+                      aria-label="AO3"
+                      title="AO3">
+                      <SiArchiveofourown />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://inquisimer.tumblr.com/"
+                      aria-label="Tumblr"
+                      title="Tumblr">
+                      <ImTumblr />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="avatar__subtitle margin-bottom--xl">
+                <p>
+                  I face-planted into the Dragon Age fandom back in 2021 after
+                  my best friend showed me a PowerPoint about how Solas broke
+                  their heart and I haven’t left since. The community is what
+                  keeps me here and I’m thrilled to be part of events that keep
+                  that supporitve spirit of creation alive!
+                </p>
+                <p>
+                  I’m a fanfiction writer and avid multishipper with enough OCs
+                  and world states that I need a spreadsheet to keep them
+                  organized. I’m excited to join the Dragon Age Annual mod team
+                  this year and can’t wait to see what everyone creates!
                 </p>
               </div>
             </article>
