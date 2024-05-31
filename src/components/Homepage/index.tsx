@@ -32,13 +32,12 @@ export function Intro(): JSX.Element {
             DAA first began production in 2021 for a 2022 calendar (confusing we
             know) and we are now in our 2025 calendar production period. If you
             did not opt-in to our newsletter during our 2025 Interest Check, you
-            can sign-up below. Our newsletters will be sent to let you know when
+            can sign up below. Our newsletters will be sent to let you know when
             applications and pre-orders open. We may also send occasional
             production updates!
           </p>
           <p>
-            For even more updates, we encourage you to follow us on tumblr or
-            twitter.
+            For even more updates, we encourage you to follow us on social media.
           </p>
         </div>
       </div>
@@ -53,7 +52,7 @@ export function Current(): JSX.Element {
         <div className={styles.paragraphs}>
           <h2>2025 Production is underway!</h2>
           <p>
-            The mods are pleased to announce this years' theme and charity have
+            The mods are pleased to announce this year's theme and charity have
             been decided with help from everyone who completed the interest
             check! Thank you for your continued support of DAA.
           </p>
@@ -69,7 +68,7 @@ export function Current(): JSX.Element {
           Calling all artists, writers, and betas, we are looking for this
           year's talented team of contributors to help us produce DAA 2025.{" "}
           <strong>Applications close on June 14, 2024.</strong> For more info
-          read our <a href="/application">Before You Apply</a>, and then head
+          read our <a href="/application">Before You Apply</a> page, and then head
           over to the applications:
           <ul style={{ listStyleType: "none" }} className={clsx(styles.current)}>
             <li>

@@ -64,9 +64,9 @@ fit for you!
 
   - the selection of subject matter for your piece(s)
   - understanding when production changes must be made
-  - working with moderators for revisions
+  - working with moderators for revisions<br/><br/>
 
-  In exchange, moderators also pledge to be flexible. Although we do have final
+	In exchange, moderators also pledge to be flexible. Although we do have final
   say, we promise to be understanding of real life setbacks which might impact
   your ability to check in and will always give weight to contributors' artistic
   ideas.
@@ -78,7 +78,7 @@ fit for you!
 - All contributors must be open to review and feedback on their work from
   moderators.
 
-- Contributors will need to complete works in 2-4 months to meet production
+- Contributors will need to complete their works in 2-4 months to meet production
   deadlines. Detailed timelines are provided upon acceptance.
 
 ### Artists
@@ -122,7 +122,7 @@ fit for you!
 - _Merch:_ If there is enough interest in one of our planned merch items, we may
   have some roles for writing contributions to merch. Exact guidelines may vary,
   but we expect Writers who write for the merch option to be able to produce one
-  piece of between 1000 and 1500 words. More precise guidelines will be
+  piece of between 1000 and 2000 words. More precise guidelines will be
   available as production begins.
 
 - **Writers may apply for both the Wall Calendar and Merch roles.** If a Writer
