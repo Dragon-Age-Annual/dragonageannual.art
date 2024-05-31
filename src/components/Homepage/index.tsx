@@ -30,8 +30,8 @@ export function Intro(): JSX.Element {
           </p>
           <p>
             DAA first began production in 2021 for a 2022 calendar (confusing we
-            know) and we are now in our 2024 calendar production period. If you
-            did not opt-in to our newsletter during our 2024 Interest Check, you
+            know) and we are now in our 2025 calendar production period. If you
+            did not opt-in to our newsletter during our 2025 Interest Check, you
             can sign-up below. Our newsletters will be sent to let you know when
             applications and pre-orders open. We may also send occasional
             production updates!
