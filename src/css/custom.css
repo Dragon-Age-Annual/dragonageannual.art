@@ -14,13 +14,13 @@
 }
 
 :root {
-  --ifm-color-primary: #4a0bbc;
-  --ifm-color-primary-dark: #430aa9;
-  --ifm-color-primary-darker: #3f09a0;
-  --ifm-color-primary-darkest: #340884;
-  --ifm-color-primary-light: #510ccf;
-  --ifm-color-primary-lighter: #550dd8;
-  --ifm-color-primary-lightest: #6112f1;
+  --ifm-color-primary: #35034a;
+  --ifm-color-primary-dark: #300343;
+  --ifm-color-primary-darker: #2d033f;
+  --ifm-color-primary-darkest: #250234;
+  --ifm-color-primary-light: #3a0351;
+  --ifm-color-primary-lighter: #3d0355;
+  --ifm-color-primary-lightest: #450460;
   --ifm-background-color: #e8e8f2;
   --ifm-background-surface-color: #d8d8e1;
   --ifm-navbar-background-color: var(--ifm-background-color);
@@ -176,7 +176,7 @@ i {
 }
 
 [class*="announcementBar"] {
-  background-color: #4a0bbc !important;
+  background-color: #7b0464 !important;
   color: #e8e8f2;
   font-family: var(--ifm-heading-font-family);
   font-size: 1.15rem !important;
@@ -186,7 +186,7 @@ i {
 
 [class*="announcementBar"] > [class*="close"],
 [class*="announcementBar"] > [class*="close"]:hover {
-  background-color: #4a0bbc;
+  background-color: #7b0464;
   opacity: 1;
 }
 

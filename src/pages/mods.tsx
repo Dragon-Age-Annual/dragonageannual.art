@@ -48,7 +48,7 @@ export default function Mods(): JSX.Element {
                   <div className="avatar__name">Kemvee</div>
                   <small className="avatar__subtitle">
                     <em>
-                      Project Manager, Shipping & Production, Social Media
+                      Founder, Shipping & Production
                     </em>
                   </small>
                   <div className={clsx("avatar__subtitle", styles.icons)}>
@@ -206,7 +206,7 @@ export default function Mods(): JSX.Element {
                 <div className="avatar__intro">
                   <div className="avatar__name">Inquisimer</div>
                   <small className="avatar__subtitle">
-                    <em>Organization, Social Media</em>
+                    <em>Writer, Organization, Social Media</em>
                   </small>
                   <div className={clsx("avatar__subtitle", styles.icons)}>
                     <a

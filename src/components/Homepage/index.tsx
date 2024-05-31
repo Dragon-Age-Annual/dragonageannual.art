@@ -1,4 +1,10 @@
-import { FaInstagram, FaItchIo, FaTumblr, FaTwitter } from "react-icons/fa";
+import {
+  FaBluesky,
+  FaInstagram,
+  FaItchIo,
+  FaTumblr,
+  FaTwitter,
+} from "react-icons/fa6";
 
 import React from "react";
 import clsx from "clsx";
@@ -24,15 +30,14 @@ export function Intro(): JSX.Element {
           </p>
           <p>
             DAA first began production in 2021 for a 2022 calendar (confusing we
-            know) and we are now in our 2024 calendar production period. If you
-            did not opt-in to our newsletter during our 2024 Interest Check, you
-            can sign-up below. Our newsletters will be sent to let you know when
+            know) and we are now in our 2025 calendar production period. If you
+            did not opt-in to our newsletter during our 2025 Interest Check, you
+            can sign up below. Our newsletters will be sent to let you know when
             applications and pre-orders open. We may also send occasional
             production updates!
           </p>
           <p>
-            For even more updates, we encourage you to follow us on tumblr or
-            twitter.
+            For even more updates, we encourage you to follow us on social media.
           </p>
         </div>
       </div>
@@ -43,16 +48,40 @@ export function Intro(): JSX.Element {
 export function Current(): JSX.Element {
   return (
     <section className={styles.social}>
-      <div className={clsx(styles.current, "container")}>
-        <img
-          src="/img/CoverPreview.png"
-          className={styles.cover}
-          alt="The front cover for the Dragon Age Annual 2024: Compendium Pactorum; the title is placed in the right front foreground in light purple-grey text and the letters have a faded neon-like vibrant purple glow. In the background, a dragon facing the right side of the image looms above a large stone, its claw curling around it. The stone contains carvings of animals representing the countries of Thedas arranged around a veilfire torch bathing the stone in teal light. From upper left circling around to bottom right the animals are: griffin for Anderfels, snake for Tevinter, crow for Antiva, Mabari for Ferelden, and lion for Orlais. The rest of the image is cast in vibrant orange, pink, and yellow from a rising or setting sun which is positioned behind the dragon, the light is reflected in the background on cumulus clouds which add texture to the image. In the foreground discarded on the ground as if left from battle there is a Templar shield and a mage staff; the mage staff is casing very light yellow lightning in the shape of the Circle of Magi symbol. In the midground, to the right of the stone, under the dragon's head, and framing the title are two red banners - one with the Qun symbol and the other with the Chantry symbol. In the upper left and lower right corner there are two art deco style adornments in a metallic sheen used to frame the picture."
-        />
-        {/* <strong>Theme:</strong> Countries & Factions
-        <br />
-        <strong>Charity:</strong>{" "}
-        <a href="https://www.warchild.org.uk/">War Child UK</a> */}
+      <div className="container">
+        <div className={styles.paragraphs}>
+          <h2>2025 Production is underway!</h2>
+          <p>
+            The mods are pleased to announce this year's theme and charity have
+            been decided with help from everyone who completed the interest
+            check! Thank you for your continued support of DAA.
+          </p>
+          <div className={clsx(styles.current)}>
+            <p>
+              <strong>Theme:</strong> Thedas' Myths & Legends
+              <br />
+              <strong>Charity:</strong>{" "}
+              <a href="https://www.warchild.org.uk/">War Child UK</a>
+            </p>
+          </div>
+          <h3>We are currently accepting applications.</h3>
+          Calling all artists, writers, and betas, we are looking for this
+          year's talented team of contributors to help us produce DAA 2025.{" "}
+          <strong>Applications close on June 14, 2024.</strong> For more info
+          read our <a href="/application">Before You Apply</a> page, and then head
+          over to the applications:
+          <ul style={{ listStyleType: "none" }} className={clsx(styles.current)}>
+            <li>
+              🎨 <a href="https://forms.gle/3CgRrGLbD3xfkddR8">Artists</a>
+            </li>
+            <li>
+              🖋️ <a href="https://forms.gle/98HnjtUDaoMYvJYU6">Writers</a>
+            </li>
+            <li>
+              🔍 <a href="https://forms.gle/NyuAUSJ1o1XvJakT6">Betas</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   );
@@ -67,10 +96,10 @@ export function Social(): JSX.Element {
         </div>
         <div className={clsx(styles.row, styles.icons)}>
           <a
-            href="https://twitter.com/DragonAgeAnnual/"
-            aria-label="Twitter"
-            title="Twitter">
-            <FaTwitter />
+            href="https://bsky.app/profile/dragonageannual.bsky.social"
+            aria-label="Bluesky"
+            title="Bluesky">
+            <FaBluesky />
           </a>
           <a
             href="https://dragonageannual.tumblr.com/"
@@ -89,6 +118,12 @@ export function Social(): JSX.Element {
             aria-label="Itch.io"
             title="Itch.io">
             <FaItchIo />
+          </a>
+          <a
+            href="https://twitter.com/DragonAgeAnnual/"
+            aria-label="Twitter"
+            title="Twitter">
+            <FaTwitter />
           </a>
         </div>
       </div>

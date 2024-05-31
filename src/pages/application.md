@@ -4,12 +4,20 @@ title: Before You Apply
 
 # Before You Apply
 
-We thank you for your interest in Dragon Age Annual! Please take the time to
-read the information below carefully before you apply.
+We thank you for your interest in contributing to Dragon Age Annual! Please take
+the time to read the information below carefully before you apply.
+
+## General Information
 
 DAA is a not-for-profit project and all contributions are done on a voluntary
-basis. There is no monetary compensation for contributors. All profits will be
-donated to the chosen charity for the year.
+basis. There is no monetary or product compensation for contributors.
+Contributors are entitled to a free copy of the pdf of the calendar. In past
+years, we have also been pleased to be able to allow contributors to purchase
+**one** physical copy of the calendar or merch bundle (their choice) at cost.
+Please note: since DAA's primary goal is to raise money for charity, we cannot
+guarantee that an "at cost" copy will be available for purchase and cannot
+extend this offer to more than one copy. **All** profits will be donated to the
+chosen charity for the year.
 
 **We do not accept any applications of AI-generated works or where others’
 creations have been traced or used as "bases".** All works should be your own.
@@ -32,9 +40,9 @@ out to us via social media or email dragonageannual@gmail.com.
    moderators with respect.
 
 3. Because a calendar has a fixed minimum number of pages that must be produced,
-   each piece is critical to production. Therefore, we ask that you only apply
-   if you are confident in your ability to deliver your assigned piece(s) within
-   the project’s deadline.
+   each piece is **critical** to production. Therefore, we ask that you only
+   apply if you are confident in your ability to deliver your assigned piece(s)
+   within the project’s deadline.
 
 Should we become aware of any breach in our code of conduct we may take action
 up to and including removal from the project or barring from future
@@ -56,9 +64,9 @@ fit for you!
 
   - the selection of subject matter for your piece(s)
   - understanding when production changes must be made
-  - working with moderators for revisions <br /><br />
+  - working with moderators for revisions<br/><br/>
 
-  In exchange, moderators also pledge to be flexible. Although we do have final
+	In exchange, moderators also pledge to be flexible. Although we do have final
   say, we promise to be understanding of real life setbacks which might impact
   your ability to check in and will always give weight to contributors' artistic
   ideas.
@@ -70,7 +78,7 @@ fit for you!
 - All contributors must be open to review and feedback on their work from
   moderators.
 
-- Contributors will need to complete works in 2-4 months to meet production
+- Contributors will need to complete their works in 2-4 months to meet production
   deadlines. Detailed timelines are provided upon acceptance.
 
 ### Artists
@@ -111,15 +119,24 @@ fit for you!
 - The matching of writers to artists will take place after the artists' concepts
   have been approved during the earliest stages of production.
 
+- _Merch:_ If there is enough interest in one of our planned merch items, we may
+  have some roles for writing contributions to merch. Exact guidelines may vary,
+  but we expect Writers who write for the merch option to be able to produce one
+  piece of between 1000 and 2000 words. More precise guidelines will be
+  available as production begins.
+
+- **Writers may apply for both the Wall Calendar and Merch roles.** If a Writer
+  is selected for both roles, they are encouraged to work with moderators if
+  they find they will need flexibility in meeting deadlines for all their
+  pieces.
+
 ### Support Roles
 
-- _Graphics:_ Assist in the design, marketing and assembly of the Annual. This
-  can include but is not limited to contributor spotlights, social media posts,
-  merchandising imagery and pages of the calendar. We are looking for people who
-  are proactive and can take charge of their responsibilities.<br /><br />
 - _Betas:_ Review and verify accuracy of all copy produced for the Annual. This
   can include but is not limited to writer’s stories, cover copy, website text,
   contributor spotlights, and credits pages.
+
+- **Prospective Writers may also apply as Betas.**
 
 ## Portfolio Reviews
 
@@ -147,6 +164,12 @@ please let us know in your application!
 
 - Scoring will be based on overall composition, colour choices, strong
   backgrounds, and technique.
+
+- Merchandise artists do not need to have created similar merch before; however,
+  if you have designed similar merch (even in other fandoms) for projects or for
+  your own shops, please do include those samples (even if they are from another
+  fandom!).
+
 - Overall, the best plan is to show us _your_ individual style as an artist, and
   we'll do our best to figure out how we can play to your strengths.
 
@@ -162,8 +185,8 @@ please let us know in your application!
 - We judge on grammar, technique, and characterization. We cannot guarantee all
   three mods will be able to judge characterization for non-Dragon Age
   characters or OCs. Please try to include samples with multiple canon Dragon
-  Age characters or unique forms (for example, an in universe codex, a character
-  piece, and a descriptive piece).
+  Age characters and with unique forms (for example, an in universe codex, a
+  character piece, and a descriptive piece).
 
 ### Support Roles
 
@@ -171,4 +194,4 @@ please let us know in your application!
   in a fandom setting.
 
 - It is also helpful if you’re able to describe a little about your practical
-  experience
+  experience.
