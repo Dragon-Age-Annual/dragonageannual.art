@@ -134,12 +134,12 @@ const config = {
         { name: "twitter:url", content: "https://www.dragonageannual.art" },
         { name: "og:image", content: "/img/favicon.png" },
       ],
-			// announcementBar: {
-			// 	id: 'coming_soon',
-			// 	content:
-			// 		'✨ <a href="https://da-annual.itch.io/dragon-age-annual-2024">Pre-Order now</a>! ✨',
-			// 	isCloseable: true,
-			// },
+			announcementBar: {
+				id: 'applications open',
+				content:
+					'✨ Apply Now: <a href="https://forms.gle/3CgRrGLbD3xfkddR8">Artists</a>, <a href="https://forms.gle/98HnjtUDaoMYvJYU6">Writers</a>, and <a href="https://forms.gle/NyuAUSJ1o1XvJakT6">Betas</a>! ✨',
+				isCloseable: false,
+			},
     }),
 };
 
