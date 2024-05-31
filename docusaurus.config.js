@@ -135,7 +135,7 @@ const config = {
         { name: "og:image", content: "/img/favicon.png" },
       ],
 			announcementBar: {
-				id: 'applications open',
+				id: 'applications_open',
 				content:
 					'✨ Apply Now: <a href="https://forms.gle/3CgRrGLbD3xfkddR8">Artists</a>, <a href="https://forms.gle/98HnjtUDaoMYvJYU6">Writers</a>, and <a href="https://forms.gle/NyuAUSJ1o1XvJakT6">Betas</a>! ✨',
 				isCloseable: false,
