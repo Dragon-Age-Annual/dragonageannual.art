@@ -232,7 +232,7 @@ export default function Mods(): JSX.Element {
                   my best friend showed me a PowerPoint about how Solas broke
                   their heart and I haven’t left since. The community is what
                   keeps me here and I’m thrilled to be part of events that keep
-                  that supporitve spirit of creation alive!
+                  that supportive spirit of creation alive!
                 </p>
                 <p>
                   I’m a fanfiction writer and avid multishipper with enough OCs
