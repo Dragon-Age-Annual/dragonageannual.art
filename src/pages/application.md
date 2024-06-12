@@ -195,3 +195,9 @@ please let us know in your application!
 
 - It is also helpful if you’re able to describe a little about your practical
   experience.
+
+## Applications
+
+- [Artists](https://forms.gle/3CgRrGLbD3xfkddR8)
+- [Writers](https://forms.gle/98HnjtUDaoMYvJYU6)
+- [Betas](https://forms.gle/NyuAUSJ1o1XvJakT6)
