@@ -1,0 +1,29 @@
+---
+import DefaultLayout from "../layouts/DefaultLayout.astro";
+import Image from "astro/components/Image.astro";
+
+import lothering from "../assets/img/lothering.png";
+---
+
+<DefaultLayout title="404">
+  <section class="my-12 text-center">
+    <div class="container">
+      <h1>404</h1>
+    </div>
+  </section>
+  <section class="my-12">
+    <div class="space-content container text-center">
+      <p class="text-2xl">
+        We're sorry. You can't fast travel to this page, because like Lothering,
+        it no longer exists.
+      </p>
+      <Image
+        src={lothering}
+        alt="A screenshot of Lothering from Dragon Age Origins taken from when the player first approaches the village."
+        width="750"
+        class="max-w-3/4 mx-auto rounded-2xl"
+      />
+      <a class="button" href="/">Return to the World Map</a>
+    </div>
+  </section>
+</DefaultLayout>

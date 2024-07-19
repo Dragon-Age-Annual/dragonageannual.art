@@ -1,0 +1,59 @@
+---
+import type { ImageMetadata } from "astro";
+
+interface Props {
+  year: number;
+  title: string;
+  theme: string;
+  charityName: string;
+  charityLink: string;
+  cover: ImageMetadata;
+  coverAlt: string;
+  amountUS: number;
+  amountUK: number;
+}
+
+const props = Astro.props;
+
+const dollars = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+});
+
+const pounds = new Intl.NumberFormat("en-UK", {
+  style: "currency",
+  currency: "GBP",
+});
+
+const donationUS = dollars.format(props.amountUS);
+const donationUK = pounds.format(props.amountUK);
+---
+
+<article
+  class="w-prose relative flex min-h-full flex-col rounded-lg border-2 border-solid border-nord4 dark:border-nord0 md:w-[360px]"
+>
+  <img
+    src={props.cover.src}
+    alt={props.coverAlt}
+    class="w-prose rounded-t-lg lg:w-[360px]"
+  />
+  <div class="mx-auto py-3">
+    <h3>{props.title}</h3>
+  </div>
+  <div class="px-5 leading-loose">
+    <ul class="list-style-none pb-4">
+      <li>
+        <strong>Theme:</strong>
+        {props.theme}
+      </li>
+      <li>
+        <strong>Charity:</strong>
+        <a href={props.charityLink}>{props.charityName}</a>
+      </li>
+      <li>
+        <strong>Donation Amount:</strong>
+        {donationUS} / {donationUK}
+      </li>
+    </ul>
+  </div>
+</article>

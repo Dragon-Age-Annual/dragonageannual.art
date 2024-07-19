@@ -1,0 +1,39 @@
+---
+import TableOfContentsHeading from "./TableOfContentsHeading.astro";
+
+type myHeading = {
+  depth: number;
+  text: string;
+  slug: string;
+  subheadings: Array<myHeading>;
+};
+
+type myHeadings = Array<myHeading>;
+
+const { headings } = Astro.props;
+const toc = buildToc(headings);
+
+function buildToc(headings: myHeadings) {
+  const toc: myHeadings = [];
+  const parentHeadings = new Map();
+  headings.forEach((h) => {
+    const heading = { ...h, subheadings: [] };
+    heading.text = heading.text.replace(" #", "");
+    parentHeadings.set(heading.depth, heading);
+    if (heading.depth === 2) {
+      toc.push(heading);
+    } else {
+      parentHeadings.get(heading.depth - 1).subheadings.push(heading);
+    }
+  });
+  return toc;
+}
+---
+
+<nav
+  class="toc mt-14 hidden w-72 border-l border-dotted border-neutral-500 pl-7 lg:block"
+>
+  <ul class="list-none">
+    {toc.map((heading) => <TableOfContentsHeading heading={heading} />)}
+  </ul>
+</nav>

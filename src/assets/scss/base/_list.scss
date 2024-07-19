@@ -1,0 +1,61 @@
+// | -------------------------------------------------------------
+// | Lists
+// | -------------------------------------------------------------
+
+@use "breakpoint" as *;
+
+ul:not([class]) {
+  margin-left: 1rem;
+
+  ul,
+  ol {
+    padding: 0.5rem 1rem 0;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+    list-style: disc;
+  }
+
+  > li::marker {
+    display: block;
+    color: var(--primary-100);
+  }
+}
+
+ol:not([class]) {
+  counter-reset: item;
+
+  ol {
+    counter-reset: item;
+  }
+
+  li {
+    display: block;
+    margin-bottom: 0.5rem;
+
+    @include breakpoint(medium) {
+      margin-bottom: 0.75rem;
+    }
+
+    &::before {
+      content: counters(item, ".") ". ";
+      counter-increment: item;
+      color: var(--primary-100);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    p {
+      display: inline;
+    }
+  }
+
+  ul {
+    li::before {
+      content: "";
+    }
+  }
+}
