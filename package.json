@@ -23,7 +23,7 @@
     "@typescript-eslint/eslint-plugin": "^7.16.1",
     "@typescript-eslint/parser": "^7.16.1",
     "accessible-astro-components": "^2.3.6",
-    "astro": "^4.12.1",
+    "astro": "^4.12.2",
     "astro-icon": "^1.1.0",
     "astro-meta-tags": "^0.3.0",
     "eslint": "^8.57.0",
@@ -46,6 +46,6 @@
     "unified": "^11.0.5"
   },
   "dependencies": {
-    "astro-compress": "^2.2.28"
+    "@astrojs/check": "^0.8.2"
   }
 }
