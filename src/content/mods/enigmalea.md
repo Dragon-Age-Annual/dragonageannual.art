@@ -5,7 +5,7 @@ avatar: "./avatars/enigmalea.png"
 roles:
   - writer
   - graphics
-  - shipping
+  - logistics
 links:
   - https://enigmalea.quest
   - https://archiveofourown.org/users/enigmalea
