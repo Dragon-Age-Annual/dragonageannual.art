@@ -7,7 +7,7 @@ const mods = (await getCollection("mods")).toSorted(
 );
 ---
 
-<section class="gap-x-5 lg:grid lg:grid-cols-2">
+<section class="gap-x-5 md:grid md:grid-cols-2">
   {
     mods.map(async (mod) => {
       const renderedBody = await mod.render();

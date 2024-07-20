@@ -2,9 +2,7 @@
 order: 4
 name: kemvee
 avatar: "./avatars/kemvee.png"
-roles:
-  - founder
-  - shipping
+roles: [founder, logistics, finance]
 links:
   - https://www.reddit.com/user/Kemvee/
   - https://kemvee.tumblr.com/
