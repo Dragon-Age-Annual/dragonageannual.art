@@ -1,0 +1,16 @@
+---
+const currentYear = new Date().getFullYear();
+
+import Socials from "./Socials.astro";
+---
+
+<footer class="bg-nord5 dark:bg-nord0">
+  <section class="py-8">
+    <Socials />
+    <div class="text-center">
+      <p>
+        &copy; {currentYear} Dragon Age Annual
+      </p>
+    </div>
+  </section>
+</footer>

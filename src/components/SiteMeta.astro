@@ -1,0 +1,44 @@
+---
+import { ViewTransitions } from "astro:transitions";
+
+const { subtitle, description, url, author } = Astro.props;
+
+let title = "Dragon Age Annual ☼";
+let image = "/socialimage.png";
+---
+
+<!-- general meta -->
+<meta name="title" content={`${title} ${subtitle}`} />
+<meta name="description" content={description} />
+<meta name="author" content={author} />
+<meta name="theme-color" content="#87bfcf" />
+
+<!-- open graph -->
+<meta property="og:locale" content="en_UK" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content={`${title} ${subtitle}`} />
+<meta property="og:description" content={description} />
+<meta property="og:site_name" content="Dragon Age Annual Mods" />
+
+<meta property="og:url" content={url} />
+
+<meta
+  property="og:image"
+  content={Astro.site ? `${Astro.site}${image}` : image}
+/>
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="627" />
+
+<!-- twitter card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="DragonAgeAnnual" />
+<meta property="twitter:domain" content="dragonagannual.art" />
+<meta property="twitter:url" content={url} />
+<meta name="twitter:title" content={`${title} ${subtitle}`} />
+<meta name="twitter:description" content={description} />
+
+<!-- page title -->
+<title>{title} {subtitle}</title>
+
+<ViewTransitions />

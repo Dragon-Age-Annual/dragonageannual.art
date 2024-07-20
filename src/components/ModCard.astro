@@ -1,0 +1,77 @@
+---
+import type { ImageMetadata } from "astro";
+
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  order: number;
+  name: string;
+  avatar: ImageMetadata;
+  roles: string[];
+  links: string[];
+}
+
+const props = Astro.props;
+
+const altText: string = `${props.name}'s Avatar`;
+---
+
+<article
+  class="w-prose space-content mb-4 flex max-w-[90vw] flex-col rounded bg-nord6 p-6 dark:bg-nord3 lg:w-full"
+>
+  <div class="grid auto-cols-max grid-flow-col gap-x-6 gap-y-1">
+    <div
+      class="fit-content align-center row-span-3 self-center rounded-full bg-nord10"
+    >
+      <img src={props.avatar.src} alt={altText} class="w-24 rounded-full" />
+    </div>
+    <h3>{props.name}</h3>
+
+    <ul
+      class="list-style-none !sm:max-w-[100%] flex max-w-[75%] flex-row flex-wrap capitalize italic"
+    >
+      {
+        props.roles.map((role, index) => (
+          <li class="inline-block w-fit text-wrap break-words">
+            {index - 2 ? role + ",\xa0" : role}
+          </li>
+        ))
+      }
+    </ul>
+    <ul
+      class:list={{ hidden: props.links.length == 0 }}
+      class="list-type-none flex flex-row gap-2"
+    >
+      {
+        props.links.map((link) => (
+          <li class="w-6">
+            <a href={link.url}>
+              {link.icon ? (
+                <>
+                  <Icon name={link.icon} title={link.platform} />
+                </>
+              ) : (
+                <>
+                  <Icon
+                    name={"lucide:home"}
+                    title={`${props.name}'s website`}
+                  />
+                </>
+              )}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <div
+    class="space-content border-t-1 h-[200px] overflow-y-scroll border-t-2 border-nord10 px-5 pt-5 shadow-[inset_0_10px_9px_-10px] shadow-nord4 scrollbar-thin dark:shadow-nord0"
+  >
+    <slot />
+  </div>
+</article>
+<style>
+  .hidden {
+    display: none;
+  }
+</style>

@@ -1,48 +1,51 @@
 {
-  "name": "daa-test",
-  "version": "0.0.0",
-  "private": true,
+  "name": "dragonageannual",
+  "description": "The Website for the Dragon Age Annual fan calendar.",
+  "type": "module",
   "scripts": {
-    "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "clear": "docusaurus clear",
-    "serve": "docusaurus serve",
-    "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
-  },
-  "dependencies": {
-    "@docusaurus/core": "^2.4.3",
-    "@docusaurus/preset-classic": "^2.4.3",
-    "@mdx-js/react": "^1.6.22",
-    "clsx": "^1.2.1",
-    "prism-react-renderer": "^1.3.5",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-icons": "^5.2.1",
-    "react-masonry-css": "^1.0.16"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^2.4.3",
-    "@tsconfig/docusaurus": "^1.0.5",
-    "typescript": "^4.7.4"
+    "@astrojs/mdx": "^3.1.3",
+    "@astrojs/partytown": "^2.1.1",
+    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/ts-plugin": "^1.9.0",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.7.0",
+    "@fontsource-variable/lexend": "^5.0.20",
+    "@fontsource/atkinson-hyperlegible": "^5.0.20",
+    "@iconify-json/lucide": "^1.1.200",
+    "@iconify-json/simple-icons": "^1.1.109",
+    "@iconify-json/tabler": "^1.1.118",
+    "@typescript-eslint/eslint-plugin": "^7.16.1",
+    "@typescript-eslint/parser": "^7.16.1",
+    "accessible-astro-components": "^2.3.6",
+    "astro": "^4.12.2",
+    "astro-icon": "^1.1.0",
+    "astro-meta-tags": "^0.3.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-astro": "^1.2.3",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "globals": "^15.8.0",
+    "patch-package": "^8.0.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-slug": "^6.0.0",
+    "sass": "^1.77.8",
+    "social-links": "^1.14.0",
+    "svgo": "^3.3.2",
+    "tailwind-nord": "^1.3.0",
+    "tailwind-scrollbar": "^3.1.0",
+    "tailwindcss": "^3.4.6",
+    "typescript": "^5.5.3",
+    "unified": "^11.0.5"
   },
-  "browserslist": {
-    "production": [
-      ">0.5%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "engines": {
-    "node": ">=16.14"
+  "dependencies": {
+    "@astrojs/check": "^0.8.2"
   }
 }

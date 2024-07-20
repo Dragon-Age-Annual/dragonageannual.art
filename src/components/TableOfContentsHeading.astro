@@ -1,0 +1,25 @@
+---
+const { heading } = Astro.props;
+
+type myHeading = {
+  depth: number;
+  text: string;
+  slug: string;
+  subheadings: Array<myHeading>;
+};
+---
+
+<li>
+  <a href={"#" + heading.slug} class="!no-underline">
+    {heading.text}
+  </a>
+  {
+    heading.subheadings.length > 0 && (
+      <ul class="pl-4">
+        {heading.subheadings.map((subheading: myHeading) => (
+          <Astro.self heading={subheading} />
+        ))}
+      </ul>
+    )
+  }
+</li>

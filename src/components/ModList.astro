@@ -1,0 +1,27 @@
+---
+import { getCollection } from "astro:content";
+import ModCard from "./ModCard.astro";
+
+const mods = (await getCollection("mods")).toSorted(
+  (a, b) => a.data.order - b.data.order
+);
+---
+
+<section class="gap-x-5 md:grid md:grid-cols-2">
+  {
+    mods.map(async (mod) => {
+      const renderedBody = await mod.render();
+      return (
+        <ModCard
+          order={mod.data.order}
+          name={mod.data.name}
+          avatar={mod.data.avatar}
+          roles={mod.data.roles}
+          links={mod.data.links}
+        >
+          <renderedBody.Content />
+        </ModCard>
+      );
+    })
+  }
+</section>

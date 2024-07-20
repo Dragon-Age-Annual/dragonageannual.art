@@ -1,0 +1,26 @@
+---
+import DefaultLayout from "./DefaultLayout.astro";
+import TableOfContents from "../components/TableOfContents.astro";
+
+const { frontmatter, headings } = Astro.props;
+---
+
+<DefaultLayout title={frontmatter.title} description={frontmatter.description}>
+  <div class="container grid auto-cols-auto grid-flow-col gap-7">
+    <div class="space-content my-12">
+      <h1>{frontmatter.title}</h1>
+      <slot />
+    </div>
+    <TableOfContents headings={headings} />
+  </div>
+</DefaultLayout>
+
+<style is:global>
+  .space-content p img {
+    max-width: 75%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-500);
+  }
+</style>
