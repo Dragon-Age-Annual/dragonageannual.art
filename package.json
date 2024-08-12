@@ -13,7 +13,7 @@
     "@astrojs/mdx": "^3.1.3",
     "@astrojs/partytown": "^2.1.1",
     "@astrojs/tailwind": "^5.1.0",
-    "@astrojs/ts-plugin": "^1.9.1",
+    "@astrojs/ts-plugin": "^1.9.0",
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.9.0",
     "@fontsource-variable/lexend": "^5.0.20",
@@ -24,7 +24,7 @@
     "@typescript-eslint/eslint-plugin": "^8.0.1",
     "@typescript-eslint/parser": "^8.0.1",
     "accessible-astro-components": "^2.3.6",
-    "astro": "^4.13.3",
+    "astro": "^4.12.2",
     "astro-icon": "^1.1.0",
     "astro-meta-tags": "^0.3.0",
     "astro-robots-txt": "^1.0.0",
@@ -46,5 +46,8 @@
     "tailwindcss": "^3.4.9",
     "typescript": "^5.5.4",
     "unified": "^11.0.5"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.8.2"
   }
 }
