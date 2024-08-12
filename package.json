@@ -8,6 +8,7 @@
     "build": "astro build",
     "preview": "astro preview"
   },
+	"overrides": { "astro-icon": { "cheerio": "1.0.0-rc.12" } },
   "devDependencies": {
     "@astrojs/mdx": "^3.1.3",
     "@astrojs/partytown": "^2.1.1",
