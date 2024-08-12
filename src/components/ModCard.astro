@@ -32,9 +32,9 @@ const altText: string = `${props.name}'s Avatar`;
     >
       {
         props.roles.map((role, index) => (
-          <li class="inline-block w-fit text-wrap break-words">
-            {index - 2 ? role + ",\xa0" : role}
-          </li>
+						<li class="inline-block w-fit text-wrap break-words">
+							{index - (props.roles.length - 1) ? role + ",\xa0" : role}
+						</li>
         ))
       }
     </ul>
