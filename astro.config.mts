@@ -6,6 +6,8 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeSlug from "rehype-slug";
 import tailwind from "@astrojs/tailwind";
 
+import robotsTxt from "astro-robots-txt";
+
 // https://astro.build/config
 export default defineConfig({
   compressHTML: true,
@@ -16,6 +18,7 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
     metaTags(),
+    robotsTxt(),
   ],
   markdown: {
     remarkPlugins: [],
