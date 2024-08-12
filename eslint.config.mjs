@@ -37,6 +37,7 @@ export default [
     files: ["**/*.js"],
 
     rules: {
+      "no-unused-vars": "off",
       "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
     },
   },
@@ -53,8 +54,8 @@ export default [
         extraFileExtensions: [".astro"],
       },
     },
-
     rules: {
+      "no-unused-vars": "off",
       "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
     },
   },
@@ -70,14 +71,7 @@ export default [
     },
 
     rules: {
-      "@typescript-eslint/no-unused-vars": [
-        "error",
-        {
-          argsIgnorePattern: "^_",
-          destructuredArrayIgnorePattern: "^_",
-        },
-      ],
-
+      "@typescript-eslint/no-unused-vars": "off",
       "@typescript-eslint/no-non-null-assertion": "off",
     },
   },

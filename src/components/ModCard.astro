@@ -1,14 +1,14 @@
 ---
 import type { ImageMetadata } from "astro";
-
+import type { SocialsSchema } from "../lib/socials-transformer";
 import { Icon } from "astro-icon/components";
 
 interface Props {
   order: number;
   name: string;
   avatar: ImageMetadata;
-  roles: string[];
-  links: string[];
+  roles: Array<string>;
+  links: Array<SocialsSchema>;
 }
 
 const props = Astro.props;
@@ -28,12 +28,12 @@ const altText: string = `${props.name}'s Avatar`;
     <h3>{props.name}</h3>
 
     <ul
-      class="list-style-none !sm:max-w-[100%] flex max-w-[75%] flex-row flex-wrap capitalize italic"
+      class="list-style-none flex w-[75%] flex-row flex-wrap pr-6 capitalize italic xl:w-full xl:flex-nowrap"
     >
       {
         props.roles.map((role, index) => (
           <li class="inline-block w-fit text-wrap break-words">
-            {index - 2 ? role + ",\xa0" : role}
+            {index - (props.roles.length - 1) ? role + ",\xa0" : role}
           </li>
         ))
       }
