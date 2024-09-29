@@ -4,6 +4,7 @@ import CallToAction from "../components/CallToAction.astro";
 import About from "../components/About.astro";
 import { Image } from "astro:assets";
 import banner from "../assets/img/banner.png";
+import covers from "../assets/img/covers.png";
 ---
 
 <DefaultLayout
@@ -19,23 +20,13 @@ import banner from "../assets/img/banner.png";
       />
       <div class="flex flex-row gap-10">
         <div class="space-content w-prose lg:w-3/4">
-          <h2>2025 Production Is Underway</h2>
-          <p class="!my-0">
-            <strong class="text-nord8">STATUS:</strong> Concepts approved!
-          </p>
-          <p>
-            Our contributors have completed their brainstorming, developed their
-            concepts, and submitted them for final approval. After days of
-            agonising over so many fantastic ideas and concepts, we're excited
-            to announce that concepts are officially approved and our creative
-            team has started their work.
-          </p>
-          <p>We can't wait to see their progress. 👀</p>
-          <p>
-            We are pleased to announce this year's theme and charity have been
-            decided with help from everyone who completed the interest check!
-            Thank you for your continued support of DAA.
-          </p>
+          <h2>Pre-Orders Open October 1!</h2>
+          <Image
+            src={covers}
+            alt="Dragon Age Annual"
+            class="mx-auto w-11/12 md:w-[700px]"
+          />
+
           <ul class="list-type-none text-lg">
             <li>
               <strong class="uppercase text-nord8">Title:</strong> Legacies
