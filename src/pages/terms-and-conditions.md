@@ -52,7 +52,7 @@ Paypal takes a small merchant fee for each transaction (up to 3.4% + 0.30 USD,
 for more details see
 [Paypal's Swedish Merchant Fees](https://www.paypal.com/se/webapps/mpp/merchant-fees)).
 
-<p role="note">The Swedish merchaant fees are available in Swedish only. You will need to use a translator to access the information in other languages.</p>
+<p role="note">The Swedish merchant fees are available in Swedish only. You will need to use a translator to access the information in other languages.</p>
 
 ## Ownership & Rights
 
