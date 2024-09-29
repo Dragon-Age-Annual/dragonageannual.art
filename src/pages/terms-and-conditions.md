@@ -8,14 +8,15 @@ description:
 
 ## Delivery & Shipping
 
-Physical copies of the Calendar will be printed and shipped from **Sweden**. The
-target shipping date for all physical calendars is December 1, 2024.
+Physical copies of the Calendar will be printed in the EU and shipped from
+**Sweden**. The target shipping date for all physical calendars is December
+1, 2024.
 
 For US addresses, orders are shipped around middle of November in bulk to our US
 mod who then re-ships within the US. The bulk package usually arrives to our US
 mod within 2 weeks. Once they are re-shipped—our goal is to do this within 3-5
 Business Days (defined as calendar days not including Saturday, Sunday,
-[US Federal Holidays](https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/#url=2024)—packages
+[US Federal Holidays](https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/#url=2024))—packages
 inside the US _usually_ arrive within 3-5 Business Days; packages to US
 territories or APOs do take longer.
 
@@ -32,7 +33,7 @@ December 16, 2024.
 ## Printing at Home
 
 We welcome purchasers to print at home or at local printers! Please note that
-our caldenar pages are A4 (210 x 297 mm) and our zine pages are A5 (210 x 148
+our calendar pages are A4 (210 x 297 mm) and our zine pages are A5 (210 x 148
 mm) which may not be standard sizing, particularly in the US and Canada.
 
 If printing at home, please test a single page first to ensure your printer is
@@ -47,9 +48,11 @@ or taxes.
 Dragon Age Annual is not liable for these costs. Please consider any additional
 potential local costs as part of your purchase price for affordability.
 
-Paypal takes a small merchant fee for each transaction (up to 3.6% + 0.30 USD,
+Paypal takes a small merchant fee for each transaction (up to 3.4% + 0.30 USD,
 for more details see
-[Paypal's UK Merchant Fees](https://www.paypal.com/uk/webapps/mpp/merchant-fees)).
+[Paypal's Swedish Merchant Fees](https://www.paypal.com/se/webapps/mpp/merchant-fees)).
+
+<p role="note">The Swedish merchaant fees are available in Swedish only. You will need to use a translator to access the information in other languages.</p>
 
 ## Ownership & Rights
 
