@@ -37,5 +37,5 @@ met. They will be offered on a first come, first served basis.
 ## What do I need to claim a community copy?
 
 An [itch.io](http://itch.io) account! Please be aware that itch.io only allows
-one purchases per account, so claiming a community copy will prevent you from
+one purchase per account, so claiming a community copy will prevent you from
 purchasing any of our other packages from that same account.
