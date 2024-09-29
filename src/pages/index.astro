@@ -2,9 +2,11 @@
 import DefaultLayout from "../layouts/DefaultLayout.astro";
 import CallToAction from "../components/CallToAction.astro";
 import About from "../components/About.astro";
+import ThemeData from "../components/ThemeData.astro";
 import { Image } from "astro:assets";
 import banner from "../assets/img/banner.png";
 import covers from "../assets/img/covers.png";
+import { Icon } from "astro-icon/components";
 ---
 
 <DefaultLayout
@@ -18,30 +20,51 @@ import covers from "../assets/img/covers.png";
         alt="Dragon Age Annual"
         class="mx-auto w-11/12 md:w-[700px]"
       />
-      <div class="flex flex-row gap-10">
-        <div class="space-content w-prose lg:w-3/4">
-          <h2>Pre-Orders Open October 1!</h2>
+      <div class="gap-10 lg:grid lg:grid-flow-row-dense lg:grid-cols-4">
+        <div class="space-content w-prose lg:col-span-3">
+          <h2>DAA 2025 Pre-Orders Are Open!</h2>
           <Image
             src={covers}
-            alt="Dragon Age Annual"
-            class="mx-auto w-11/12 md:w-[700px]"
+            alt="Covers for the Dragon Age Annual calendar and zine."
+            class="mx-auto w-[60%]"
           />
 
-          <ul class="list-type-none text-lg">
-            <li>
-              <strong class="uppercase text-nord8">Title:</strong> Legacies
-            </li>
-            <li>
-              <strong class="uppercase text-nord8">Theme:</strong> Thedas' Myths
-              & Legends
-            </li>
-            <li>
-              <strong class="uppercase text-nord8">Charity:</strong>
-              <a href="https://www.warchild.org.uk/">War Child UK</a>
-            </li>
-          </ul>
+          <p>
+            Our itch.io shop is officially open—pre-order your copy of <em
+              >Dragon Age Annual 2025: Legacies</em
+            > NOW!
+          </p>
+          <p>All sale proceeds will be donated to support War Child UK.</p>
+
+          <p>
+            Thanks to our incredible creative team, we're excited to offer our
+            largest spread of products to date, including bundle options so that
+            you can mix and match the calendar, zine, and merchandise!
+          </p>
+          <h3 class="!mt-1">Pre-Order Deadlines</h3>
+          <p>
+            <strong>Physical Copies & Merch:</strong> October 31st, 2024<br />
+            <strong>Digital Calendar & Zine:</strong> January 31st, 2025
+          </p>
+          <p class="text-center">
+            <Icon
+              name="noto:backhand-index-pointing-right"
+              class="inline align-text-top"
+            />
+            <a
+              href="https://da-annual.itch.io/daa2025-legacies"
+              class="text-2xl font-bold">Order Now</a
+            >
+            <Icon
+              name="noto:backhand-index-pointing-left"
+              class="inline align-text-top"
+            />
+          </p>
         </div>
-        <About />
+        <aside class="flex flex-col gap-y-5">
+          <About />
+          <ThemeData />
+        </aside>
       </div>
       <CallToAction />
     </div>
