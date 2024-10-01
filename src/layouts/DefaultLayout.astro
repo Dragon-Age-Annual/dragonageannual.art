@@ -4,6 +4,7 @@ import "../assets/scss/globals.scss";
 import SiteMeta from "../components/SiteMeta.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Announcement from "../components/Announcement.astro";
 
 const {
   title,
@@ -37,6 +38,7 @@ const {
     />
   </head>
   <body>
+    <Announcement />
     <Header />
     <main id="main-content" transition:animate="fade">
       <slot />

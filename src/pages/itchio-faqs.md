@@ -47,20 +47,31 @@ calendar and options vary slightly each year.</p>
 After you make your purchase, you will be directed back to itch.io to another
 page.
 
-1. Scroll to the **bottom of the page** and click the `Provide Information`
-   button located below the product description and above the follow buttons.
+<ol>
+
+<li>
+
+Scroll to the **bottom of the page** and click the `Provide Information` button
+located below the product description and above the follow buttons.
 
 ![screenshot of "Provide Information" button](../assets/img/itchio/step2.png)
 
-2. Complete the pop-up form and click the `Save` button.
+</li>
+
+<li>Complete the pop-up form and click the `Save` button.
 
 ![screenshot of the modal pop-up which collects information on options and addresses](../assets/img/itchio/step3.png)
 
-3. You're done! If your information saved correctly the button at the bottom of
+</li>
+
+<li>You're done! If your information saved correctly the button at the bottom of
    the page will now say "Update Information". You can come back here to update
    your address prior to shipping at any point!
 
 ![screenshot of the "Update Information" button](../assets/img/itchio/step4.png)
+
+</li>
+</ol>
 
 ## After your purchase is made:
 
@@ -68,25 +79,37 @@ If you accidentally close the tab after purchasing, forgot to provide an address
 the day you purchased, you can still add one to your order! You can also update
 your shipping address until we ship! Just follow the steps below:
 
-1. Locate your purchase confirmation email from itch.io and click on the
-   _Download Page_ link.
+<ol>
+<li>
+
+Locate your purchase confirmation email from itch.io and click on the _Download
+Page_ link.
+
+</li>
 
 <p role="note">You will need to sign in and create an account under the order email otherwise a "mismatched token" error may occur.</p>
 
 ![screenshot of an email with the link](../assets/img/itchio/step1.png)
 
-2. Scroll to the very bottom of the download page. Below your package
-   descriptions you will see a `Provide Information` button. Click the button.
+<li>
+
+Scroll to the very bottom of the download page.Below your package descriptions
+you will see a `Provide Information` button. Click the button.
+
+</li>
 
 <p role="note">If you have already provided an address, but need to update it, this button will say <code>Update Information</code>. Click the button!</p>
 
 ![screenshot of "Provide Information" button](../assets/img/itchio/step2.png)
 
-3. Complete the pop up form and click the `Save` button.
+<li>Complete the pop up form and click the `Save` button.
 
 ![screenshot of the modal pop-up which collects information on options and addresses](../assets/img/itchio/step3.png)
 
-4. You're done! If your information saved correctly the button display will now
+</li>
+<li>You're done! If your information saved correctly the button display will now
    say "Update Information".
 
-![screenshot of the "Update Information" button](../assets/img/itchio/step4.png)
+![screenshot of the "Update Information" button](../assets/img/itchio/step4.png)</li>
+
+</ol>
