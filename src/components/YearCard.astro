@@ -30,16 +30,14 @@ const donationUK = pounds.format(props.amountUK);
 ---
 
 <article
-  class="w-prose relative flex min-h-full flex-col rounded-lg border-2 border-solid border-nord4 dark:border-nord0 md:w-[360px]"
+  class="w-prose relative min-h-full flex-col rounded-lg border-2 border-solid border-nord4 dark:border-nord0 md:w-[360px]"
 >
   <img
     src={props.cover.src}
     alt={props.coverAlt}
     class="w-prose rounded-t-lg lg:w-[360px]"
   />
-  <div class="mx-auto py-3">
-    <h3>{props.title}</h3>
-  </div>
+  <h2 class="py-3 text-center !text-[1.6rem]">{props.title}</h2>
   <div class="px-5 leading-loose">
     <ul class="list-style-none pb-4">
       <li>
@@ -51,7 +49,7 @@ const donationUK = pounds.format(props.amountUK);
         <a href={props.charityLink}>{props.charityName}</a>
       </li>
       <li>
-        <strong>Donation Amount:</strong>
+        <strong>Donation:</strong>
         {donationUS} / {donationUK}
       </li>
     </ul>
