@@ -31,7 +31,7 @@
     "@typescript-eslint/parser": "^8.1.0",
     "accessible-astro-components": "^2.3.6",
     "astro": "^4.15.9",
-    "astro-icon": "^1.1.1",
+    "astro-icon": "^1.1.5",
     "astro-meta-tags": "^0.3.1",
     "astro-robots-txt": "^1.0.0",
     "eslint": "^8.57.0",
