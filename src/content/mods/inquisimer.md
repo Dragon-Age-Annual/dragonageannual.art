@@ -4,7 +4,7 @@ name: inquisimer
 avatar: "./avatars/inquisimer.png"
 roles:
   - writer
-  - organisation
+  - organization
   - social media
 links:
   - https://archiveofourown.org/users/inquisimer
@@ -17,5 +17,5 @@ since. The community is what keeps me here and I’m thrilled to be part of even
 that keep that supportive spirit of creation alive!
 
 I’m a fanfiction writer and avid multishipper with enough OCs and world states
-that I need a spreadsheet to keep them organized. I’m excited to join the Dragon
-Age Annual mod team this year and can’t wait to see what everyone creates!
+that I need a spreadsheet to keep them organized. Dragon Age Annual is one of my
+favorite projects to work on and I'm excited to see what everyone creates!
