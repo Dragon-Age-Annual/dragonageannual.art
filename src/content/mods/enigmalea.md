@@ -24,5 +24,5 @@ earnest around 2019, I threw myself wholeheartedly into the DA fandom.
 I'm primarily a writer, but I also love to run projects, events, and
 communities. I dabble in coding and graphic design. At any given time I have a
 chaotic mass of projects and deadlines happening all at once, but the Annual is
-always my favourite. I'm immensely proud of the work we manage to accomplish
-each year!
+always my favorite. I'm immensely proud of the work we manage to accomplish each
+year!

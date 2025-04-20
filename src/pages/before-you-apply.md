@@ -112,13 +112,13 @@ fit for you!
 
 - _Pieces:_
 
-  - _Calendar Writers_ will produce two works related to two different art pieces.
-    Pieces will vary from approximately 200 words to approximately 600 words
-    depending on calendar space and layout.
+  - _Calendar Writers_ will produce two works related to two different art
+    pieces. Pieces will vary from approximately 200 words to approximately 600
+    words depending on calendar space and layout.
 
-  - _Merch (Zine) Writers_ will produce one work based on the Dragon Age Tarot theme. The
-    piece will vary from approximately 1000 words to 2000 words depending on
-    zine space and layout.
+  - _Merch (Zine) Writers_ will produce one work based on the Dragon Age Tarot
+    theme. The piece will vary from approximately 1000 words to 2000 words
+    depending on zine space and layout.
 
 - _Editing:_ In addition to receiving feedback from moderators, writers will
   also receive feedback from betas. Note that this does NOT mean that all
@@ -166,15 +166,21 @@ please let us know in your application!
 
 ### Artists
 
+- We can no longer accept portfolios that are hosted solely on Twitter/X because
+  they cannot be accessed without an account.
+
+- If your portfolio is hosted on a social media site, you must link to a hashtag
+  or feed of ONLY your art. It is not acceptable to link to a feed that includes
+  reblogs/reposts of others' art intermixed with your own.
+
 - Please provide a sampling of your work (minimum 5 pieces) which shows the
   various skills and styles you are capable of and which presents your art at
   its best.
 
-- For the wall calendar, we do not have a preference for style. Past pieces have
-  ranged from cartoon/anime-inspired to painterly to realism, and everything in
-  between.
+- For your portfolios, we do not have a preference for style. For the 2026
+  theme, we are asking that artists emulate the Dragon Age tarot or mural style.
 
-- Scoring will be based on overall composition, colour choices, strong
+- Scoring will be based on overall composition, color choices, strong
   backgrounds, and technique.
 
 - Merchandise artists do not need to have created similar merch before; however,

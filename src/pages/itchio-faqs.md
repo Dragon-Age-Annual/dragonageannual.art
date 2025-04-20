@@ -39,7 +39,7 @@ whether we succeed in combining shipping or not.
 ## How do I add an address for my physical purchase?
 
 <p role="note">The screenshots below may vary slightly from the actual page in
-colour and content. These screenshots are from the sale of our 2023
+color and content. These screenshots are from the sale of our 2023
 calendar and options vary slightly each year.</p>
 
 ### When you make your purchase:
