@@ -94,6 +94,11 @@ fit for you!
 - _Merch:_ Guidelines for merch will vary based on the items being produced. We
   are very happy to consider your creative requests for items!
 
+- _Merch (Zine):_ Artists are expected to produce one portrait-oriented A6-sized
+  piece or one short (2-3 pages) comic, adhering to guidelines and theme.
+  Depending on space in the zine, artists may be allowed to produce more than
+  one piece, if they so choose.
+
 - **Artists may apply for both the Wall Calendar and Merch roles.** If an Artist
   is selected for both roles, they are encouraged to work with moderators if
   they find they will need flexibility in meeting deadlines for all their
@@ -105,9 +110,15 @@ fit for you!
 
 ### Writers
 
-- _Pieces:_ Writers will produce two works related to two different art pieces.
-  Pieces will vary from approximately 200 words to approximately 600 words
-  depending on calendar space and layout.
+- _Pieces:_
+
+  - _Calendar Writers_ will produce two works related to two different art pieces.
+    Pieces will vary from approximately 200 words to approximately 600 words
+    depending on calendar space and layout.
+
+  - _Merch (Zine) Writers_ will produce one work based on the Dragon Age Tarot theme. The
+    piece will vary from approximately 1000 words to 2000 words depending on
+    zine space and layout.
 
 - _Editing:_ In addition to receiving feedback from moderators, writers will
   also receive feedback from betas. Note that this does NOT mean that all
@@ -119,12 +130,6 @@ fit for you!
 
 - The matching of writers to artists will take place after the artists' concepts
   have been approved during the earliest stages of production.
-
-- _Merch:_ If there is enough interest in one of our planned merch items, we may
-  have some roles for writing contributions to merch. Exact guidelines may vary,
-  but we expect Writers who write for the merch option to be able to produce one
-  piece of between 1000 and 1500 words. More precise guidelines will be
-  available as production begins.
 
 - **Writers may apply for both the Wall Calendar and Merch roles.** If a Writer
   is selected for both roles, they are encouraged to work with moderators if
@@ -138,6 +143,12 @@ fit for you!
   contributor spotlights, and credits pages.
 
 - **Prospective Writers may also apply as Betas.**
+
+- _Graphic Designers:_ Create graphics for use in advertising on social media,
+  including but not limited to announcement banners, contributor spotlight &
+  preview templates, and product preview cards. Graphic designers will also
+  assist the production team with typesetting for the calendar and zine and may
+  be asked to create text-based merchandise items, depending on interest.
 
 ## Portfolio Reviews
 
@@ -189,7 +200,7 @@ please let us know in your application!
   Age characters and with unique forms (for example, an in universe codex, a
   character piece, and a descriptive piece).
 
-### Support Roles
+### Support Roles (Betas & Graphics)
 
 - Please provide a few examples of your work whether completed professionally or
   in a fandom setting.

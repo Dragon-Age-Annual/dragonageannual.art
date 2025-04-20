@@ -21,54 +21,60 @@ import { Icon } from "astro-icon/components";
       />
       <div class="gap-10 lg:grid lg:grid-flow-row-dense lg:grid-cols-4">
         <div class="space-content w-prose lg:col-span-3">
-          <h2>DAA is back!</h2>
+          <h2>Contributor Applications Are Open NOW!</h2>
           <p>
-            Dragon Age Annual is back for our fifth year! We're excited to
-            celebrate this beloved franchise with our fellow fans, new and old,
-            and we want to hear from YOU.
+            Dragon Age Annual is back for our fifth year, and we're excited to
+            celebrate this beloved franchise with our fellow fans, new and old!
           </p>
 
           <p>
-            Help us shape the 2026 production by completing the interest check
-            now. Let us know what charities you're interested in supporting,
-            what themes you'd like to see, which merchandise items you prefer,
-            and other details that will make DAA 2026 something you'll love.
+            Based on the responses to our interest check, DAA 2026 will be
+            raising money for <a
+              href="https://lakareutangranser.se/en/who-we-are"
+              >MSF Sweden | Doctors Without Borders</a
+            > and the project theme will be Dragon Age Tarot. Our calendar and merchandise
+            will feature your favorite characters in the style of Inquisition's tarot
+            cards, your favorite moments in the style of murals from Trespasser and
+            Veilguard, and stories focused on the themes nd motifs of Tarot.
+          </p>
+
+          <p>
+            We are looking for a team of artists, writers, beta readers, and
+            graphic designers to help produce DAA 2026. If you're a Dragon Age
+            fan creator interested in contributing to a fun and rewarding
+            project, check out our contributor guidelines and apply now!
           </p>
 
           <p class="text-center">
-            <Icon
-              name="noto:backhand-index-pointing-right"
-              class="inline align-text-top"
-            />
-            <a
-              href="https://forms.gle/owUUMyJwzXtSNm5r5"
-              class="text-2xl font-bold">2026 Interest Check</a
-            >
-            <Icon
-              name="noto:backhand-index-pointing-left"
-              class="inline align-text-top"
-            /><br />
-            <strong>Complete by April 6th!</strong>
+            <Icon class="inline" name="noto:spiral-calendar" />
+            <strong class="text-nord8">Applications Close:</strong> Saturday, May
+            10th <Icon class="inline" name="noto:spiral-calendar" />
           </p>
 
-          <p>
-            Contributor applications will open after the interest check, in
-            mid-to-late April. If you're interested in joining our creative team
-            as an artist, writer, or beta, follow us across social media or sign
-            up for our newsletter below to be notified when applications open.
-          </p>
-
-          <p>
-            Thank you, as always, to our supporters - whether you've worked on
-            or bought the Annual in past years, we couldn't keep this project
-            going without you. Here's to another year of all things Dragon Age!
-          </p>
+          <div class="!max-w-fit !m-auto">
+            <h3 class="mb-0 pb-0">Application Links</h3>
+            <ul class="list-none">
+              <li>
+                <Icon class="inline" name="noto:artist-palette" />
+                <a href="https://forms.gle/JhpPgVghWnzXHN156">Artists</a>
+              </li>
+              <li>
+                <Icon class="inline" name="noto:fountain-pen" />
+                <a href="https://forms.gle/YX8jj3as5f1RJm666">Writers</a>
+              </li>
+              <li>
+                <Icon class="inline" name="noto:bookmark-tabs" />
+                <a href="https://forms.gle/hhvEMXvZ9MkTXcM78"
+                  >Betas & Graphics</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <aside class="flex flex-col gap-y-5">
           <About />
         </aside>
       </div>
-			<a id="newsletter" />
+      <a id="newsletter"></a>
       <CallToAction />
     </div>
   </article>

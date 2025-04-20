@@ -1,4 +1,5 @@
 ---
+import { Icon } from "astro-icon/components";
 import Navigation from "../components/Navigation.astro";
 import { SkipLinks } from "accessible-astro-components";
 ---
@@ -16,6 +17,25 @@ import { SkipLinks } from "accessible-astro-components";
       <a href="/before-you-apply">Before You Apply</a>
     </li>
     <li class="menu-item has-dropdown">
+      <button aria-haspopup="true" aria-expanded="false"
+        ><Icon name="noto:sparkles" />Apply Here</button
+      >
+      <ul class="dropdown-menu">
+        <li class="submenu-item">
+          <Icon class="inline" name="noto:artist-palette" />
+          <a href="https://forms.gle/JhpPgVghWnzXHN156">Artists</a>
+        </li>
+        <li class="submenu-item">
+          <Icon class="inline" name="noto:fountain-pen" />
+          <a href="https://forms.gle/YX8jj3as5f1RJm666">Writers</a>
+        </li>
+        <li class="submenu-item">
+          <Icon class="inline" name="noto:bookmark-tabs" />
+          <a href="https://forms.gle/hhvEMXvZ9MkTXcM78">Betas & Graphics</a>
+        </li>
+      </ul>
+    </li>
+    <!-- <li class="menu-item has-dropdown">
       <button aria-haspopup="true" aria-expanded="false">Purchasing</button>
       <ul class="dropdown-menu">
         <li class="submenu-item">
@@ -28,7 +48,7 @@ import { SkipLinks } from "accessible-astro-components";
           <a href="/community-copies">Community Copies</a>
         </li>
       </ul>
-    </li>
+    </li> -->
   </Navigation>
 </header>
 
