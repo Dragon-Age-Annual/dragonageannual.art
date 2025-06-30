@@ -5,7 +5,7 @@ import About from "../components/About.astro";
 import ThemeData from "../components/ThemeData.astro";
 import { Image } from "astro:assets";
 import banner from "../assets/img/banner.png";
-import { Icon } from "astro-icon/components";
+import contributors from "../assets/img/contributors.png";
 ---
 
 <DefaultLayout
@@ -21,60 +21,42 @@ import { Icon } from "astro-icon/components";
       />
       <div class="gap-10 lg:grid lg:grid-flow-row-dense lg:grid-cols-4">
         <div class="space-content w-prose lg:col-span-3">
-          <h2>Contributor Applications Are Open NOW!</h2>
+          <h2>Congrats To Our Contributors!</h2>
           <p>
-            Dragon Age Annual is back for our fifth year, and we're excited to
-            celebrate this beloved franchise with our fellow fans, new and old!
+            This is our 5<sup>th</sup> year creating Dragon Age Annual and to celebrate
+            our first milestone anniversary, we're planning our biggest year yet.
+            To help us prepare we've assembled our largest team of contributors (<strong
+              >61</strong
+            >) with many holding multiple roles. Production is well under way!
           </p>
+
+          <p>
+            Our full list of contributors for 2026 is below. Be sure to follow
+            us on social media where you can learn more about them and follow
+            them on their socials!
+            <Image
+              src={contributors}
+              alt="list of contributors"
+              class="mx-auto mt-4 w-5/6 md:w-[500px] rounded-lg"
+            />
+          </p>
+
+          <h2 class="!mt-4">2026 Theme & Charity</h2>
 
           <p>
             Based on the responses to our interest check, DAA 2026 will be
             raising money for <a
               href="https://lakareutangranser.se/en/who-we-are"
               >MSF Sweden | Doctors Without Borders</a
-            > and the project theme will be Dragon Age Tarot. Our calendar and merchandise
+            > and the project theme will be <strong>Dragon Age Tarot</strong>. Our calendar and merchandise
             will feature your favorite characters in the style of Inquisition's tarot
             cards, your favorite moments in the style of murals from Trespasser and
             Veilguard, and stories focused on the themes and motifs of Tarot.
           </p>
-
-          <p>
-            We are looking for a team of artists, writers, beta readers, and
-            graphic designers to help produce DAA 2026. If you're a Dragon Age
-            fan creator interested in contributing to a fun and rewarding
-            project, check out our <a href="/before-you-apply"
-              >contributor guidelines</a
-            > and apply now!
-          </p>
-
-          <p class="text-center">
-            <Icon class="inline" name="noto:spiral-calendar" />
-            <strong class="text-nord8">Applications Close:</strong> Saturday, May
-            10th <Icon class="inline" name="noto:spiral-calendar" />
-          </p>
-
-          <div class="!m-auto !max-w-fit">
-            <h3 class="mb-0 pb-0">Application Links</h3>
-            <ul class="list-none">
-              <li>
-                <Icon class="inline" name="noto:artist-palette" />
-                <a href="https://forms.gle/JhpPgVghWnzXHN156">Artists</a>
-              </li>
-              <li>
-                <Icon class="inline" name="noto:fountain-pen" />
-                <a href="https://forms.gle/YX8jj3as5f1RJm666">Writers</a>
-              </li>
-              <li>
-                <Icon class="inline" name="noto:bookmark-tabs" />
-                <a href="https://forms.gle/hhvEMXvZ9MkTXcM78"
-                  >Betas & Graphics</a
-                >
-              </li>
-            </ul>
-          </div>
         </div>
         <aside class="flex flex-col gap-y-5">
           <About />
+          <ThemeData />
         </aside>
       </div>
       <a id="newsletter"></a>
