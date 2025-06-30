@@ -5,10 +5,10 @@ avatar: "./avatars/fox.png"
 roles:
   - artist
   - graphics
-  - Fox
+  - logistics
 links:
   - https://thefoxinboots.tumblr.com/
-  - https://twitter.com/thefoxinboots
+  - https://foxinboots.bsky.social/
   - https://www.instagram.com/foxinboots/
 ---
 

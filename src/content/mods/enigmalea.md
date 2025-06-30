@@ -3,17 +3,13 @@ order: 1
 name: enigmalea
 avatar: "./avatars/enigmalea.png"
 roles:
-  - writer
   - graphics
   - logistics
 links:
   - https://enigmalea.quest
   - https://archiveofourown.org/users/enigmalea
   - https://enigmalea.tumblr.com
-  - https://enigmalea.bsky.social
-  - url: https://easymode.im/@enigmalea
-    platform: firefish
-    username: enigmalea
+  - https://bsky.app/profile/enigmalea.quest
 ---
 
 I'm a fandom old who's been involved in internet fandom in some shape or form

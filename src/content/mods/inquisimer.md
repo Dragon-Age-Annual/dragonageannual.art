@@ -9,6 +9,7 @@ roles:
 links:
   - https://archiveofourown.org/users/inquisimer
   - https://inquisimer.tumblr.com/
+  - https://inquisimer.bsky.social/
 ---
 
 I face-planted into the Dragon Age fandom back in 2021 after my best friend

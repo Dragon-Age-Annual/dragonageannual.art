@@ -1,5 +1,6 @@
 import { defineCollection, z } from "astro:content";
-import { socialsSchema, transformSocial } from "../lib/socials-transformer";
+
+import { SocialLinks } from "@fujocoded/zod-transform-socials";
 
 const modCollection = defineCollection({
   type: "content",
@@ -9,10 +10,7 @@ const modCollection = defineCollection({
       name: z.string(),
       avatar: image(),
       roles: z.string().array().optional(),
-      links: socialsSchema
-        .array()
-        .default([])
-        .transform((links) => links.map(transformSocial)),
+      links: SocialLinks,
     }),
 });
 
