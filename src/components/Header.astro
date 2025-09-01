@@ -4,7 +4,7 @@ import Navigation from "../components/Navigation.astro";
 import { SkipLinks } from "accessible-astro-components";
 ---
 
-<header class="sticky z-50 bg-nord5 dark:bg-nord0">
+<header class="sticky z-0 mt-10 bg-nord5 dark:bg-nord0">
   <SkipLinks />
   <Navigation>
     <li class="menu-item has-dropdown">
@@ -13,9 +13,9 @@ import { SkipLinks } from "accessible-astro-components";
     <li class="menu-item">
       <a href="/about">About</a>
     </li>
-    <li class="menu-item">
+    <!-- <li class="menu-item">
       <a href="/before-you-apply">Before You Apply</a>
-    </li>
+    </li> -->
     <!-- <li class="menu-item has-dropdown">
       <button aria-haspopup="true" aria-expanded="false"
         ><Icon name="noto:sparkles" />Apply Here</button
@@ -35,20 +35,44 @@ import { SkipLinks } from "accessible-astro-components";
         </li>
       </ul>
     </li> -->
-    <!-- <li class="menu-item has-dropdown">
-      <button aria-haspopup="true" aria-expanded="false">Purchasing</button>
+    <li class="menu-item has-dropdown">
+      <button aria-haspopup="true" aria-expanded="false">Pre-Order Info</button>
       <ul class="dropdown-menu">
         <li class="submenu-item">
-          <a href="/terms-and-conditions">Terms & Conditions</a>
+          <a href="https://shop.dragonageannual.art">Shop</a>
         </li>
         <li class="submenu-item">
-          <a href="/itchio-faqs">Itch.io FAQS</a>
+          <a href="https://shop.dragonageannual.art/product-gallery"
+            >Product Gallery</a
+          >
         </li>
         <li class="submenu-item">
-          <a href="/community-copies">Community Copies</a>
+          <a href="https://shop.dragonageannual.art/package-comparisons"
+            >Pack Comparison</a
+          >
+        </li>
+        <li class="submenu-item">
+          <a href="https://shop.dragonageannual.art/our-contributors"
+            >Our Contributors</a
+          >
+        </li>
+        <li class="submenu-item">
+          <a href="https://shop.dragonageannual.art/community-copies"
+            >Community Copies</a
+          >
+        </li>
+        <li class="submenu-item">
+          <a href="https://shop.dragonageannual.art/itch-io-faq"
+            >Itch.io FAQ</a
+          >
+				</li>
+				<li class="submenu-item">
+          <a href="https://shop.dragonageannual.art/terms-conditions"
+            >Terms & Conditions</a
+          >
         </li>
       </ul>
-    </li> -->
+    </li>
   </Navigation>
 </header>
 

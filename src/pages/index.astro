@@ -5,53 +5,80 @@ import About from "../components/About.astro";
 import ThemeData from "../components/ThemeData.astro";
 import { Image } from "astro:assets";
 import banner from "../assets/img/banner.png";
-import contributors from "../assets/img/contributors.png";
+import preorders from "../assets/img/preorders_open.png";
 ---
 
 <DefaultLayout
   title="Home"
-  description="Dragon Age Annual is an unofficial charity calendar featuring fanworks from talented, volunteer Dragon Age fans— artists, writers, and more."
+  description="Dragon Age Annual: fan‑made charity calendar & merch. Seasonal pre‑orders champion causes, showcasing Thedas in art & fiction."
 >
   <article class="container">
     <div class="space-content my-12">
-      <Image
+      <!-- <Image
         src={banner}
         alt="Dragon Age Annual"
         class="mx-auto w-11/12 md:w-[700px]"
-      />
+      /> -->
       <div class="gap-10 lg:grid lg:grid-flow-row-dense lg:grid-cols-4">
         <div class="space-content w-prose lg:col-span-3">
-          <h2>Congrats To Our Contributors!</h2>
+          <Image
+            src={preorders}
+            alt="Banner image featuring covers of calendar, zine and mini tarot merchandise. It states: Pre-Orders Open! Physical Sep 1-Sep 30. Digital Sep 1-Jan 31. Visit our shop for additional merch! A Dragon Age Annual logo is centered in the bottom and  an MSF Sweden logo is in the bottom right."
+          />
+          <h2 class="!mt-3">2026 Pre-Orders Are Open!</h2>
+
           <p>
-            This is our 5<sup>th</sup> year creating Dragon Age Annual and to celebrate
-            our first milestone anniversary, we're planning our biggest year yet.
-            To help us prepare we've assembled our largest team of contributors (<strong
-              >61</strong
-            >) with many holding multiple roles. Production is well under way!
+            Explore our largest selection of merchandise yet — inspired by
+            Dragon Age Tarot, our contributors have put their hearts into every
+            creation. You can also secure a free digital art print set on
+            itch.io, featuring the cover art from all five DAA calendars, no
+            coin nor contract required. This is our thanks to you, for
+            supporting this project over the last five years. We couldn't have
+            done it without you!
           </p>
 
           <p>
-            Our full list of contributors for 2026 is below. Be sure to follow
-            us on social media where you can learn more about them and follow
-            them on their socials!
-            <Image
-              src={contributors}
-              alt="list of contributors"
-              class="mx-auto mt-4 w-5/6 md:w-[500px] rounded-lg"
-            />
+            Physical pre-orders will be open until September 30th and digital
+            pre-orders will be open until January 31st. All proceeds go to
+            support <a
+              href="https://lakareutangranser.se/en/home"
+              target="_blank"
+              rel="noopener">MSF Sweden</a
+            >!
           </p>
 
-          <h2 class="!mt-4">2026 Theme & Charity</h2>
+          <p>
+            Check out the <a
+              href="https://shop.dragonageannual.art/product-gallery"
+              target="_blank"
+              rel="noopener">product previews</a
+            > and <a
+              href="https://shop.dragonageannual.art/package-comparison"
+              target="_blank"
+              rel="noopener">compare available packages</a
+            > in our new-and-improved shop. Unlike years past, you can purchase multiple
+            packs in a single order, so mix-and-match to your heart's content. Don't
+            forget to take a look at our <a
+              href="https://shop.dragonageannual.art/package-comparison"
+              target="_blank"
+              rel="noopener">stretch goals</a
+            > for bonus items and upgrades that can be unlocked with your purchase.
+          </p>
 
           <p>
-            Based on the responses to our interest check, DAA 2026 will be
-            raising money for <a
-              href="https://lakareutangranser.se/en/who-we-are"
-              >MSF Sweden | Doctors Without Borders</a
-            > and the project theme will be <strong>Dragon Age Tarot</strong>. Our calendar and merchandise
-            will feature your favorite characters in the style of Inquisition's tarot
-            cards, your favorite moments in the style of murals from Trespasser and
-            Veilguard, and stories focused on the themes and motifs of Tarot.
+            Also back for an encore performance are community copies — FREE
+            copies of the Calendar &amp; Zine PDFs paid for by donations from
+            other fans. Even if you aren't in a position to buy right now DAA
+            2026 is for you! <a
+              href="https://shop.dragonageannual.com/community-copies"
+              target="_blank"
+              rel="noopener">See our shop</a
+            > for information on donating toward and claiming community copies.
+          </p>
+
+          <p>
+            Thank you all for five amazing years of <em>Dragon Age Annual</em> —
+            here's to five more!
           </p>
         </div>
         <aside class="flex flex-col gap-y-5">
