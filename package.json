@@ -1,6 +1,6 @@
 {
   "name": "dragonageannual",
-  "description": "The Website for the Dragon Age Annual fan calendar.",
+  "description": "Dragon Age Annual: fan‑made charity calendar & merch. Seasonal pre‑orders champion causes, showcasing Thedas in art & fiction",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
