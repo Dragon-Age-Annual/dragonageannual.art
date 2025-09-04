@@ -9,49 +9,33 @@
     class="flex h-full w-full flex-col items-center gap-5 rounded-xl bg-nord6 p-12 dark:bg-nord1"
   >
     <h2 class="text-center font-display">Sign Up for Our Newsletter</h2>
-
     <form
-      action="https://art.us8.list-manage.com/subscribe/post?u=af081f3f7162c7300898c1a98&id=f8f98934b6&f_id=002762e0f0"
+			target="_blank"
       method="post"
+      action="https://newsletter.dragonageannual.art/subscription/form"
       class="validate w-full text-center"
-      target="_self"
-      novalidate=""
     >
-      <label for="mce-EMAIL" class="font-bold uppercase tracking-widest"
-        >Email</label
-      ><input
-        type="email"
-        name="EMAIL"
-        id="mce-EMAIL"
-        required="true"
-        value=""
-        placeholder="mods@dragonageannual.art"
-        class="border-dark border-fujo-blue m-3 h-12 max-w-[75%] self-center rounded-full border-2 bg-nord6 p-3 text-nord0 placeholder:italic sm:max-2xl:w-auto md:my-0"
-      />
+      <div>
+        <input type="hidden" name="nonce" />
 
-      <input
-        type="submit"
-        name="subscribe"
-        class="button md:mt-0"
-        value="Subscribe"
-      />
-
-      <div id="mce-responses">
-        <div class="response" id="mce-error-response" style="display: none;">
-        </div>
-        <div class="response" id="mce-success-response" style="display: none;">
-        </div>
-      </div>
-
-      <div style="position: absolute; left: -5000px;" aria-hidden="true">
-        /* real people should not fill this in and expect good things - do not
-        remove this or risk form bot signups */
-        <input
-          type="text"
-          name="b_af081f3f7162c7300898c1a98_f8f98934b6"
-          tabindex="-1"
-          value=""
-        />
+			<label for="EMAIL" class="font-bold uppercase tracking-widest"
+        >Email</label>
+          <input
+            type="email"
+            name="EMAIL"
+            required
+            placeholder="mods@dragonageannual.art"
+            class="border-dark border-fujo-blue m-3 h-12 max-w-[75%] self-center rounded-full border-2 bg-nord6 p-3 text-nord0 placeholder:italic sm:max-2xl:w-auto md:my-0"
+          />
+          <input
+            id="aafb2"
+            type="checkbox"
+            name="l"
+            checked
+            value="aafb2e12-9adc-4465-8e45-592ddbc6e4c5"
+						class="hidden"
+          />
+        <input type="submit" class="button md:mt-0" value="Subscribe" />
       </div>
     </form>
   </div>
