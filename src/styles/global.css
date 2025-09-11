@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@plugin 'tailwind-scrollbar';
+@plugin 'tailwind-nord';
+
+
+@import "@fontsource-variable/lexend";
+@import "@fontsource/atkinson-hyperlegible";
+
+@theme {
+  --font-sans: "Atkinson Hyperlegible";
+  --font-serif: "Lexend Variable";
+  --font-display: "DAA Font";
+}

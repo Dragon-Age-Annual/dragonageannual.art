@@ -17,11 +17,11 @@ const altText: string = `${props.name}'s Avatar`;
 ---
 
 <article
-  class="w-prose space-content mb-4 flex max-w-[90vw] flex-col rounded bg-nord6 p-6 dark:bg-nord3 lg:w-full"
+  class="w-prose space-content bg-nord6 dark:bg-nord3 mb-4 flex max-w-[90vw] flex-col rounded p-6 lg:w-full"
 >
   <div class="grid auto-cols-max grid-flow-col gap-x-6 gap-y-1">
     <div
-      class="fit-content align-center row-span-3 self-center rounded-full bg-nord10"
+      class="fit-content align-center bg-nord10 row-span-3 self-center rounded-full"
     >
       <img src={props.avatar.src} alt={altText} class="w-24 rounded-full" />
     </div>
@@ -65,7 +65,7 @@ const altText: string = `${props.name}'s Avatar`;
     </ul>
   </div>
   <div
-    class="space-content border-t-1 h-[200px] overflow-y-scroll border-t-2 border-nord10 px-5 pt-5 shadow-[inset_0_10px_9px_-10px] shadow-nord4 scrollbar-thin dark:shadow-nord0"
+    class="space-content border-nord10 shadow-nord4 scrollbar-thin dark:shadow-nord0 h-[200px] overflow-y-scroll border-t-1 px-5 pt-5 shadow-[inset_0_10px_9px_-10px]"
   >
     <slot />
   </div>
