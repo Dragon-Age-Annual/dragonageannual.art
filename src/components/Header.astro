@@ -1,11 +1,11 @@
 ---
 import { Icon } from "astro-icon/components";
 import Navigation from "../components/Navigation.astro";
-import { SkipLinks } from "accessible-astro-components";
+import { SkipLink } from 'accessible-astro-components'
 ---
 
-<header class="sticky z-0 mt-10 bg-nord5 dark:bg-nord0">
-  <SkipLinks />
+<header class="bg-nord5 dark:bg-nord0 sticky z-0 mt-10">
+  <SkipLink />
   <Navigation>
     <li class="menu-item has-dropdown">
       <a href="/past-years">Past Years</a>
@@ -62,11 +62,9 @@ import { SkipLinks } from "accessible-astro-components";
           >
         </li>
         <li class="submenu-item">
-          <a href="https://shop.dragonageannual.art/itch-io-faq"
-            >Itch.io FAQ</a
-          >
-				</li>
-				<li class="submenu-item">
+          <a href="https://shop.dragonageannual.art/itch-io-faq">Itch.io FAQ</a>
+        </li>
+        <li class="submenu-item">
           <a href="https://shop.dragonageannual.art/terms-conditions"
             >Terms & Conditions</a
           >
@@ -76,9 +74,7 @@ import { SkipLinks } from "accessible-astro-components";
   </Navigation>
 </header>
 
-<style lang="scss" is:global>
-  @use "../assets/scss/base/outline" as *;
-
+<style is:global>
   header {
     .type-icon a {
       display: block;

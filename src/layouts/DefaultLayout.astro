@@ -1,6 +1,5 @@
 ---
-import "@astrojs/tailwind/base.css";
-import "../assets/scss/globals.scss";
+import "../styles/global.css";
 import SiteMeta from "../components/SiteMeta.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
@@ -44,7 +43,7 @@ const {
       <slot />
     </main>
     <Footer />
-    <style lang="scss" is:global>
+    <style is:global>
       // theme settings
       :root {
         --radius-small: 3px;
@@ -54,7 +53,7 @@ const {
         --font-family-default: "Atkinson Hyperlegible", sans-serif;
         --font-family-special: "Lexend Variable", sans-serif;
         // light theme
-        --font-color: var(--neutral-900);
+        --font-color: var(--color-nord4);
         --action-color: var(--primary-300);
         --action-color-state: var(--primary-500);
         --background: var(--neutral-100);
@@ -63,7 +62,7 @@ const {
       }
 
       // dark color scheme overrides
-      .darkmode {
+      .dark {
         --font-color: var(--neutral-100);
         --action-color: var(--primary-300);
         --action-color-state: var(--primary-500);

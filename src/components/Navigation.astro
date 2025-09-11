@@ -7,12 +7,12 @@ import logo from "../assets/img/logo.svg";
 
 <div
   id="main-navigation"
-  class="is-desktop py-8 shadow-md shadow-nord4 dark:shadow-[#242933]"
+  class="is-desktop shadow-nord4 py-8 shadow-md dark:shadow-[#242933]"
 >
   <div class="container">
     <a
       href="/"
-      class="flex items-center gap-2 font-display text-xl font-black uppercase !no-underline"
+      class="font-display flex items-center gap-2 text-xl font-black uppercase !no-underline"
     >
       <Image
         src={logo}
@@ -269,10 +269,7 @@ import logo from "../assets/img/logo.svg";
   });
 </script>
 
-<style lang="scss" is:global>
-  @use "../assets/scss/base/breakpoint" as *;
-  @use "../assets/scss/base/outline" as *;
-
+<style is:global>
   #main-navigation {
     > .container {
       display: flex;
@@ -290,7 +287,7 @@ import logo from "../assets/img/logo.svg";
         display: none;
       }
 
-      .darkmode-toggle {
+      .dark-toggle {
         margin-top: -6px;
       }
     }
@@ -435,7 +432,7 @@ import logo from "../assets/img/logo.svg";
     }
   }
 
-  .darkmode-toggle {
+  .dark-toggle {
     padding: 0;
     border: none;
 

@@ -5,9 +5,12 @@ import metaTags from "astro-meta-tags";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeSlug from "rehype-slug";
 import robotsTxt from "astro-robots-txt";
-import tailwind from "@astrojs/tailwind";
+
 
 import sitemap from "@astrojs/sitemap";
+
+import partytown from "@astrojs/partytown";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,9 +19,7 @@ export default defineConfig({
   integrations: [
     mdx(),
     icon(),
-    tailwind({
-      applyBaseStyles: false,
-    }),
+		partytown(),
     metaTags(),
     robotsTxt({
       policy: [
@@ -71,5 +72,9 @@ export default defineConfig({
         },
       ],
     ],
+  },
+
+  vite: {
+    plugins: [tailwindcss()],
   },
 });

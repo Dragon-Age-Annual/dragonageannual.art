@@ -62,7 +62,6 @@ fit for you!
 - All contributors (including moderators) are expected to adhere to the Code of
   Conduct.
 - Contributors are expected to be flexible. This applies to:
-
   - the selection of subject matter for your piece(s)
   - understanding when production changes must be made
   - working with moderators for revisions
@@ -111,7 +110,6 @@ fit for you!
 ### Writers
 
 - _Pieces:_
-
   - _Calendar Writers_ will produce two works related to two different art
     pieces. Pieces will vary from approximately 200 words to approximately 600
     words depending on calendar space and layout.
