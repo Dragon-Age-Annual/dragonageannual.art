@@ -99,7 +99,7 @@ import { Icon } from "astro-icon/components";
           </Dropdown>
         </li>
       </ul>
-      <DarkMode class="!border-0" />
+      <DarkMode class="lightswitch" />
     </MenuItems>
   </Astronav>
 
@@ -130,15 +130,21 @@ import { Icon } from "astro-icon/components";
 
 <style>
   @reference "../styles/global.css";
+
+  a,
+  button {
+    @apply hover:text-nord10 hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3;
+  }
   .dropdown {
-    @apply text-nord8 bg-light-purple/85 dark:bg-medium-purple/85 border-gold absolute top-0 z-50 mt-3 rounded-md border p-5 backdrop-blur-3xl;
+    @apply text-nord8 bg-light-purple/98 dark:bg-medium-purple/99 border-gold absolute top-0 z-50 mt-3 rounded-md border p-5 shadow-xl/30;
   }
 
-  li {
-    @apply mt-1.5 mr-1.5 w-max;
+  li,
+  .lightswitch {
+    @apply ml-25 w-max border-0 lg:mt-1.5 lg:mr-1.5 lg:ml-0;
   }
 
-	a, button {
-		@apply hover:text-nord10 hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3
-	}
+  .dropdown li {
+    @apply !ml-0;
+  }
 </style>
