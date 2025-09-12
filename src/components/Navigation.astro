@@ -15,7 +15,7 @@ import { Icon } from "astro-icon/components";
 
 <header
   id="main-navigation"
-  class="text-nord8 bg-nord1/10 dark:bg-nord6/10 fixed z-50 mt-[-12px] w-full items-center font-sans text-lg backdrop-blur-3xl lg:flex"
+  class="text-nord8 glass fixed z-50 mt-[-12px] w-full items-center font-sans text-lg backdrop-blur-3xl lg:flex"
 >
   <SkipLink />
   <Astronav closeOnClick>
@@ -40,16 +40,10 @@ import { Icon } from "astro-icon/components";
     <MenuItems class="hidden lg:mr-10 lg:flex">
       <ul class="flex flex-col lg:flex-row lg:gap-5">
         <li>
-          <a
-            class="hover:text-nord10 hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3"
-            href="/past-years">Past Years</a
-          >
+          <a href="/past-years">Past Years</a>
         </li>
         <li>
-          <a
-            class="hover:text-nord10 hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3"
-            href="/about">About</a
-          >
+          <a href="/about">About</a>
         </li>
         <li>
           <Dropdown class="group">
@@ -61,53 +55,39 @@ import { Icon } from "astro-icon/components";
               />
             </button>
             <DropdownItems class="relative">
-              <div
-                class="text-nord8 bg-light-purple/75 dark:bg-medium-purple/75 border-gold absolute top-0 z-50 mt-3 rounded-md border p-5 backdrop-blur-3xl"
-              >
+              <div class="dropdown">
                 <ul>
                   <li>
-                    <a
-                      class="hover:text-nord10 hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3"
-                      href="https://shop.dragonageannual.art">Shop</a
-                    >
+                    <a href="https://shop.dragonageannual.art">Shop</a>
                   </li>
                   <li>
-                    <a
-                      class="hover:text-nord10 hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3"
-                      href="https://shop.dragonageannual.art/product-gallery"
+                    <a href="https://shop.dragonageannual.art/product-gallery"
                       >Product Gallery</a
                     >
                   </li>
                   <li>
                     <a
-                      class="hover:text-nord10 hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3"
                       href="https://shop.dragonageannual.art/package-comparisons"
                       >Pack Comparison</a
                     >
                   </li>
                   <li>
-                    <a
-                      class="hover:text-nord10 hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3"
-                      href="https://shop.dragonageannual.art/our-contributors"
+                    <a href="https://shop.dragonageannual.art/our-contributors"
                       >Our Contributors</a
                     >
                     <li>
                       <a
-                        class="hover:text-nord10 hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3"
                         href="https://shop.dragonageannual.art/community-copies"
                         >Community Copies</a
                       >
                     </li>
                     <li>
-                      <a
-                        class="hover:text-nord10 hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3"
-                        href="https://shop.dragonageannual.art/itch-io-faq"
+                      <a href="https://shop.dragonageannual.art/itch-io-faq"
                         >Itch.io FAQ</a
                       >
                     </li>
                     <li>
                       <a
-                        class="hover:text-nord10 hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3"
                         href="https://shop.dragonageannual.art/terms-conditions"
                         >Terms & Conditions</a
                       >
@@ -149,9 +129,16 @@ import { Icon } from "astro-icon/components";
 </header>
 
 <style>
-  li {
-    width: max-content;
-    margin-top: 5px;
-    margin-right: 5px;
+  @reference "../styles/global.css";
+  .dropdown {
+    @apply text-nord8 bg-light-purple/85 dark:bg-medium-purple/85 border-gold absolute top-0 z-50 mt-3 rounded-md border p-5 backdrop-blur-3xl;
   }
+
+  li {
+    @apply mt-1.5 mr-1.5 w-max;
+  }
+
+	a, button {
+		@apply hover:text-nord10 hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3
+	}
 </style>
