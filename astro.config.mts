@@ -6,7 +6,6 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeSlug from "rehype-slug";
 import robotsTxt from "astro-robots-txt";
 
-
 import sitemap from "@astrojs/sitemap";
 
 import partytown from "@astrojs/partytown";
@@ -19,7 +18,7 @@ export default defineConfig({
   integrations: [
     mdx(),
     icon(),
-		partytown(),
+    partytown(),
     metaTags(),
     robotsTxt({
       policy: [

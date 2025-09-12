@@ -1,13 +1,30 @@
 @import "tailwindcss";
-@plugin 'tailwind-scrollbar';
-@plugin 'tailwind-nord';
+@plugin "tailwind-nord";
+@plugin "tailwind-scrollbar";
 
+@plugin "@tailwindcss/typography";
+@config "../../tailwind.config.js";
 
 @import "@fontsource-variable/lexend";
 @import "@fontsource/atkinson-hyperlegible";
+
+@font-face {
+  font-family: "DAA Font";
+  src:
+    url("/src/assets/fonts/daa_font_regular-webfont.woff2") format("woff2"),
+    url("/src/assets/fonts/daa_font_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@custom-variant dark (&:where(.darkmode, .darkmode *));
 
 @theme {
   --font-sans: "Atkinson Hyperlegible";
   --font-serif: "Lexend Variable";
   --font-display: "DAA Font";
+}
+
+p {
+	font-size: 1.1rem;
 }

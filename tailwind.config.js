@@ -1,0 +1,45 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  theme: {
+    extend: {
+      typography: () => ({
+        nord: {
+          css: {
+            "--tw-prose-body": "#2e3440",
+            "--tw-prose-headings": "#8fbcbb",
+            "--tw-prose-lead": "#2e3440",
+            "--tw-prose-links": "#88c0d0",
+            "--tw-prose-bold": "#2e3440",
+            "--tw-prose-counters": "#cea052",
+            "--tw-prose-bullets": "#cea052",
+            "--tw-prose-hr": "#cea052",
+            "--tw-prose-quotes": "#4c566a",
+            "--tw-prose-quote-borders": "#cea052",
+            "--tw-prose-captions": "#434c5e",
+            "--tw-prose-code": "#3b4252",
+            "--tw-prose-pre-code": "#3b4252",
+            "--tw-prose-pre-bg": "#d8dee9",
+            "--tw-prose-th-borders": "#cea052",
+            "--tw-prose-td-borders": "#cea052",
+            "--tw-prose-invert-body": "#eceff4",
+            "--tw-prose-invert-headings": "#8fbcbb",
+            "--tw-prose-invert-lead": "#eceff4",
+            "--tw-prose-invert-links": "#88c0d0",
+            "--tw-prose-invert-bold": "#eceff4",
+            "--tw-prose-invert-counters": "#cea052",
+            "--tw-prose-invert-bullets": "#cea052",
+            "--tw-prose-invert-hr": "#cea052",
+            "--tw-prose-invert-quotes": "#d8dee9",
+            "--tw-prose-invert-quote-borders": "#d8dee9",
+            "--tw-prose-invert-captions": "#e5e9f0",
+            "--tw-prose-invert-code": "#e5e9f0",
+            "--tw-prose-invert-pre-code": "#e5e9f0",
+            "--tw-prose-invert-pre-bg": "#434c5e",
+            "--tw-prose-invert-th-borders": "#cea052",
+            "--tw-prose-invert-td-borders": "#cea052",
+          },
+        },
+      }),
+    },
+  },
+};

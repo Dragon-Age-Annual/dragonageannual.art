@@ -3,31 +3,18 @@ import { Icon } from "astro-icon/components";
 ---
 
 <div
-  class="left-p bg-nord15 text-nord0 fixed top-0 z-50 h-9 w-full p-1 text-center"
+  class="left-p bg-nord15 text-nord0 not-prose fixed top-0 z-50 h-9 w-full p-1 text-center font-sans font-medium"
 >
   <Icon name="noto:crystal-ball" class="inline" />
   <div class="normal hidden text-white italic md:inline">
     Some futures are chosen — claim yours before the tarot is read.
   </div>
-  <a href="https://shop.dragonageannual.art" class="font-bold !text-[#322A43]"
+  <a
+    href="https://shop.dragonageannual.art"
+    class="font-bold text-[#322A43] hover:text-white hover:underline hover:decoration-wavy hover:underline-offset-2"
     >Pre-order Now<Icon
       name="tabler:chevrons-right"
       class="inline text-[#322A43]"
     /></a
   >
 </div>
-
-<style>
-  a:link,
-  a:any-link,
-  a:visited {
-    /* color: var(--neutral-900) !important; */
-    text-decoration: none;
-  }
-
-  a:hover,
-  a:focus {
-    color: var(--neutral-100) !important;
-    text-decoration: underline wavy !important;
-  }
-</style>
