@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 import SiteMeta from "../components/SiteMeta.astro";
-import Header from "../components/Header.astro";
+import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 import Announcement from "../components/Announcement.astro";
 
@@ -36,9 +36,9 @@ const {
       author={author}
     />
   </head>
-  <body class="bg-[#776f87] dark:bg-[#322A43]">
+  <body class="bg-light-purple dark:bg-medium-purple">
     <Announcement />
-    <Header />
+    <Navigation />
     <main id="main-content" transition:animate="fade">
       <slot />
     </main>

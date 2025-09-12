@@ -23,8 +23,11 @@
   --font-sans: "Atkinson Hyperlegible";
   --font-serif: "Lexend Variable";
   --font-display: "DAA Font";
+  --color-light-purple: #776f87;
+  --color-medium-purple: #322a43;
+  --color-gold: #cea052;
 }
 
 p {
-	font-size: 1.1rem;
+  font-size: 1.1rem;
 }
