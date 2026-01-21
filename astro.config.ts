@@ -5,9 +5,8 @@ import metaTags from "astro-meta-tags";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeSlug from "rehype-slug";
 import robotsTxt from "astro-robots-txt";
-import tailwind from "@astrojs/tailwind";
-
 import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
