@@ -8,11 +8,6 @@
     "build": "astro build",
     "preview": "astro preview"
   },
-  "overrides": {
-    "astro-icon": {
-      "cheerio": "1.0.0-rc.12"
-    }
-  },
   "devDependencies": {
     "@astrojs/check": "^0.9.3",
     "@astrojs/mdx": "^3.1.7",
@@ -53,7 +48,7 @@
     "unified": "^11.0.5"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.1.6",
+    "@astrojs/sitemap": "^3.7.0",
     "@fujocoded/zod-transform-socials": "^0.0.12"
   }
 }
