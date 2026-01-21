@@ -9,39 +9,54 @@
     class="flex h-full w-full flex-col items-center gap-5 rounded-xl bg-nord6 p-12 dark:bg-nord1"
   >
     <h2 class="text-center font-display">Sign Up for Our Newsletter</h2>
-    <form
-			target="_blank"
-      method="post"
-      action="https://newsletter.dragonageannual.art/subscription/form"
-      class="validate w-full text-center"
-    >
-      <div>
-        <input type="hidden" name="nonce" />
 
-			<label for="EMAIL" class="font-bold uppercase tracking-widest"
-        >Email</label>
-          <input
-            type="email"
-            name="EMAIL"
-            required
-            placeholder="mods@dragonageannual.art"
-            class="border-dark border-fujo-blue m-3 h-12 max-w-[75%] self-center rounded-full border-2 bg-nord6 p-3 text-nord0 placeholder:italic sm:max-2xl:w-auto md:my-0"
-          />
-          <input
-            id="aafb2"
-            type="checkbox"
-            name="l"
-            checked
-            value="aafb2e12-9adc-4465-8e45-592ddbc6e4c5"
-						class="hidden"
-          />
-        <input type="submit" class="button md:mt-0" value="Subscribe" />
+    <form
+      id="notifuse-form"
+      class="validate flex w-full flex-col items-center text-center"
+      novalidate
+    >
+      <!-- Name (optional) -->
+      <label for="first-name" class="font-bold uppercase tracking-widest">
+        Name
+      </label>
+      <input
+        type="text"
+        id="first-name"
+        name="first_name"
+        placeholder="Andraste"
+        class="border-dark border-fujo-blue m-3 h-12 max-w-[50%] self-center rounded-full border-2 bg-nord6 p-3 text-nord0 placeholder:italic sm:max-2xl:w-auto"
+      />
+
+      <!-- Email (required) -->
+      <label for="email" class="font-bold uppercase tracking-widest">
+        Email
+      </label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="mods@dragonageannual.art"
+        class="border-dark border-fujo-blue m-3 h-12 max-w-[50%] self-center rounded-full border-2 bg-nord6 p-3 text-nord0 placeholder:italic sm:max-2xl:w-auto"
+      />
+
+      <!-- Honeypot bot trap -->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true">
+        <input type="text" name="bot_field" tabindex="-1" value="" />
       </div>
+
+      <!-- Submit button -->
+      <button type="submit" id="submit-btn" class="button md:mt-0">
+        Subscribe
+      </button>
+
+      <!-- Status messages -->
+      <div id="form-status" class="mt-4 text-sm font-bold"></div>
     </form>
   </div>
 </div>
 
-<style lang="scss">
+<style>
   .call-to-action {
     background-image: linear-gradient(
       40deg,
@@ -50,3 +65,79 @@
     );
   }
 </style>
+
+<script>
+  const form = document.getElementById("notifuse-form") as HTMLFormElement;
+  const statusBox = document.getElementById("form-status");
+  const submitBtn = document.getElementById("submit-btn") as HTMLButtonElement;
+
+  if (!form || !statusBox || !submitBtn) {
+    throw new Error("Required form elements not found");
+  }
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    statusBox.textContent = "";
+    statusBox.style.color = "";
+
+    const formData = new FormData(form);
+    const email: string = form.email.value.toString().trim();
+    const firstName = (formData.get("first_name") || "").toString().trim();
+    const botField = (formData.get("bot_field") || "").toString();
+
+    // Bot protection
+    if (botField) {
+      return; // silently fail
+    }
+
+    // Basic email validation
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailPattern.test(email)) {
+      statusBox.textContent = "Please enter a valid email address.";
+      statusBox.className = "text-nord11";
+      return;
+    }
+
+    // Loading state
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Submitting…";
+
+    try {
+      const response = await fetch(
+        "https://newsletter.dragonageannual.art/subscribe",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            workspace_id: "dragonageannual", // replace if needed
+            contact: {
+              email,
+              first_name: firstName || "",
+            },
+            list_ids: ["dragonageannualnesletter"], // replace if needed
+          }),
+        }
+      );
+
+      if (!response.ok) {
+        const error = await response.json().catch(() => ({}));
+        throw new Error(error?.message || "Subscription failed.");
+      }
+
+      statusBox.textContent = "Success! Please check your inbox.";
+      statusBox.className = "text-nord14";
+      form.reset();
+    } catch (err) {
+      statusBox.textContent =
+        typeof err === "object" && err !== null && "message" in err
+          ? (err as { message: string }).message
+          : "An unexpected error occurred.";
+      statusBox.className = "text-nord11";
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Subscribe";
+    }
+  });
+</script>
