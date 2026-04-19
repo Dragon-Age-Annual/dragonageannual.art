@@ -101,7 +101,6 @@ export default defineConfig({
   },
 
   vite: {
-		// @ts-expect-error: Vite's type definitions don't include the `plugins` property, but it is valid.
     plugins: [tailwindcss()],
   },
 });

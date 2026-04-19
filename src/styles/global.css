@@ -4,9 +4,7 @@
 @plugin "@tailwindcss/typography";
 @config "../../tailwind.config.ts";
 
-@import "./nord.css"
-
-@custom-variant dark (&:where(.darkmode, .darkmode *));
+@import "./nord.css" @custom-variant dark (&: where(.darkmode, .darkmode *));
 
 @theme {
   --color-light-purple: #776f87;
@@ -15,7 +13,7 @@
 }
 
 @theme inline {
-	--font-sans: var(--font-atkinson-hyperlegible);
+  --font-sans: var(--font-atkinson-hyperlegible);
   --font-serif: var(--font-lexend);
   --font-display: var(--font-daa);
 }
@@ -25,5 +23,5 @@ body {
 }
 
 .glass {
-	@apply bg-nord1/10 dark:bg-nord6/10
+  @apply bg-nord1/10 dark:bg-nord6/10;
 }

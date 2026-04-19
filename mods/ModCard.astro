@@ -32,7 +32,7 @@ const altText: string = `${props.name}'s Avatar`;
     >
       {
         props.roles.map((role, index) => (
-          <li class="inline-block w-fit text-wrap break-words">
+          <li class="inline-block w-fit text-wrap wrap-break-word">
             {index - (props.roles.length - 1) ? role + ",\xa0" : role}
           </li>
         ))
@@ -65,7 +65,7 @@ const altText: string = `${props.name}'s Avatar`;
     </ul>
   </div>
   <div
-    class="space-content border-nord10 shadow-nord4 scrollbar-thin dark:shadow-nord0 h-[200px] overflow-y-scroll border-t-1 px-5 pt-5 shadow-[inset_0_10px_9px_-10px]"
+    class="space-content border-nord10 shadow-nord4 scrollbar-thin dark:shadow-nord0 h-[200px] overflow-y-scroll border-t px-5 pt-5 shadow-[inset_0_10px_9px_-10px]"
   >
     <slot />
   </div>
