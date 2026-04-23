@@ -44,7 +44,29 @@ export default defineConfig({
   ],
   integrations: [
     mdx(),
-    icon(),
+    icon({
+      include: {
+        lucide: ["home", "chevron-down"],
+        noto: [
+          "crystal-ball",
+          "sparkles",
+          "artist-palette",
+          "fountain-pen",
+          "bookmark-tabs",
+        ],
+				// simple-icons needed for zod-transform-socials, but not shipped with plugin, so added here
+        simpleIcons: ['*'],
+        tabler: [
+          "brand-bluesky",
+          "brand-twitter",
+          "brand-tumblr",
+          "brand-instagram",
+          "brand-threads",
+          "brand-itch",
+          "chevrons-right",
+        ],
+      },
+    }),
     partytown(),
     metaTags(),
     robotsTxt({
