@@ -4,7 +4,6 @@
 @plugin "tailwind-scrollbar";
 
 @plugin "@tailwindcss/typography";
-@config "../../tailwind.config.ts";
 
 @theme {
   --color-arcane-300: #776f87;
