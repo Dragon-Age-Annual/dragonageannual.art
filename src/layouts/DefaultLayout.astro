@@ -17,7 +17,7 @@ const {
 <html
   lang="en"
   dir="ltr"
-  class="scrollbar-thin scrollbar-track-transparent scrollbar-thumb-nord9"
+  class="scrollbar-track-daa-white/10 scrollbar-thin scrollbar-gold"
 >
   <head>
     <meta charset="utf-8" />
@@ -43,14 +43,10 @@ const {
     <Font cssVariable="--font-daa" preload />
     <Font cssVariable="--font-victor-mono" preload />
   </head>
-  <body class="bg-arcane-300 dark:bg-arcane-600">
+  <body class="bg-arcane-300 dark:bg-arcane-600 scrollbar-track-daa-white/10 scrollbar-thin scrollbar-gold">
     <Announcement />
     <Navigation />
-    <main
-      id="main-content"
-      class="main"
-      transition:animate="fade"
-    >
+    <main id="main-content" class="main" transition:animate="fade">
       <slot />
     </main>
 
@@ -87,31 +83,6 @@ const {
           svg path {
             stroke: #eceff4;
           }
-        }
-      }
-
-      a.anchor {
-        background-color: var(--background);
-        text-decoration: none !important;
-        background-image: none;
-
-        &:visited {
-          background-color: var(--background);
-          text-decoration: none !important;
-          background-image: none;
-        }
-
-        &:hover,
-        &:focus {
-          background: var(--secondary-100);
-          background: linear-gradient(
-            45deg,
-            var(--secondary-100) 0%,
-            var(--primary-100) 50%
-          );
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
         }
       }
     </style>

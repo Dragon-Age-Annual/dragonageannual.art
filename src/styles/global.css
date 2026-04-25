@@ -6,7 +6,6 @@
 @plugin "@tailwindcss/typography";
 @config "../../tailwind.config.ts";
 
-@import "./nord.css";
 @theme {
   --color-arcane-300: #776f87;
   --color-arcane-600: #322a43;
@@ -121,5 +120,5 @@ container {
 
 /* table of contents */
 .toc a {
-  @apply text-daa-white hover:text-pink font-mono text-sm/tight italic no-underline hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3;
+  @apply text-daa-white hover:text-pink font-mono text-sm/tight no-underline hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3;
 }

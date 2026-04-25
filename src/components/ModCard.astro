@@ -17,22 +17,22 @@ const altText: string = `${props.name}'s Avatar`;
 ---
 
 <article
-  class="w-prose space-content bg-nord6 dark:bg-nord3 mb-4 flex max-w-[90vw] flex-col rounded p-6 lg:w-full"
+  class="w-prose space-content bg-daa-white/10 border border-gold mb-4 flex max-w-[90vw] flex-col rounded-xl px-6lg:w-full"
 >
-  <div class="grid auto-cols-max grid-flow-col gap-x-6 gap-y-1">
+  <div class="grid auto-cols-max grid-flow-col gap-x-6 gap-y-1 prose-daa">
     <div
-      class="fit-content align-center bg-nord10 row-span-3 self-center rounded-full"
+      class="fit-content align-center bg-teal-mid row-span-3 self-center rounded-full"
     >
       <img src={props.avatar.src} alt={altText} class="w-24 rounded-full" />
     </div>
-    <h3>{props.name}</h3>
+    <h3 class="font-display!">{props.name}</h3>
 
     <ul
-      class="list-style-none flex w-[75%] flex-row flex-wrap pr-6 capitalize italic xl:w-full xl:flex-nowrap"
+      class="list-style-none flex w-[75%] flex-row flex-wrap capitalize xl:w-full xl:flex-nowrap"
     >
       {
         props.roles.map((role, index) => (
-          <li class="inline-block w-fit text-wrap wrap-break-word">
+          <li class="inline-block w-fit text-wrap wrap-break-word font-mono text-sm">
             {index - (props.roles.length - 1) ? role + ",\xa0" : role}
           </li>
         ))
@@ -65,13 +65,8 @@ const altText: string = `${props.name}'s Avatar`;
     </ul>
   </div>
   <div
-    class="space-content border-nord10 shadow-nord4 scrollbar-thin dark:shadow-nord0 h-[200px] overflow-y-scroll border-t px-5 pt-5 shadow-[inset_0_10px_9px_-10px]"
+    class="space-content border-pink scrollbar-thin scrollbar-gold shadow-arcane-800 h-[200px] overflow-y-scroll border-t px-5 pt-5 shadow-[inset_0_10px_9px_-10px]"
   >
     <slot />
   </div>
 </article>
-<style>
-  .hidden {
-    display: none;
-  }
-</style>
