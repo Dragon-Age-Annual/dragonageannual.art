@@ -15,14 +15,14 @@ import { Icon } from "astro-icon/components";
 
 <header
   id="main-navigation"
-  class="text-nord8 glass fixed z-50 mt-[-12px] w-full items-center font-sans text-lg backdrop-blur-3xl lg:flex"
+  class="text-teal-mid fixed z-50 mt-10 w-full items-center font-sans text-lg lg:flex bg-arcane-800/55 backdrop-blur-2xl"
 >
   <SkipLink />
   <Astronav closeOnClick>
     <div class="flex w-full items-center justify-between px-10 py-3">
       <a
         href="/"
-        class="font-display flex items-center gap-2 text-xl font-bold uppercase !no-underline"
+        class="font-display text-bold flex items-center gap-2 text-xl uppercase no-underline!"
       >
         <Image
           src={logo}
@@ -34,7 +34,7 @@ import { Icon } from "astro-icon/components";
         <span class="hidden sm:inline-block">Dragon Age Annual</span>
       </a>
       <div class="block lg:hidden">
-        <MenuIcon class="text-nord8 h-4 w-4" />
+        <MenuIcon class="text-teal-mid h-4 w-4" />
       </div>
     </div>
     <MenuItems class="hidden lg:mr-10 lg:flex">
@@ -105,7 +105,7 @@ import { Icon } from "astro-icon/components";
 
   <!-- TODO: From Old Layout Update To New Layout
 		 <li class="menu-item">
-      <a class="hover:text-nord10 hover:underline hover:decoration-wavy hover:underline-offset-3 hover:decoration-2" href="/before-you-apply">Before You Apply</a>
+      <a class="hover:text-pink hover:underline hover:decoration-wavy hover:underline-offset-3 hover:decoration-2" href="/before-you-apply">Before You Apply</a>
     </li> -->
   <!-- <li class="menu-item has-dropdown">
       <button aria-haspopup="true" aria-expanded="false"
@@ -114,15 +114,15 @@ import { Icon } from "astro-icon/components";
       <ul class="dropdown-menu">
         <li>
           <Icon class="inline" name="noto:artist-palette" />
-          <a class="hover:text-nord10 hover:underline hover:decoration-wavy hover:underline-offset-3 hover:decoration-2" href="https://forms.gle/JhpPgVghWnzXHN156">Artists</a>
+          <a class="hover:text-pink hover:underline hover:decoration-wavy hover:underline-offset-3 hover:decoration-2" href="https://forms.gle/JhpPgVghWnzXHN156">Artists</a>
         </li>
         <li>
           <Icon class="inline" name="noto:fountain-pen" />
-          <a class="hover:text-nord10 hover:underline hover:decoration-wavy hover:underline-offset-3 hover:decoration-2" href="https://forms.gle/YX8jj3as5f1RJm666">Writers</a>
+          <a class="hover:text-pink hover:underline hover:decoration-wavy hover:underline-offset-3 hover:decoration-2" href="https://forms.gle/YX8jj3as5f1RJm666">Writers</a>
         </li>
         <li>
           <Icon class="inline" name="noto:bookmark-tabs" />
-          <a class="hover:text-nord10 hover:underline hover:decoration-wavy hover:underline-offset-3 hover:decoration-2" href="https://forms.gle/hhvEMXvZ9MkTXcM78">Betas & Graphics</a>
+          <a class="hover:text-pink hover:underline hover:decoration-wavy hover:underline-offset-3 hover:decoration-2" href="https://forms.gle/hhvEMXvZ9MkTXcM78">Betas & Graphics</a>
         </li>
       </ul>
     </li> -->
@@ -133,10 +133,10 @@ import { Icon } from "astro-icon/components";
 
   a,
   button {
-    @apply hover:text-nord10 hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3;
+    @apply hover:text-pink hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3;
   }
   .dropdown {
-    @apply text-nord8 bg-light-purple/98 dark:bg-medium-purple/99 border-gold absolute top-0 z-50 mt-3 rounded-md border p-5 shadow-xl/30;
+    @apply text-teal-mid bg-arcane-300/98 dark:bg-arcane-600/99 border-gold absolute top-0 z-50 mt-3 rounded-md border p-5 shadow-xl/30;
   }
 
   li,
@@ -145,6 +145,6 @@ import { Icon } from "astro-icon/components";
   }
 
   .dropdown li {
-    @apply !ml-0;
+    @apply ml-0!;
   }
 </style>

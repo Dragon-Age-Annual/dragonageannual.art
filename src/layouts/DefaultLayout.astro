@@ -4,6 +4,7 @@ import SiteMeta from "../components/SiteMeta.astro";
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 import Announcement from "../components/Announcement.astro";
+import { Font } from "astro:assets";
 
 const {
   title,
@@ -26,6 +27,7 @@ const {
     <!-- favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
+    <!-- Open Graph -->
     <SiteMeta
       subtitle={title}
       description={description}
@@ -35,16 +37,26 @@ const {
       image={image}
       author={author}
     />
+    <!-- fonts -->
+    <Font cssVariable="--font-atkinson-hyperlegible" preload />
+    <Font cssVariable="--font-lexend" preload />
+    <Font cssVariable="--font-daa" preload />
+    <Font cssVariable="--font-victor-mono" preload />
   </head>
-  <body class="bg-light-purple dark:bg-medium-purple">
+  <body class="bg-arcane-300 dark:bg-arcane-600">
     <Announcement />
     <Navigation />
-    <main id="main-content" transition:animate="fade">
+    <main
+      id="main-content"
+      class="main"
+      transition:animate="fade"
+    >
       <slot />
     </main>
+
     <Footer />
     <style is:global>
-      // sticky footer on low content pages
+      /* sticky footer on low content pages */
       html,
       body {
         height: 100%;

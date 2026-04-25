@@ -5,91 +5,79 @@ import About from "../components/About.astro";
 import ProjectStats from "../components/ProjectStats.astro";
 import { Image } from "astro:assets";
 import banner from "../assets/img/banner.png";
-import preorders from "../assets/img/preorders_open.png";
+import { Icon } from "astro-icon/components";
 ---
 
 <DefaultLayout
   title="Home"
-  description="Dragon Age Annual: fan‑made charity calendar & merch. Seasonal pre‑orders champion causes, showcasing Thedas in art & fiction."
+  description="Dragon Age Annual: fan‑made charity calendar & merchandise. Seasonal pre‑orders champion causes, showcasing Thedas in art & fiction."
 >
-  <article class="container">
-    <div class="space-content my-12">
-      <!-- <Image
-        src={banner}
-        alt="Dragon Age Annual"
-        class="mx-auto w-11/12 md:w-[700px]"
-      /> -->
-      <div class="gap-10 lg:grid lg:grid-flow-row-dense lg:grid-cols-4">
-        <div
-          class="space-content prose prose-nord dark:prose-invert w-prose lg:col-span-3"
-        >
-          <Image
-            src={preorders}
-            alt="Banner image featuring covers of calendar, zine and mini tarot merchandise. It states: Pre-Orders Open! Physical Sep 1-Sep 30. Digital Sep 1-Jan 31. Visit our shop for additional merch! A Dragon Age Annual logo is centered in the bottom and  an MSF Sweden logo is in the bottom right."
+  <!-- SECTION: Main Content (Text + Sidebar) -->
+  <section class="section">
+    <div class="gap-10 lg:grid lg:grid-flow-row-dense lg:grid-cols-4">
+      <!-- Main Text Column -->
+      <div class="prose-daa lg:col-span-3">
+        <Image
+          src={banner}
+          alt="Dragon Age Annual"
+          class="mx-auto w-11/12 md:w-200"
+        />
+        <h2>DAA is back!</h2>
+
+        <p>
+          Dragon Age Annual is back for our sixth year! We're excited to
+          celebrate this beloved franchise with our fellow fans, new and old,
+          and we want to hear from YOU.
+        </p>
+
+        <p>
+          Help us shape the 2027 production by completing the interest check
+          now. Let us know what charities you're interested in supporting, what
+          themes you'd like to see, which merchandise items you prefer, and
+          other details that will make DAA 2027 something you'll love.
+        </p>
+
+        <p class="text-center">
+          <Icon
+            name="noto:backhand-index-pointing-right"
+            class="inline align-text-top"
           />
-          <h2 class="mt-3!">2026 Pre-Orders Are Open!</h2>
+          <a
+            href="https://forms.dragonageannual.art/2027interest"
+            class="text-2xl font-bold">2027 Interest Check</a
+          >
+          <Icon
+            name="noto:backhand-index-pointing-left"
+            class="inline align-text-top"
+          /><br />
+          <strong>Complete by April 30th!</strong>
+        </p>
 
-          <p>
-            Explore our largest selection of merchandise yet — inspired by
-            Dragon Age Tarot, our contributors have put their hearts into every
-            creation. Beginning Sep 7, you can also secure a free digital art
-            print set on itch.io, featuring the cover art from all five DAA
-            calendars, no coin nor contract required. This is our thanks to you,
-            for supporting this project over the last five years. We couldn't
-            have done it without you!
-          </p>
+        <p>
+          Contributor applications will open after the interest check. If you're
+          interested in joining our creative team as an artist, writer, or beta,
+          follow us across social media or sign up for our newsletter below to
+          be notified when applications open.
+        </p>
 
-          <p>
-            Physical pre-orders will be open until September 30th and digital
-            pre-orders will be open until January 31st. All proceeds go to
-            support <a
-              href="https://lakareutangranser.se/en/home"
-              target="_blank"
-              rel="noopener">MSF Sweden</a
-            >!
-          </p>
-
-          <p>
-            Check out the <a
-              href="https://shop.dragonageannual.art/product-gallery"
-              target="_blank"
-              rel="noopener">product previews</a
-            > and <a
-              href="https://shop.dragonageannual.art/package-comparison"
-              target="_blank"
-              rel="noopener">compare available packages</a
-            > in our new-and-improved shop. Unlike years past, you can purchase multiple
-            packs in a single order, so mix-and-match to your heart's content. Don't
-            forget to take a look at our <a
-              href="https://shop.dragonageannual.art/package-comparison"
-              target="_blank"
-              rel="noopener">stretch goals</a
-            > for bonus items and upgrades that can be unlocked with your purchase.
-          </p>
-
-          <p>
-            Also back for an encore performance are community copies — FREE
-            copies of the Calendar &amp; Zine PDFs paid for by donations from
-            other fans. Even if you aren't in a position to buy right now DAA
-            2026 is for you! <a
-              href="https://shop.dragonageannual.art/community-copies"
-              target="_blank"
-              rel="noopener">See our shop</a
-            > for information on donating toward and claiming community copies.
-          </p>
-
-          <p>
-            Thank you all for five amazing years of <em>Dragon Age Annual</em> — here's
-            to five more!
-          </p>
-        </div>
-        <aside class="flex flex-col gap-y-5">
-          <About />
-          <ProjectStats />
-        </aside>
+        <p>
+          Thank you, as always, to our supporters — whether you've worked on or
+          bought the Annual in past years, we couldn't keep this project going
+          without you. Here's to another year of all things Dragon Age!
+        </p>
       </div>
-      <a id="newsletter"></a>
-      <CallToAction />
+
+      <!-- Sidebar Column -->
+      <aside class="flex flex-col gap-y-5">
+        <About />
+        <ProjectStats />
+      </aside>
     </div>
-  </article>
+  </section>
+
+  <!-- SECTION: Newsletter CTA -->
+	<a name="newsletter"></a>
+  <section id="newsletter" class="section mt-8! mb-4">
+    <CallToAction />
+  </section>
 </DefaultLayout>

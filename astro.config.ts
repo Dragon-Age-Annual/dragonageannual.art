@@ -19,13 +19,33 @@ export default defineConfig({
       provider: fontProviders.fontsource(),
       name: "Lexend",
       cssVariable: "--font-lexend",
+      weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      styles: ["normal", "italic"],
       fallbacks: ["sans-serif", "system-ui"],
     },
     {
       provider: fontProviders.fontsource(),
-      name: "Atkinson Hyperlegible",
+      name: "Atkinson Hyperlegible Next",
       cssVariable: "--font-atkinson-hyperlegible",
+      weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      styles: ["normal"],
       fallbacks: ["sans-serif", "system-ui"],
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Atkinson Hyperlegible Next",
+      cssVariable: "--font-atkinson-hyperlegible",
+      weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      styles: ["normal", "italic"],
+      fallbacks: ["sans-serif", "system-ui"],
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Victor Mono",
+      cssVariable: "--font-victor-mono",
+      weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      styles: ["normal", "italic"],
+      fallbacks: ["monospace", "system-ui"],
     },
     {
       provider: fontProviders.local(),
@@ -35,7 +55,7 @@ export default defineConfig({
         variants: [
           {
             src: ["./src/assets/fonts/daa_font_regular-webfont.woff2"],
-            weight: "normal",
+            weight: "bold",
             style: "normal",
           },
         ],
@@ -48,23 +68,16 @@ export default defineConfig({
       include: {
         lucide: ["home", "chevron-down"],
         noto: [
+          "backhand-index-pointing-left",
+          "backhand-index-pointing-right",
           "crystal-ball",
           "sparkles",
           "artist-palette",
           "fountain-pen",
           "bookmark-tabs",
         ],
-				// simple-icons needed for zod-transform-socials, but not shipped with plugin, so added here
-        simpleIcons: ['*'],
-        tabler: [
-          "brand-bluesky",
-          "brand-twitter",
-          "brand-tumblr",
-          "brand-instagram",
-          "brand-threads",
-          "brand-itch",
-          "chevrons-right",
-        ],
+        // simple-icons needed for zod-transform-socials, but not shipped with plugin, so added here
+        simpleIcons: ["*"],
       },
     }),
     partytown(),
