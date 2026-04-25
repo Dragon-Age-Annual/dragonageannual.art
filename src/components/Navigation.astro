@@ -40,24 +40,41 @@ import { Icon } from "astro-icon/components";
     <MenuItems class="hidden lg:mr-10 lg:flex">
       <ul class="flex flex-col lg:flex-row lg:gap-5">
         <li>
-          <Icon name="noto:sparkles" class="inline" />
-          <a href="https://forms.dragonageannual.art/2027Interest"
-            >2027 Interest Check</a
-          >
-          <Icon name="noto:sparkles" class="inline" />
-        </li>
-        <li>
-          <a href="/past-years">Past Years</a>
-        </li>
-        <li>
-          <a href="/about">About</a>
-        </li>
-
-        <!-- Application -->
-        <!-- TODO: From Old Layout Update To New Layout -->
-        <!--  <li class="menu-item">
-      <a class="hover:text-pink hover:underline hover:decoration-wavy hover:underline-offset-3 hover:decoration-2" href="/before-you-apply">Before You Apply</a>
-    </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <Icon name="noto:sparkles" class="inline" />
+            <a href="https://forms.dragonageannual.art/2027Interest"
+              >2027 Interest Check</a
+            >
+            <Icon name="noto:sparkles" class="inline" />
+          </li>
+          <li>
+            <a href="/past-years">Past Years</a>
+          </li>
+          <!-- Application -->
+          <li>
+            <Dropdown class="group">
+              <button class="flex items-center">
+                <span> Application Info </span>
+                <Icon
+                  name="lucide:chevron-down"
+                  class="mt-0.5 ml-1 h-4 w-4 group-open:rotate-180"
+                />
+              </button>
+              <DropdownItems class="relative">
+                <div class="dropdown">
+                  <ul>
+                    <li>
+                      <a href="/before-you-apply">Before You Apply</a>
+                    </li>
+                  </ul>
+                </div>
+              </DropdownItems>
+            </Dropdown>
+            <!-- TODO: From Old Layout Update To New Layout -->
+            <!-- 
      <li class="menu-item has-dropdown">
       <button aria-haspopup="true" aria-expanded="false"
         ><Icon name="noto:sparkles" />Apply Here</button
@@ -78,8 +95,8 @@ import { Icon } from "astro-icon/components";
       </ul>
     </li> -->
 
-        <!-- Sales Dropdown -->
-        <!-- <li>
+            <!-- Sales Dropdown -->
+            <!-- <li>
           <Dropdown class="group">
             <button class="flex items-center">
               <span> Pre-Order Info </span>
@@ -132,31 +149,32 @@ import { Icon } from "astro-icon/components";
             </DropdownItems>
           </Dropdown>
         </li> -->
-      </ul>
+          </li>
 
-      <!-- TODO: Implement DarkMode component -->
-      <!-- <DarkMode class="lightswitch" /> -->
+          <!-- TODO: Implement DarkMode component -->
+          <!-- <DarkMode class="lightswitch" /> -->
+        </li>
+      </ul>
     </MenuItems>
+
+    <style>
+      @reference "../styles/global.css";
+      a,
+      button {
+        @apply hover:text-pink hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3;
+      }
+      .dropdown {
+        @apply text-teal-mid bg-arcane-300/98 dark:bg-arcane-600/99 border-gold absolute top-0 z-50 mt-3 rounded-md border p-5 shadow-xl/30;
+      }
+
+      li,
+      .lightswitch {
+        @apply ml-25 w-max border-0 lg:mt-1.5 lg:mr-1.5 lg:ml-0;
+      }
+
+      .dropdown li {
+        @apply ml-0!;
+      }
+    </style>
   </Astronav>
 </header>
-
-<style>
-  @reference "../styles/global.css";
-
-  a,
-  button {
-    @apply hover:text-pink hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3;
-  }
-  .dropdown {
-    @apply text-teal-mid bg-arcane-300/98 dark:bg-arcane-600/99 border-gold absolute top-0 z-50 mt-3 rounded-md border p-5 shadow-xl/30;
-  }
-
-  li,
-  .lightswitch {
-    @apply ml-25 w-max border-0 lg:mt-1.5 lg:mr-1.5 lg:ml-0;
-  }
-
-  .dropdown li {
-    @apply ml-0!;
-  }
-</style>
