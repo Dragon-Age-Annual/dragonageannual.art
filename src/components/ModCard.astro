@@ -17,30 +17,35 @@ const altText: string = `${props.name}'s Avatar`;
 ---
 
 <article
-  class="w-prose space-content bg-daa-white/10 border border-gold mb-4 flex max-w-[90vw] flex-col rounded-xl px-6lg:w-full"
+  class="w-prose space-content bg-daa-white/10 border-gold mb-4 flex max-w-[90vw] flex-col rounded-xl border px-6 lg:w-full"
 >
-  <div class="grid auto-cols-max grid-flow-col gap-x-6 gap-y-1 prose-daa">
+  <div class="prose-daa grid auto-cols-max grid-flow-col gap-x-6">
     <div
-      class="fit-content align-center bg-teal-mid row-span-3 self-center rounded-full"
+      class="bg-teal-mid align-center row-span-3 flex h-24 w-24 justify-center self-center rounded-full"
     >
-      <img src={props.avatar.src} alt={altText} class="w-24 rounded-full" />
+      <img
+        src={props.avatar.src}
+        alt={altText}
+        class="h-24 w-24 self-center rounded-full"
+      />
     </div>
-    <h3 class="font-display!">{props.name}</h3>
-
-    <ul
-      class="list-style-none flex w-[75%] flex-row flex-wrap capitalize xl:w-full xl:flex-nowrap"
+    <h3 class="font-display! mb-0! p-0! leading-8! z-10">{props.name}</h3>
+    <div
+      class="font-mono text-sm text-wrap wrap-break-word capitalize xl:w-full xl:flex-nowrap leading-4! mt-2!"
     >
-      {
-        props.roles.map((role, index) => (
-          <li class="inline-block w-fit text-wrap wrap-break-word font-mono text-sm">
-            {index - (props.roles.length - 1) ? role + ",\xa0" : role}
-          </li>
-        ))
-      }
-    </ul>
+      <ul
+        class="list-style-none m-0! flex flex-wrap pl-6"
+      >
+        {
+          props.roles.map((role, index) => (
+            <li>{index - (props.roles.length - 1) ? role + ",\xa0" : role}</li>
+          ))
+        }
+      </ul>
+    </div>
     <ul
       class:list={{ hidden: props.links.length == 0 }}
-      class="list-type-none flex flex-row gap-2"
+      class="list-type-none mt-0! flex flex-row gap-2 p-0!"
     >
       {
         props.links.map((link) => (
