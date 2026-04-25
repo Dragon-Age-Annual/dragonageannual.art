@@ -15,7 +15,7 @@ import { Icon } from "astro-icon/components";
 
 <header
   id="main-navigation"
-  class="text-teal-mid fixed z-50 mt-10 w-full items-center font-sans text-lg lg:flex bg-arcane-800/55 backdrop-blur-2xl"
+  class="text-teal-mid bg-arcane-800/55 fixed z-50 mt-10 w-full items-center font-sans text-lg backdrop-blur-2xl lg:flex"
 >
   <SkipLink />
   <Astronav closeOnClick>
@@ -40,12 +40,46 @@ import { Icon } from "astro-icon/components";
     <MenuItems class="hidden lg:mr-10 lg:flex">
       <ul class="flex flex-col lg:flex-row lg:gap-5">
         <li>
+          <Icon name="noto:sparkles" class="inline" />
+          <a href="https://forms.dragonageannual.art/2027Interest"
+            >2027 Interest Check</a
+          >
+          <Icon name="noto:sparkles" class="inline" />
+        </li>
+        <li>
           <a href="/past-years">Past Years</a>
         </li>
         <li>
           <a href="/about">About</a>
         </li>
+
+        <!-- Application -->
+        <!-- TODO: From Old Layout Update To New Layout -->
+        <!--  <li class="menu-item">
+      <a class="hover:text-pink hover:underline hover:decoration-wavy hover:underline-offset-3 hover:decoration-2" href="/before-you-apply">Before You Apply</a>
+    </li>
+     <li class="menu-item has-dropdown">
+      <button aria-haspopup="true" aria-expanded="false"
+        ><Icon name="noto:sparkles" />Apply Here</button
+      >
+      <ul class="dropdown-menu">
         <li>
+          <Icon class="inline" name="noto:artist-palette" />
+          <a class="hover:text-pink hover:underline hover:decoration-wavy hover:underline-offset-3 hover:decoration-2" href="https://forms.gle/JhpPgVghWnzXHN156">Artists</a>
+        </li>
+        <li>
+          <Icon class="inline" name="noto:fountain-pen" />
+          <a class="hover:text-pink hover:underline hover:decoration-wavy hover:underline-offset-3 hover:decoration-2" href="https://forms.gle/YX8jj3as5f1RJm666">Writers</a>
+        </li>
+        <li>
+          <Icon class="inline" name="noto:bookmark-tabs" />
+          <a class="hover:text-pink hover:underline hover:decoration-wavy hover:underline-offset-3 hover:decoration-2" href="https://forms.gle/hhvEMXvZ9MkTXcM78">Betas & Graphics</a>
+        </li>
+      </ul>
+    </li> -->
+
+        <!-- Sales Dropdown -->
+        <!-- <li>
           <Dropdown class="group">
             <button class="flex items-center">
               <span> Pre-Order Info </span>
@@ -97,35 +131,13 @@ import { Icon } from "astro-icon/components";
               </div>
             </DropdownItems>
           </Dropdown>
-        </li>
+        </li> -->
       </ul>
-      <DarkMode class="lightswitch" />
+
+      <!-- TODO: Implement DarkMode component -->
+      <!-- <DarkMode class="lightswitch" /> -->
     </MenuItems>
   </Astronav>
-
-  <!-- TODO: From Old Layout Update To New Layout
-		 <li class="menu-item">
-      <a class="hover:text-pink hover:underline hover:decoration-wavy hover:underline-offset-3 hover:decoration-2" href="/before-you-apply">Before You Apply</a>
-    </li> -->
-  <!-- <li class="menu-item has-dropdown">
-      <button aria-haspopup="true" aria-expanded="false"
-        ><Icon name="noto:sparkles" />Apply Here</button
-      >
-      <ul class="dropdown-menu">
-        <li>
-          <Icon class="inline" name="noto:artist-palette" />
-          <a class="hover:text-pink hover:underline hover:decoration-wavy hover:underline-offset-3 hover:decoration-2" href="https://forms.gle/JhpPgVghWnzXHN156">Artists</a>
-        </li>
-        <li>
-          <Icon class="inline" name="noto:fountain-pen" />
-          <a class="hover:text-pink hover:underline hover:decoration-wavy hover:underline-offset-3 hover:decoration-2" href="https://forms.gle/YX8jj3as5f1RJm666">Writers</a>
-        </li>
-        <li>
-          <Icon class="inline" name="noto:bookmark-tabs" />
-          <a class="hover:text-pink hover:underline hover:decoration-wavy hover:underline-offset-3 hover:decoration-2" href="https://forms.gle/hhvEMXvZ9MkTXcM78">Betas & Graphics</a>
-        </li>
-      </ul>
-    </li> -->
 </header>
 
 <style>

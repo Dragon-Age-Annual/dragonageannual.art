@@ -68,9 +68,9 @@ export default defineConfig({
       include: {
         lucide: ["home", "chevron-down"],
         noto: [
+					"ballot-box-with-ballot",
           "backhand-index-pointing-left",
           "backhand-index-pointing-right",
-          "crystal-ball",
           "sparkles",
           "artist-palette",
           "fountain-pen",
