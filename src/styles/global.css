@@ -31,7 +31,7 @@
 }
 
 @utility anchor {
-  @apply text-arcane-600! text-shadow-arcane-600 text-shadow-md hover:text-pink! cursor-pointer! no-underline! not-italic! ;
+  @apply text-arcane-600! text-shadow-arcane-600 hover:text-pink! cursor-pointer! not-italic! no-underline! text-shadow-md;
 }
 
 @utility heading {
@@ -45,6 +45,10 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+@utility list-style-none {
+  @apply ml-0 list-none pl-0;
 }
 
 h1,
@@ -94,11 +98,6 @@ container {
   @apply text-teal-mid hover:text-pink no-underline hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3;
 }
 
-.prose-daa ul,
-.prose-daa ul li {
-  @apply ml-0 list-none pl-0;
-}
-
 /* grid helper */
 .grid-daa {
   @apply grid gap-12 md:grid-cols-2;
@@ -118,6 +117,14 @@ container {
 }
 
 /* table of contents */
+.toc { 
+	@apply list-style-none;
+}
+
+.toc li {
+	@apply m-0!
+}
+
 .toc a {
   @apply text-daa-white hover:text-pink font-mono text-sm/tight no-underline hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3;
 }

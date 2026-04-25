@@ -34,7 +34,7 @@ const altText: string = `${props.name}'s Avatar`;
       class="font-mono text-sm text-wrap wrap-break-word capitalize xl:w-full xl:flex-nowrap leading-4! mt-2!"
     >
       <ul
-        class="list-style-none m-0! flex flex-wrap pl-6"
+        class="list-style-none! m-0! flex flex-wrap pl-6"
       >
         {
           props.roles.map((role, index) => (
@@ -45,7 +45,7 @@ const altText: string = `${props.name}'s Avatar`;
     </div>
     <ul
       class:list={{ hidden: props.links.length == 0 }}
-      class="list-type-none mt-0! flex flex-row gap-2 p-0!"
+      class="list-style-none! mt-0! flex flex-row gap-2 p-0!"
     >
       {
         props.links.map((link) => (

@@ -66,7 +66,7 @@ export default defineConfig({
     mdx(),
     icon({
       include: {
-        lucide: ["home", "chevron-down"],
+        lucide: ["home", "chevron-down", "chevron-right"],
         noto: [
 					"ballot-box-with-ballot",
           "backhand-index-pointing-left",
