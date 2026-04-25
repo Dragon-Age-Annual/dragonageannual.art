@@ -20,9 +20,9 @@
   --color-pink: #865dd8;
   --color-purple-dark: #3b1d4f;
   --color-purple-mid: #5a2f73;
-	--color-success: #a3be8c;
-  --color-teal-mid: #9bc3c9;
-  --color-teal-mid-mid: #74a5ac;
+  --color-success: #a3be8c;
+  --color-teal-light: #9bc3c9;
+  --color-teal-mid: #74a5ac;
 }
 
 @theme inline {
@@ -32,21 +32,21 @@
   --font-display: var(--font-daa);
 }
 
+@utility anchor {
+  @apply text-arcane-600! text-shadow-arcane-600 text-shadow-md hover:text-pink! cursor-pointer! no-underline! not-italic! ;
+}
+
 @utility heading {
   @apply font-serif font-bold;
   background-image: linear-gradient(
     135deg,
     var(--color-teal-mid),
-    var(--color-teal-mid)
+    var(--color-teal-light)
   );
 
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-}
-
-@utility copper-linear {
-  @apply from-copper-light to-copper-deep bg-linear-135 from-50%;
 }
 
 h1,
@@ -93,7 +93,12 @@ container {
   @apply text-gold font-bold;
 }
 .prose-daa a {
-  @apply text-teal-mid no-underline hover:text-pink hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3;
+  @apply text-teal-mid hover:text-pink no-underline hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3;
+}
+
+.prose-daa ul,
+.prose-daa ul li {
+  @apply ml-0 list-none pl-0;
 }
 
 /* grid helper */
@@ -112,4 +117,9 @@ container {
 
 .button-primary {
   @apply from-purple-dark to-purple-mid text-daa-white relative inline-block cursor-pointer rounded bg-linear-135 px-4 py-2 font-bold;
+}
+
+/* table of contents */
+.toc a {
+  @apply text-daa-white hover:text-pink font-mono text-sm/tight italic no-underline hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3;
 }
