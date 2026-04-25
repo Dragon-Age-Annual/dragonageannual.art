@@ -117,12 +117,12 @@ container {
 }
 
 /* table of contents */
-.toc { 
-	@apply list-style-none;
+.toc {
+  @apply list-style-none;
 }
 
 .toc li {
-	@apply m-0!
+  @apply m-0!;
 }
 
 .toc a {

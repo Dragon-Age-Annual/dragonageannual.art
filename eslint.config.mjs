@@ -15,10 +15,7 @@ const compat = new FlatCompat({
 });
 
 export default [
-  ...compat.extends(
-    "eslint:recommended",
-    "plugin:astro/recommended",
-  ),
+  ...compat.extends("eslint:recommended", "plugin:astro/recommended"),
   {
     languageOptions: {
       globals: {
@@ -85,7 +82,7 @@ export default [
     ignores: ["env.d.ts", "*/env.d.ts", ".astro/*", "node_modules/*"],
   },
 
-	  ...tailwind.configs["flat/recommended"],
+  ...tailwind.configs["flat/recommended"],
   {
     settings: {
       tailwindcss: {

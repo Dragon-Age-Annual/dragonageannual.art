@@ -4,7 +4,7 @@ import { glob } from "astro/loaders";
 import { z } from "astro/zod";
 
 const modCollection = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: "./src/content/mods/" }),
+  loader: glob({ pattern: "**/*.md", base: "./src/content/mods/" }),
   schema: ({ image }) =>
     z.object({
       order: z.number(),

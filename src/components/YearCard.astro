@@ -39,8 +39,9 @@ const donationUK = Number.isNaN(amountUKNum)
   : pounds.format(amountUKNum);
 ---
 
-
-<article class="w-prose relative min-h-full flex-col rounded-lg md:w-[360px] hover:border hover:border-pink">
+<article
+  class="w-prose hover:border-pink relative min-h-full flex-col rounded-lg hover:border md:w-[360px]"
+>
   <div
     class="bg-arcane-800 border-gold flex h-64 rounded-t-xl border-b-8 px-6 py-12"
   >
@@ -51,7 +52,7 @@ const donationUK = Number.isNaN(amountUKNum)
     />
   </div>
   <div class="flex h-64">
-    <ul class="list-style-none! pb-4 self-center ml-4!">
+    <ul class="list-style-none! ml-4! self-center pb-4">
       <li>
         <strong>Theme:</strong>
         {props.theme}

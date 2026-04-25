@@ -15,7 +15,7 @@ type myHeading = {
   </a>
   {
     heading.subheadings.length > 0 && (
-      <ul class="pl-4 list-style-none!">
+      <ul class="list-style-none! pl-4">
         {heading.subheadings.map((subheading: myHeading) => (
           <Astro.self heading={subheading} />
         ))}
