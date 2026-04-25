@@ -26,8 +26,8 @@ const pastYearsCollection = defineCollection({
       charityLink: z.url(),
       cover: image(),
       coverAlt: z.string(),
-      amountUS: z.number(),
-      amountUK: z.number(),
+      amountUS: z.union([z.string(), z.number()]),
+      amountUK: z.union([z.string(), z.number()]),
     }),
 });
 

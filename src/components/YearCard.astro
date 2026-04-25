@@ -9,8 +9,8 @@ interface Props {
   charityLink: string;
   cover: ImageMetadata;
   coverAlt: string;
-  amountUS: number;
-  amountUK: number;
+  amountUS: number | string;
+  amountUK: number | string;
 }
 
 const props = Astro.props;
@@ -25,21 +25,33 @@ const pounds = new Intl.NumberFormat("en-UK", {
   currency: "GBP",
 });
 
-const donationUS = dollars.format(props.amountUS);
-const donationUK = pounds.format(props.amountUK);
+// Convert to numbers first
+const amountUSNum = Number(props.amountUS);
+const amountUKNum = Number(props.amountUK);
+
+// Fallback logic
+const donationUS = Number.isNaN(amountUSNum)
+  ? "$ TBD"
+  : dollars.format(amountUSNum);
+
+const donationUK = Number.isNaN(amountUKNum)
+  ? "£ TBD"
+  : pounds.format(amountUKNum);
 ---
 
-<article
-  class="w-prose bg-daa-white/10 border border-gold relative min-h-full flex-col rounded-lg border-2 border-solid md:w-[360px]"
->
-  <img
-    src={props.cover.src}
-    alt={props.coverAlt}
-    class="w-prose rounded-t-lg lg:w-[360px]"
-  />
-  <h2 class="py-3 text-center !text-[1.6rem]">{props.title}</h2>
-  <div class="px-5 leading-loose">
-    <ul class="list-style-none pb-4">
+
+<article class="w-prose relative min-h-full flex-col rounded-lg md:w-[360px] hover:border hover:border-pink">
+  <div
+    class="bg-arcane-800 border-gold flex h-64 rounded-t-xl border-b-8 px-6 py-12"
+  >
+    <img
+      src={props.cover.src}
+      alt={props.coverAlt}
+      class="self-center lg:w-[360px]"
+    />
+  </div>
+  <div class="flex h-64">
+    <ul class="list-style-none! pb-4 self-center ml-4!">
       <li>
         <strong>Theme:</strong>
         {props.theme}
