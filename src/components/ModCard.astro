@@ -1,14 +1,14 @@
 ---
-import type { ImageMetadata } from "astro";
-import type { SocialLinksData } from "@fujocoded/zod-transform-socials";
 import { Icon } from "astro-icon/components";
+import type { SocialLinksData } from "@fujocoded/zod-transform-socials";
 
 interface Props {
-  order: number;
   name: string;
-  avatar: ImageMetadata;
+  avatar: string;
   roles: Array<string>;
   links: SocialLinksData;
+  mod_duties: Array<String>;
+  bio: string;
 }
 
 const props = Astro.props;
@@ -24,9 +24,10 @@ const altText: string = `${props.name}'s Avatar`;
       class="bg-teal-mid align-center row-span-3 flex h-24 w-24 justify-center self-center rounded-full"
     >
       <img
-        src={props.avatar.src}
+        src={props.avatar}
         alt={altText}
         class="h-24 w-24 self-center rounded-full"
+        loading="lazy"
       />
     </div>
     <h3 class="font-display! z-10 mb-0! p-0! leading-8!">{props.name}</h3>
@@ -41,10 +42,7 @@ const altText: string = `${props.name}'s Avatar`;
         }
       </ul>
     </div>
-    <ul
-      class:list={{ hidden: props.links.length == 0 }}
-      class="list-style-none! mt-0! flex flex-row gap-2 p-0!"
-    >
+    <ul class="list-style-none! mt-0! flex flex-row gap-2 p-0!">
       {
         props.links.map((link) => (
           <li class="w-6">
@@ -70,6 +68,6 @@ const altText: string = `${props.name}'s Avatar`;
   <div
     class="space-content border-pink scrollbar-thin scrollbar-gold shadow-arcane-800 h-[200px] overflow-y-scroll border-t px-5 pt-5 shadow-[inset_0_10px_9px_-10px]"
   >
-    <slot />
+    {props.bio}
   </div>
 </article>

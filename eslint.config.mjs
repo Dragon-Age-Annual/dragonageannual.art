@@ -4,6 +4,7 @@ import globals from "globals";
 import js from "@eslint/js";
 import parser from "astro-eslint-parser";
 import path from "node:path";
+import tailwind from "eslint-plugin-tailwindcss";
 import tsParser from "@typescript-eslint/parser";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -88,7 +89,7 @@ export default [
       tailwindcss: {
         // These are the default values but feel free to customize
         callees: ["classnames", "clsx", "ctl"],
-        config: "tailwind.config.js", // returned from `loadConfig()` utility if not provided
+        config: "/src/styles/global.css", // returned from `loadConfig()` utility if not provided
         cssFiles: [
           "**/*.css",
           "!**/node_modules",

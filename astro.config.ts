@@ -3,7 +3,6 @@ import { defineConfig, fontProviders } from "astro/config";
 import icon from "astro-icon";
 import mdx from "@astrojs/mdx";
 import metaTags from "astro-meta-tags";
-import partytown from "@astrojs/partytown";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeSlug from "rehype-slug";
 import robotsTxt from "astro-robots-txt";
@@ -80,7 +79,6 @@ export default defineConfig({
         simpleIcons: ["*"],
       },
     }),
-    partytown(),
     metaTags(),
     robotsTxt({
       policy: [
