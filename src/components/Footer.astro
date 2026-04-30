@@ -4,13 +4,13 @@ const currentYear = new Date().getFullYear();
 import Socials from "./Socials.astro";
 ---
 
-<footer class="bg-nord5 dark:bg-nord0">
-  <section class="py-8">
+<footer
+  class="bg-arcane-800/55 text-daa-white flex items-center gap-4 py-10 backdrop-blur-2xl"
+>
+  <div class="container flex flex-col justify-center gap-6">
     <Socials />
-    <div class="text-center">
-      <p>
-        &copy; {currentYear} Dragon Age Annual
-      </p>
+    <div class="w-full text-center">
+      &copy; {currentYear} Dragon Age Annual
     </div>
-  </section>
+  </div>
 </footer>

@@ -1,0 +1,130 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+@plugin "tailwind-scrollbar";
+
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-arcane-300: #776f87;
+  --color-arcane-600: #322a43;
+  --color-arcane-800: #1f192a;
+  --color-copper-deep: #c6846c;
+  --color-copper-light: #fcb9a9;
+  --color-copper-mid: #e19a86;
+  --color-daa-white: var(--color-mist-200);
+  --color-error: #bf616a;
+  --color-gold: #cea052;
+  --color-pink: #865dd8;
+  --color-purple-dark: #3b1d4f;
+  --color-purple-mid: #5a2f73;
+  --color-success: #a3be8c;
+  --color-teal-light: #9bc3c9;
+  --color-teal-mid: #74a5ac;
+}
+
+@theme inline {
+  --font-sans: var(--font-atkinson-hyperlegible);
+  --font-serif: var(--font-lexend);
+  --font-mono: var(--font-victor-mono);
+  --font-display: var(--font-daa);
+}
+
+@utility anchor {
+  @apply text-arcane-600! text-shadow-arcane-600 hover:text-pink! cursor-pointer! not-italic! no-underline! text-shadow-md;
+}
+
+@utility heading {
+  @apply font-serif font-bold;
+  background-image: linear-gradient(
+    135deg,
+    var(--color-teal-mid),
+    var(--color-teal-light)
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility list-style-none {
+  @apply ml-0 list-none pl-0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply heading!;
+}
+
+/* layout helpers */
+.main {
+  @apply mx-auto w-11/12 max-w-300 space-y-16 px-6 py-16;
+}
+
+container {
+  @apply mx-auto;
+}
+
+/* vertical rhythm */
+.section {
+  @apply mt-24;
+}
+.section-wide {
+  @apply py-24;
+}
+.section-tight {
+  @apply py-10;
+}
+
+/* typography helpers */
+.prose-daa {
+  @apply prose prose-lg text-daa-white max-w-none font-sans! leading-relaxed;
+}
+.prose-daa h2 {
+  @apply my-4;
+}
+.prose-daa p {
+  @apply my-6;
+}
+.prose-daa b,
+.prose-daa strong {
+  @apply text-gold font-bold;
+}
+.prose-daa a {
+  @apply text-teal-mid hover:text-pink no-underline hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3;
+}
+
+/* grid helper */
+.grid-daa {
+  @apply grid gap-12 md:grid-cols-2;
+}
+
+.card-pad {
+  @apply p-6;
+}
+
+/* forms */
+.form-input {
+  @apply border-gold focus:border-pink placeholder-daa-white/70 mt-0 mb-3 block w-full border-0 border-b-2 bg-transparent px-0.5 placeholder:italic focus:ring-0 md:max-w-150;
+}
+
+.button-primary {
+  @apply from-purple-dark to-purple-mid text-daa-white relative inline-block cursor-pointer rounded bg-linear-135 px-4 py-2 font-bold;
+}
+
+/* table of contents */
+.toc {
+  @apply list-style-none;
+}
+
+.toc li {
+  @apply m-0!;
+}
+
+.toc a {
+  @apply text-daa-white hover:text-pink font-mono text-sm/tight no-underline hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3;
+}

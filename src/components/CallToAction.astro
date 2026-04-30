@@ -3,12 +3,12 @@
 ---
 
 <div
-  class="call-to-action relative my-10 flex flex-col items-center rounded-xl p-2 shadow-nord3 drop-shadow-lg dark:shadow-nord0"
+  class="bg-gold relative flex flex-col items-center rounded-xl p-2 drop-shadow-lg"
 >
   <div
-    class="flex h-full w-full flex-col items-center gap-5 rounded-xl bg-nord6 p-12 dark:bg-nord1"
+    class="prose-daa bg-arcane-800 flex h-full w-full flex-col items-center gap-5 rounded-xl p-12"
   >
-    <h2 class="text-center font-display">Sign Up for Our Newsletter</h2>
+    <h2 class="font-display! text-center">Sign Up for Our Newsletter</h2>
 
     <form
       id="notifuse-form"
@@ -16,7 +16,7 @@
       novalidate
     >
       <!-- Name (optional) -->
-      <label for="first-name" class="font-bold uppercase tracking-widest">
+      <label for="first-name" class="font-bold tracking-widest uppercase">
         Name
       </label>
       <input
@@ -24,11 +24,11 @@
         id="first-name"
         name="first_name"
         placeholder="Andraste"
-        class="border-dark border-fujo-blue m-3 h-12 max-w-[50%] self-center rounded-full border-2 bg-nord6 p-3 text-nord0 placeholder:italic sm:max-2xl:w-auto"
+        class="form-input"
       />
 
       <!-- Email (required) -->
-      <label for="email" class="font-bold uppercase tracking-widest">
+      <label for="email" class="font-bold tracking-widest uppercase">
         Email
       </label>
       <input
@@ -37,7 +37,7 @@
         name="email"
         required
         placeholder="mods@dragonageannual.art"
-        class="border-dark border-fujo-blue m-3 h-12 max-w-[50%] self-center rounded-full border-2 bg-nord6 p-3 text-nord0 placeholder:italic sm:max-2xl:w-auto"
+        class="form-input"
       />
 
       <!-- Honeypot bot trap -->
@@ -46,7 +46,7 @@
       </div>
 
       <!-- Submit button -->
-      <button type="submit" id="submit-btn" class="button md:mt-0">
+      <button type="submit" id="submit-btn" class="button button-primary mt-4">
         Subscribe
       </button>
 
@@ -55,16 +55,6 @@
     </form>
   </div>
 </div>
-
-<style>
-  .call-to-action {
-    background-image: linear-gradient(
-      40deg,
-      var(--primary-100),
-      var(--secondary-200)
-    );
-  }
-</style>
 
 <script>
   const form = document.getElementById("notifuse-form") as HTMLFormElement;
@@ -94,7 +84,7 @@
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailPattern.test(email)) {
       statusBox.textContent = "Please enter a valid email address.";
-      statusBox.className = "text-nord11";
+      statusBox.className = "text-error";
       return;
     }
 
@@ -127,14 +117,14 @@
       }
 
       statusBox.textContent = "Success! Please check your inbox.";
-      statusBox.className = "text-nord14";
+      statusBox.className = "text-success";
       form.reset();
     } catch (err) {
       statusBox.textContent =
         typeof err === "object" && err !== null && "message" in err
           ? (err as { message: string }).message
           : "An unexpected error occurred.";
-      statusBox.className = "text-nord11";
+      statusBox.className = "text-error";
     } finally {
       submitBtn.disabled = false;
       submitBtn.textContent = "Subscribe";

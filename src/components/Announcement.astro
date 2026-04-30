@@ -3,25 +3,15 @@ import { Icon } from "astro-icon/components";
 ---
 
 <div
-  class="left-p fixed top-0 z-50 h-9 w-full bg-nord15 p-1 text-center text-nord0"
+  class="bg-arcane-300 text-arcane-800 prose-daa fixed top-0 z-50 h-10 w-full p-1 text-center"
 >
-  <Icon name="noto:crystal-ball" class="inline" /> <div class="hidden md:inline text-white italic normal">Some futures are chosen —
-  claim yours before the tarot is read.</div> <a href="https://shop.dragonageannual.art"
-    class="font-bold !text-[#322A43]">Pre-order Now<Icon name="tabler:chevrons-right" class="inline text-[#322A43]" /></a
+  <Icon name="noto:ballot-box-with-ballot" class="inline" />
+  <div class="normal hidden md:inline">
+    Tell us what you want to see in the 2027 Annual!
+  </div>
+  <a
+    href="https://forms.dragonageannual.art/2027Interest"
+    class="text-gold! hover:text-daa-white!">Interest Check Ends: May 1, 2026</a
   >
+  <Icon name="noto:ballot-box-with-ballot" class="inline" />
 </div>
-
-<style>
-  a:link,
-  a:any-link,
-  a:visited {
-    /* color: var(--neutral-900) !important; */
-    text-decoration: none;
-  }
-
-  a:hover,
-  a:focus {
-    color: var(--neutral-100) !important;
-    text-decoration: underline wavy !important;
-  }
-</style>

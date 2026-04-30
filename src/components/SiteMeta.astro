@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 
 const { subtitle, description, url, author } = Astro.props;
 
@@ -41,4 +41,4 @@ const image = "/socialimage.png";
 <!-- page title -->
 <title>{title} {subtitle}</title>
 
-<ViewTransitions />
+<ClientRouter />

@@ -4,7 +4,7 @@ name: inquisimer
 avatar: "./avatars/inquisimer.png"
 roles:
   - writer
-  - organization
+  - admin
   - social media
 links:
   - https://archiveofourown.org/users/inquisimer

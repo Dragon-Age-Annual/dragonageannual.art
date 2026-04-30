@@ -1,10 +1,10 @@
 ---
-import "@astrojs/tailwind/base.css";
-import "../assets/scss/globals.scss";
+import "../styles/global.css";
 import SiteMeta from "../components/SiteMeta.astro";
-import Header from "../components/Header.astro";
+import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 import Announcement from "../components/Announcement.astro";
+import { Font } from "astro:assets";
 
 const {
   title,
@@ -17,7 +17,7 @@ const {
 <html
   lang="en"
   dir="ltr"
-  class="scrollbar-thin scrollbar-track-transparent scrollbar-thumb-nord9"
+  class="scrollbar-track-daa-white/10 scrollbar-thin scrollbar-gold"
 >
   <head>
     <meta charset="utf-8" />
@@ -27,6 +27,7 @@ const {
     <!-- favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
+    <!-- Open Graph -->
     <SiteMeta
       subtitle={title}
       description={description}
@@ -36,43 +37,24 @@ const {
       image={image}
       author={author}
     />
+    <!-- fonts -->
+    <Font cssVariable="--font-atkinson-hyperlegible" preload />
+    <Font cssVariable="--font-lexend" preload />
+    <Font cssVariable="--font-daa" preload />
+    <Font cssVariable="--font-victor-mono" preload />
   </head>
-  <body>
+  <body
+    class="bg-arcane-300 dark:bg-arcane-600 scrollbar-track-daa-white/10 scrollbar-thin scrollbar-gold"
+  >
     <Announcement />
-    <Header />
-    <main id="main-content" transition:animate="fade">
+    <Navigation />
+    <main id="main-content" class="main" transition:animate="fade">
       <slot />
     </main>
+
     <Footer />
-    <style lang="scss" is:global>
-      // theme settings
-      :root {
-        --radius-small: 3px;
-        --radius-large: 6px;
-        --gap-default: 2rem;
-        --font-measure: 70ch;
-        --font-family-default: "Atkinson Hyperlegible", sans-serif;
-        --font-family-special: "Lexend Variable", sans-serif;
-        // light theme
-        --font-color: var(--neutral-900);
-        --action-color: var(--primary-300);
-        --action-color-state: var(--primary-500);
-        --background: var(--neutral-100);
-        --primary-background: var(--primary-100);
-        --neutral-background: var(--neutral-200);
-      }
-
-      // dark color scheme overrides
-      .darkmode {
-        --font-color: var(--neutral-100);
-        --action-color: var(--primary-300);
-        --action-color-state: var(--primary-500);
-        --background: var(--neutral-900);
-        --primary-background: var(--primary-500);
-        --neutral-background: var(--neutral-900);
-      }
-
-      // sticky footer on low content pages
+    <style is:global>
+      /* sticky footer on low content pages */
       html,
       body {
         height: 100%;
@@ -80,11 +62,6 @@ const {
       }
 
       body {
-        display: flex;
-        flex-direction: column;
-        color: var(--font-color);
-        background-color: var(--background);
-
         main {
           flex: 1 0 auto;
         }
@@ -108,31 +85,6 @@ const {
           svg path {
             stroke: #eceff4;
           }
-        }
-      }
-
-      a.anchor {
-        background-color: var(--background);
-        text-decoration: none !important;
-        background-image: none;
-
-        &:visited {
-          background-color: var(--background);
-          text-decoration: none !important;
-          background-image: none;
-        }
-
-        &:hover,
-        &:focus {
-          background: var(--secondary-100);
-          background: linear-gradient(
-            45deg,
-            var(--secondary-100) 0%,
-            var(--primary-100) 50%
-          );
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
         }
       }
     </style>

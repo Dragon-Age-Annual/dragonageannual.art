@@ -6,8 +6,8 @@ const { frontmatter, headings } = Astro.props;
 ---
 
 <DefaultLayout title={frontmatter.title} description={frontmatter.description}>
-  <div class="container grid auto-cols-auto grid-flow-col gap-7">
-    <div class="space-content my-12">
+  <div class="section grid auto-cols-auto grid-flow-col gap-7">
+    <div class="prose-daa space-content my-12">
       <h1>{frontmatter.title}</h1>
       <slot />
     </div>
