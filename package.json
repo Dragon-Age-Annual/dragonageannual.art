@@ -9,12 +9,12 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "postinstall": "patch-package"
+    "preview": "astro preview"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",
     "@eslint/js": "^10.0.1",
+    "@fujocoded/zod-transform-socials": "github:Dragon-Age-Annual/zod-astro-fix#main",
     "@tailwindcss/forms": "^0.5.11",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.2.4",
@@ -25,7 +25,6 @@
     "eslint-plugin-astro": "^1.7.0",
     "eslint-plugin-tailwindcss": "^4.0.0-alpha.2",
     "globals": "^17.5.0",
-    "patch-package": "^8.0.1",
     "prettier": "^3.8.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.8.0",
@@ -39,7 +38,6 @@
     "@astrojs/check": "^0.9.9",
     "@astrojs/mdx": "^5.0.4",
     "@astrojs/sitemap": "^3.7.2",
-    "@fujocoded/zod-transform-socials": "^0.0.14",
     "@iconify-json/lucide": "^1.2.105",
     "@iconify-json/noto": "^1.2.7",
     "@iconify-json/simple-icons": "^1.2.80",
