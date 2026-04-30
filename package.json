@@ -1,6 +1,6 @@
 {
   "name": "dragonageannual",
-  "description": "Dragon Age Annual: fan-made charity calendar & merch. Seasonal pre-orders champion causes, showcasing Thedas in art & fiction",
+  "description": "Dragon Age Annual: fan-made charity calendar & merchandise. Seasonal pre-orders champion causes, showcasing Thedas in art & fiction",
   "type": "module",
   "overrides": {
     "vite": "^7"

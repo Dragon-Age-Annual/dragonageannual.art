@@ -25,22 +25,22 @@ for a 2022 calendar (confusing we know) and has continued annually since!
 
 One day in 2021 some friends were having a conversation:
 
-  <div class="w-prose mx-auto flex flex-col gap-3 md:max-w-3xl">
-    <div class="flex items-start gap-2.5">
+  <div class="mx-auto flex flex-col gap-5 md:max-w-3xl">
+    <div class="flex items-start gap-5">
       <div
-        class="border-gold bg-daa-white/10 flex w-full max-w-[320px] flex-col rounded-e-xl rounded-es-xl border p-4 leading-1.5 backdrop-blur-2xl"
+        class="border-gold bg-daa-white/10 flex w-full max-w-[320px] flex-col rounded-e-xl rounded-es-xl border px-4"
       >
-        <p class="prose-daa py-1">
+        <p class="prose-daa">
           Imagine if there was a pin-up calendar of Thedas' hottest villains!
         </p>
       </div>
     </div>
 
-    <div class="flex place-content-end gap-2.5">
+    <div class="flex place-content-end gap-5">
       <div
-        class="border-pink bg-daa-white/10 flex w-full max-w-[320px] flex-col rounded-s-xl rounded-br-xl border p-4 leading-1.5 backdrop-blur-2xl"
+        class="border-pink bg-daa-white/10 flex w-full max-w-[320px] flex-col rounded-s-xl rounded-br-xl border px-4 text-right"
       >
-        <p class="prose-daa py-1 text-right">
+        <p class="prose-daa">
           Ha ha, yeah who would be crazy enough to do that right…?
         </p>
       </div>
@@ -57,6 +57,7 @@ each of you in the highest quality we can!
 
 ## Meet the Mods
 
+<section class="gap-x-3 md:grid md:grid-cols-2">
 {daaMods.map((mod) => (
 
   <ModCard
@@ -68,3 +69,4 @@ each of you in the highest quality we can!
     bio={mod.data.bio}
   />
 ))}
+</section>

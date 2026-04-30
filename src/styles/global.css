@@ -8,7 +8,7 @@
 @theme {
   --color-arcane-300: #776f87;
   --color-arcane-600: #322a43;
-  --color-arcane-800: #>;
+  --color-arcane-800: #1f192a;
   --color-copper-deep: #c6846c;
   --color-copper-light: #fcb9a9;
   --color-copper-mid: #e19a86;
@@ -62,7 +62,7 @@ h6 {
 
 /* layout helpers */
 .main {
-  @apply mx-auto w-11/12 max-w-[1200px] space-y-16 px-6 py-16;
+  @apply mx-auto w-11/12 max-w-300 space-y-16 px-6 py-16;
 }
 
 container {
@@ -109,7 +109,7 @@ container {
 
 /* forms */
 .form-input {
-  @apply border-gold focus:border-pink placeholder-daa-white/70 mt-0 mb-3 block w-full border-0 border-b-2 bg-transparent px-0.5 placeholder:italic focus:ring-0 md:max-w-[600px];
+  @apply border-gold focus:border-pink placeholder-daa-white/70 mt-0 mb-3 block w-full border-0 border-b-2 bg-transparent px-0.5 placeholder:italic focus:ring-0 md:max-w-150;
 }
 
 .button-primary {
