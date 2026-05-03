@@ -1,0 +1,89 @@
+---
+import config from "../config.json";
+import { getCollection } from "astro:content";
+
+// Load all past years
+const pastYears = await getCollection("pastYears");
+
+// Total number of years
+const yearsRunning = pastYears.length;
+
+// Sum all EUR donations (skip TBD or missing)
+const euros = new Intl.NumberFormat("en-UK", {
+  style: "currency",
+  currency: "EUR",
+});
+
+const total = pastYears
+  .map((y) => y.data.amountEU)
+  .filter((n) => typeof n === "number")
+  .reduce((sum, n) => sum + n, 0);
+
+const totalDonations = euros.format(total);
+---
+
+<div id="info" class="prose lg:block">
+  <div
+    class="border-gold relative flex flex-col items-center rounded-xl border shadow-neutral-600 drop-shadow-lg"
+  >
+    <div
+      class="prose prose-daa space-content mt-0 h-full w-full rounded-xl px-6 pt-0 pb-8"
+    >
+      <h2 class="mb-2! text-center">Info</h2>
+      <h3 class="border-purple-mid mb-1! border-b text-left">Totals</h3>
+      <ul class="list-style-none">
+        <li>
+          <strong class="uppercase">Years:</strong>
+          {yearsRunning}
+        </li>
+        <li>
+          <strong class="uppercase">Raised:</strong>
+          {totalDonations}
+        </li>
+      </ul>
+      <h3 class="border-purple-mid mb-0! border-b text-left">
+        {config.year} Details
+      </h3>
+      {
+        !config.title && !config.theme && !config.charityName && (
+          <p class="prose-daa text-center opacity-70">
+            Stay tuned for updates on the next production cycle!
+          </p>
+        )
+      }
+      <ul class="list-style-none">
+        {
+          config.title && (
+            <li>
+              <strong class="uppercase">Title:</strong> {config.title}
+            </li>
+          )
+        }
+        {
+          config.theme && (
+            <li>
+              <strong class="uppercase">Theme:</strong> {config.theme}
+            </li>
+          )
+        }
+
+        {
+          config.charityName && (
+            <li>
+              <strong class="uppercase">Charity:</strong>
+              <a href={config.charityLink}>{config.charityName}</a>
+            </li>
+          )
+        }
+      </ul>
+    </div>
+  </div>
+</div>
+
+<style>
+  @reference "tailwindcss";
+  ul,
+  li {
+    @apply m-0! list-none p-0!;
+  }
+</style>

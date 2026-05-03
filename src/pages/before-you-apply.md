@@ -15,6 +15,7 @@ basis.** There is no monetary or physical product compensation for contributors.
 Contributors are entitled to a free copy of the pdf of the calendar. In past
 years, we have also been pleased to be able to allow contributors to purchase
 **one** physical copy of the calendar or merch bundle (their choice) at cost.
+
 Please note: since DAA's primary goal is to raise money for charity, we cannot
 guarantee that an "at cost" copy will be available for purchase and cannot
 extend this offer to more than one copy. **All** profits will be donated to the
@@ -29,7 +30,7 @@ out to us via social media or email dragonageannual@gmail.com.
 ## Code of Conduct
 
 1. DAA has a _strict_ anti-harassment stance including harassment of other fans
-   and BioWare personnel. As part of our application process, we do review
+   and BioWare personnel. As part of our application process, we review
    applicants' social media to ensure alignment with this core value. Harassment
    may include, but is not limited to, any of the following: dogpiling, making
    intentionally inflammatory posts/hot takes, suicide-baiting, participating in
@@ -88,20 +89,21 @@ fit for you!
 
 - We select the cover artist from among other artist applications. The cover
   artist will be expected to create **two** landscape-oriented, A4-sized pieces
-  (one for the front and one for the back) fitting the theme.
+  (one for the front and one for the back) fitting the theme or one large piece
+  spanning both covers.
 
 - _Merch:_ Guidelines for merch will vary based on the items being produced. We
   are very happy to consider your creative requests for items!
 
-- _Merch (Zine):_ Artists are expected to produce one portrait-oriented A6-sized
-  piece or one short (2-3 pages) comic, adhering to guidelines and theme.
-  Depending on space in the zine, artists may be allowed to produce more than
-  one piece, if they so choose.
+- _Zine:_ Artists are expected to produce one portrait-oriented A5-sized piece
+  or one short (2-3 pages) comic, adhering to guidelines and theme. Depending on
+  space in the zine, artists may be allowed to produce more than one piece, if
+  they so choose.
 
-- **Artists may apply for both the Wall Calendar and Merch roles.** If an Artist
-  is selected for both roles, they are encouraged to work with moderators if
-  they find they will need flexibility in meeting deadlines for all their
-  pieces.
+- **Artists may apply for Wall Calendar, Zine, and/or Merch roles.** If an
+  Artist is selected for multiple roles, they are encouraged to work with
+  moderators if they find they will need flexibility in meeting deadlines for
+  all their pieces.
 
 - Detailed concepts will be reviewed and approved by the mod team during the
   earliest stages of production. Please do not begin earnest work on your piece
@@ -112,41 +114,43 @@ fit for you!
 - _Pieces:_
   - _Calendar Writers_ will produce two works related to two different art
     pieces. Pieces will vary from approximately 200 words to approximately 600
-    words depending on calendar space and layout.
+    words **depending on calendar space and layout**.
 
-  - _Merch (Zine) Writers_ will produce one work based on the Dragon Age Tarot
-    theme. The piece will vary from approximately 1000 words to 2000 words
-    depending on zine space and layout.
+  - _Zine Writers_ will produce one work based on the theme. The piece will vary
+    from approximately 1000 words to 2000 words depending on zine space. Zine
+    writers may also voluntarily write for comics produced by Zine Artists.
 
 - _Editing:_ In addition to receiving feedback from moderators, writers will
-  also receive feedback from betas. Note that this does NOT mean that all
-  suggestions from betas MUST be followed, but writers should be open to
-  considering them seriously.
+  receive feedback from betas. This does NOT mean that all suggestions from
+  betas MUST be followed, but writers should be open to considering them
+  seriously.
 
-- Due to space constraints, writers will also need to be flexible concerning
-  their pieces' length and formatting to ensure proper printing.
+- Due to space constraints, writers **must** flexible concerning their pieces'
+  length and formatting to ensure proper printing.
 
 - The matching of writers to artists will take place after the artists' concepts
   have been approved during the earliest stages of production.
 
-- **Writers may apply for both the Wall Calendar and Merch roles.** If a Writer
+- **Writers may apply for both the Wall Calendar and Zine roles.** If a Writer
   is selected for both roles, they are encouraged to work with moderators if
   they find they will need flexibility in meeting deadlines for all their
   pieces.
 
-### Support Roles
+### Production Support Roles
 
 - _Betas:_ Review and verify accuracy of all copy produced for the Annual. This
   can include but is not limited to writer’s stories, cover copy, website text,
-  contributor spotlights, and credits pages.
+  contributor spotlights, and credits pages. We also ask that Betas be available
+  at peak production times to review final production copies.
 
 - **Prospective Writers may also apply as Betas.**
 
 - _Graphic Designers:_ Create graphics for use in advertising on social media,
   including but not limited to announcement banners, contributor spotlight &
   preview templates, and product preview cards. Graphic designers will also
-  assist the production team with typesetting for the calendar and zine and may
-  be asked to create text-based merchandise items, depending on interest.
+  assist the production team with typesetting for the calendar and zine, prep
+  merch for final print, and may be asked to create text-based merchandise
+  items, depending on interest.
 
 ## Portfolio Reviews
 
@@ -175,8 +179,7 @@ please let us know in your application!
   various skills and styles you are capable of and which presents your art at
   its best.
 
-- For your portfolios, we do not have a preference for style. For the 2026
-  theme, we are asking that artists emulate the Dragon Age tarot or mural style.
+- For your portfolios, we do not have a preference for style.
 
 - Scoring will be based on overall composition, color choices, strong
   backgrounds, and technique.
@@ -204,10 +207,15 @@ please let us know in your application!
   Age characters and with unique forms (for example, an in universe codex, a
   character piece, and a descriptive piece).
 
-### Support Roles (Betas & Graphics)
+### Production Support Roles
 
 - Please provide a few examples of your work whether completed professionally or
   in a fandom setting.
+  - **Betas:** Samples may include—pieces you've written, pieces you've beta'd,
+    compilations of screenshots of comments you've left while doing beta work.
+  - **Graphics:** Samples may include prior graphics work for school, work, or
+    fandom. Graphic art may also be used as samples. Prior experience with
+    professional printing/production is helpful!
 
 - It is also helpful if you’re able to describe a little about your practical
   experience.
