@@ -9,7 +9,8 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "convertDonation": "node src/utils/convertCurrency.js"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",
@@ -25,6 +26,7 @@
     "eslint-plugin-astro": "^1.7.0",
     "eslint-plugin-tailwindcss": "^4.0.0-alpha.2",
     "globals": "^17.5.0",
+    "gray-matter": "^4.0.3",
     "prettier": "^3.8.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.8.0",
@@ -47,6 +49,7 @@
     "astro-navbar": "^2.4.0",
     "astro-robots-txt": "^1.0.0",
     "csv-parse": "^6.2.1",
+    "dotenv": "^17.4.2",
     "rehype-autolink-headings": "^7.1.0",
     "rehype-slug": "^6.0.0"
   }

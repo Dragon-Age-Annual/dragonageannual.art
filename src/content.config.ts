@@ -4,6 +4,7 @@ import { defineCollection } from "astro:content";
 import { glob } from "astro/loaders";
 import { parse } from "csv-parse/sync";
 import { z } from "astro/zod";
+
 interface RowData {
   Name: string;
   Events: string;
@@ -87,7 +88,9 @@ const pastYearsCollection = defineCollection({
       cover: image(),
       coverAlt: z.string(),
       amountUS: z.union([z.string(), z.number()]),
-      amountUK: z.union([z.string(), z.number()]),
+      amountEU: z.union([z.string(), z.number()]),
+      exchangeRate: z.number().positive().optional(),
+      exchangeDate: z.string().optional(),
     }),
 });
 

@@ -18,6 +18,7 @@
   --color-pink: #865dd8;
   --color-purple-dark: #3b1d4f;
   --color-purple-mid: #5a2f73;
+  --color-purple-nordic: #b28dad;
   --color-success: #a3be8c;
   --color-teal-light: #9bc3c9;
   --color-teal-mid: #74a5ac;
@@ -93,6 +94,11 @@ container {
 .prose-daa b,
 .prose-daa strong {
   @apply text-gold font-bold;
+}
+
+.prose-daa em,
+.prose-daa i {
+  @apply text-purple-nordic italic;
 }
 .prose-daa a {
   @apply text-teal-mid hover:text-pink no-underline hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3;

@@ -10,7 +10,7 @@ interface Props {
   cover: ImageMetadata;
   coverAlt: string;
   amountUS: number | string;
-  amountUK: number | string;
+  amountEU: number | string;
 }
 
 const props = Astro.props;
@@ -20,27 +20,27 @@ const dollars = new Intl.NumberFormat("en-US", {
   currency: "USD",
 });
 
-const pounds = new Intl.NumberFormat("en-UK", {
+const euros = new Intl.NumberFormat("en-UK", {
   style: "currency",
-  currency: "GBP",
+  currency: "EUR",
 });
 
 // Convert to numbers first
 const amountUSNum = Number(props.amountUS);
-const amountUKNum = Number(props.amountUK);
+const amountEUNum = Number(props.amountEU);
 
 // Fallback logic
 const donationUS = Number.isNaN(amountUSNum)
   ? "$ TBD"
   : dollars.format(amountUSNum);
 
-const donationUK = Number.isNaN(amountUKNum)
-  ? "£ TBD"
-  : pounds.format(amountUKNum);
+const donationEU = Number.isNaN(amountEUNum)
+  ? "€ TBD"
+  : euros.format(amountEUNum);
 ---
 
 <article
-  class="w-prose hover:border-pink relative min-h-full flex-col rounded-lg hover:border md:w-[360px]"
+  class="w-prose hover:border-pink relative min-h-full flex-col rounded-lg hover:border md:w-90"
 >
   <div
     class="bg-arcane-800 border-gold flex h-64 rounded-t-xl border-b-8 px-6 py-12"
@@ -48,7 +48,7 @@ const donationUK = Number.isNaN(amountUKNum)
     <img
       src={props.cover.src}
       alt={props.coverAlt}
-      class="self-center lg:w-[360px]"
+      class="self-center sm:w-90"
     />
   </div>
   <div class="flex h-64">
@@ -63,7 +63,7 @@ const donationUK = Number.isNaN(amountUKNum)
       </li>
       <li>
         <strong>Donation:</strong>
-        {donationUS} / {donationUK}
+        {donationUS} / {donationEU}
       </li>
     </ul>
   </div>

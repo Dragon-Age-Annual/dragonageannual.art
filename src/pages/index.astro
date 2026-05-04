@@ -2,10 +2,10 @@
 import DefaultLayout from "../layouts/DefaultLayout.astro";
 import CallToAction from "../components/CallToAction.astro";
 import About from "../components/About.astro";
-import ProjectStats from "../components/ProjectStats.astro";
 import { Image } from "astro:assets";
 import banner from "../assets/img/banner.png";
-import { Icon } from "astro-icon/components";
+import ProjectInfo from "../components/ProjectInfo.astro";
+import config from "../config.json";
 ---
 
 <DefaultLayout
@@ -22,62 +22,56 @@ import { Icon } from "astro-icon/components";
           alt="Dragon Age Annual"
           class="mx-auto w-11/12 md:w-200"
         />
-        <h2>DAA is back!</h2>
+        <h2>Themes and charities and apps... oh my!</h2>
 
         <p>
-          Dragon Age Annual is back for our sixth year! We're excited to
-          celebrate this beloved franchise with our fellow fans, new and old,
-          and we want to hear from YOU.
+          Dragon Age Annual is back for our sixth year, and we're excited to
+          share another installment of DAA with our fellow fans, new and old!
         </p>
 
         <p>
-          Help us shape the 2027 production by completing the interest check
-          now. Let us know what charities you're interested in supporting, what
-          themes you'd like to see, which merchandise items you prefer, and
-          other details that will make DAA 2027 something you'll love.
+          Based on the responses to our interest check, DAA {config.year} will be
+          raising money for <a href={config.charityLink}>{config.charityName}</a
+          > and the project theme will be {config.theme}. From cities to
+          fortresses to your companions' favorite watering hole, our calendar,
+          zine, and merchandise pack will celebrate <em>Th</em>e <em>D</em>ragon <em
+            >A</em
+          >ge <em>S</em>etting itself, along with the characters that embody it.
+        </p>
+
+        <h3 class="text-center">Contributor applications are open now!</h3>
+
+        <p>
+          We are looking for a team of artists, writers, beta readers, and
+          graphic designers to help produce DAA {config.year}. If you're a
+          Dragon Age fan creator interested in contributing to a fun and
+          rewarding project, check out our contributor guidelines and apply now!
+          Slots are open for cover, page, and comic artists, short & long form
+          writers, merchandise artists, and production support.
         </p>
 
         <p class="text-center">
-          <Icon
-            name="noto:backhand-index-pointing-right"
-            class="inline align-text-top"
-          />
+          <span class="font-display text-pink text-xl"
+            >Applications Close EOD Sunday, May 17th, Anywhere on Earth!</span
+          ><br />
           <a
-            href="https://forms.dragonageannual.art/2027interest"
-            class="text-2xl font-bold">2027 Interest Check</a
+            href="https://www.timeanddate.com/time/zones/aoe"
+            class="text-[0.9em]">See when that is in your timezone here.</a
           >
-          <Icon
-            name="noto:backhand-index-pointing-left"
-            class="inline align-text-top"
-          /><br />
-          <strong>Complete by April 30th!</strong>
-        </p>
-
-        <p>
-          Contributor applications will open after the interest check. If you're
-          interested in joining our creative team as an artist, writer, or beta,
-          follow us across social media or sign up for our newsletter below to
-          be notified when applications open.
-        </p>
-
-        <p>
-          Thank you, as always, to our supporters — whether you've worked on or
-          bought the Annual in past years, we couldn't keep this project going
-          without you. Here's to another year of all things Dragon Age!
         </p>
       </div>
 
       <!-- Sidebar Column -->
       <aside class="flex flex-col justify-center gap-y-5">
         <About />
-        <!-- <ProjectStats /> -->
+        <ProjectInfo />
       </aside>
     </div>
-  </section>
 
-  <!-- SECTION: Newsletter CTA -->
-  <a name="newsletter"></a>
-  <section id="newsletter" class="section mt-8! mb-4">
-    <CallToAction />
+    <!-- SECTION: Newsletter CTA -->
+    <a name="newsletter"></a>
+    <section id="newsletter" class="section mt-8! mb-4">
+      <CallToAction />
+    </section>
   </section>
 </DefaultLayout>
