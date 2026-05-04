@@ -12,14 +12,15 @@ the time to read the information below carefully before you apply.
 
 **DAA is a not-for-profit project and all contributions are done on a voluntary
 basis.** There is no monetary or physical product compensation for contributors.
-Contributors are entitled to a free copy of the pdf of the calendar. In past
-years, we have also been pleased to be able to allow contributors to purchase
-**one** physical copy of the calendar or merch bundle (their choice) at cost.
+Contributors are entitled to a free copy of the pdf of the calendar and zine(s).
+In past years, we have also been pleased to be able to allow contributors to
+purchase **one** physical copy of the calendar or merch bundle (their choice) at
+cost.
 
-Please note: since DAA's primary goal is to raise money for charity, we cannot
-guarantee that an "at cost" copy will be available for purchase and cannot
-extend this offer to more than one copy. **All** profits will be donated to the
-chosen charity for the year.
+**Please note:** since DAA's primary goal is to raise money for charity, we
+cannot guarantee that an "at cost" copy will be available for purchase and
+cannot extend this offer to more than one copy. **All** profits will be donated
+to the chosen charity for the year.
 
 **We do not accept any applications of AI-generated works or where others’
 creations have been traced or used as "bases".** All works should be your own.
@@ -86,22 +87,27 @@ fit for you!
 
 - _Wall Calendar:_ Artists are expected to produce one landscape-oriented,
   A4-sized piece adhering to guidelines and theme.
-
-- We select the cover artist from among other artist applications. The cover
-  artist will be expected to create **two** landscape-oriented, A4-sized pieces
-  (one for the front and one for the back) fitting the theme or one large piece
-  spanning both covers.
+  - We select the calendar cover artist from among other artist applications.
+    The cover artist will be expected to create **two** landscape-oriented,
+    A4-sized pieces (one for the front and one for the back) fitting the theme
+    or one large piece spanning both covers.
 
 - _Merch:_ Guidelines for merch will vary based on the items being produced. We
   are very happy to consider your creative requests for items!
 
 - _Zine:_ Artists are expected to produce one portrait-oriented A5-sized piece
   or one short (2-3 pages) comic, adhering to guidelines and theme. Depending on
-  space in the zine, artists may be allowed to produce more than one piece, if
-  they so choose.
+  space in the zine(s), artists may be allowed to produce more than one piece,
+  if they so choose.
+  - We select zine cover artists from among other artist applications. The
+    physical cover artist will be expected to create two portrait-oriented,
+    A5-sized pieces (one for the front and one for the back) fitting the theme,
+    or one large piece spanning both covers. The digital cover artist will be
+    expected to create at least one portrait-oriented, A5-sized piece that fits
+    the theme for the front cover.
 
-- **Artists may apply for Wall Calendar, Zine, and/or Merch roles.** If an
-  Artist is selected for multiple roles, they are encouraged to work with
+- **Artists may apply for wall calendar, zine(s), and/or merch roles.** If an
+  artist is selected for multiple roles, they are encouraged to work with
   moderators if they find they will need flexibility in meeting deadlines for
   all their pieces.
 
@@ -125,21 +131,19 @@ fit for you!
   betas MUST be followed, but writers should be open to considering them
   seriously.
 
-- Due to space constraints, writers **must** flexible concerning their pieces'
-  length and formatting to ensure proper printing.
+- Due to space constraints, writers **must** be flexible concerning their
+  pieces' length and formatting to ensure proper printing.
 
-- The matching of writers to artists will take place after the artists' concepts
-  have been approved during the earliest stages of production.
+- The matching of calendar writers to artists will take place after the artists'
+  concepts have been approved during the earliest stages of production.
 
-- **Writers may apply for both the Wall Calendar and Zine roles.** If a Writer
-  is selected for both roles, they are encouraged to work with moderators if
-  they find they will need flexibility in meeting deadlines for all their
-  pieces.
+- **Writers may apply for both the wall calendar and zine(s) roles.** However,
+  applicants will only be selected for one role.
 
 ### Production Support Roles
 
 - _Betas:_ Review and verify accuracy of all copy produced for the Annual. This
-  can include but is not limited to writer’s stories, cover copy, website text,
+  can include but is not limited to: writer’s stories, cover copy, website text,
   contributor spotlights, and credits pages. We also ask that Betas be available
   at peak production times to review final production copies.
 
@@ -148,7 +152,7 @@ fit for you!
 - _Graphic Designers:_ Create graphics for use in advertising on social media,
   including but not limited to announcement banners, contributor spotlight &
   preview templates, and product preview cards. Graphic designers will also
-  assist the production team with typesetting for the calendar and zine, prep
+  assist the production team with typesetting for the calendar and zine(s), prep
   merch for final print, and may be asked to create text-based merchandise
   items, depending on interest.
 
@@ -197,9 +201,12 @@ please let us know in your application!
 - Please provide a sampling of your work (minimum 3) that shows the various
   skills and styles you are capable of and presents your writing at its best.
 
-- We do not have a preference for style. However, keep in mind that writing
+- WWe do not have a preference for style. However, keep in mind that writing
   flash fic with tight word counts is a different skill set than writing long
-  fic. The more samples you have of 700 word or less writing, the better!
+  fic. For calendar writers, he more samples you have of 700 word or less
+  writing, the better! Zine writer samples should be between 1000 - 2000 words.
+  If you have mostly written fic longer than these caps, you are welcome to
+  submit excerpts from longer pieces.
 
 - We judge on grammar, technique, and characterization. We cannot guarantee all
   three mods will be able to judge characterization for non-Dragon Age
