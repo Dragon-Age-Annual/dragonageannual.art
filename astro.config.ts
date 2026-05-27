@@ -9,10 +9,13 @@ import robotsTxt from "astro-robots-txt";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 
+import netlify from "@astrojs/netlify";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://www.dragonageannual.art",
   compressHTML: true,
+
   fonts: [
     {
       provider: fontProviders.fontsource(),
@@ -61,6 +64,7 @@ export default defineConfig({
       },
     },
   ],
+
   integrations: [
     mdx(),
     icon({
@@ -112,6 +116,7 @@ export default defineConfig({
     }),
     sitemap(),
   ],
+
   markdown: {
     remarkPlugins: [],
     rehypePlugins: [
@@ -135,4 +140,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+
+  adapter: netlify(),
 });
