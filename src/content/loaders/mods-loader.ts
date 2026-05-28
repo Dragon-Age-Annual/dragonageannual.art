@@ -31,7 +31,8 @@ export function modsLoader(
     loadCollection: async ({ filter }) => {
       try {
         const res = await fetch(
-          "https://docs.google.com/spreadsheets/d/1GJP6ADFCmNZAGGZF79CjMcWJYPx1hyHkjy26tOdmsc4/export?format=csv"
+          "https://docs.google.com/spreadsheets/d/1GJP6ADFCmNZAGGZF79CjMcWJYPx1hyHkjy26tOdmsc4/export?format=csv",
+          { headers: { "Cache-Control": "no-store" } }
         );
 
         if (!res.ok) {
@@ -70,7 +71,8 @@ export function modsLoader(
     loadEntry: async ({ filter }) => {
       try {
         const res = await fetch(
-          "https://docs.google.com/spreadsheets/d/1GJP6ADFCmNZAGGZF79CjMcWJYPx1hyHkjy26tOdmsc4/export?format=csv"
+          "https://docs.google.com/spreadsheets/d/1GJP6ADFCmNZAGGZF79CjMcWJYPx1hyHkjy26tOdmsc4/export?format=csv",
+          { headers: { "Cache-Control": "no-store" } }
         );
 
         if (!res.ok) {
