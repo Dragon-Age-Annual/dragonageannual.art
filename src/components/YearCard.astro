@@ -1,5 +1,6 @@
 ---
 import type { ImageMetadata } from "astro";
+import { Icon } from "astro-icon/components";
 
 interface Props {
   year: number;
@@ -7,6 +8,7 @@ interface Props {
   theme: string;
   charityName: string;
   charityLink: string;
+  receiptLink?: string;
   cover: ImageMetadata;
   coverAlt: string;
   amountUS: number | string;
@@ -52,7 +54,7 @@ const donationEU = Number.isNaN(amountEUNum)
     />
   </div>
   <div class="flex h-64">
-    <ul class="list-style-none! ml-4! self-center pb-4">
+    <ul class="list-style-none! ml-4! w-full self-center pb-4">
       <li>
         <strong>Theme:</strong>
         {props.theme}
@@ -65,6 +67,25 @@ const donationEU = Number.isNaN(amountEUNum)
         <strong>Donation:</strong>
         {donationUS} / {donationEU}
       </li>
+      {
+        props.receiptLink && (
+          <li class="text-center text-sm">
+            [&nbsp;
+            <a
+              href={props.receiptLink}
+              target="_blank"
+              class="text-gold! hover:text-teal-mid! hover:decoration-solid! hover:decoration-1!"
+            >
+              View Receipt
+            </a>
+            <Icon
+              name="pixelarticons:external-link"
+              class="inline align-baseline"
+            />
+            &nbsp;]
+          </li>
+        )
+      }
     </ul>
   </div>
 </article>

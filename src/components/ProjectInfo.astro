@@ -1,5 +1,5 @@
 ---
-import config from "../config.json";
+import config from "../config.ts";
 import { getCollection } from "astro:content";
 
 // Load all past years
@@ -20,6 +20,9 @@ const total = pastYears
   .reduce((sum, n) => sum + n, 0);
 
 const totalDonations = euros.format(total);
+
+const uniqueCharities = new Set(pastYears.map((y) => y.data.charityName));
+const totalCharities = uniqueCharities.size;
 ---
 
 <div id="info" class="prose lg:block">
@@ -39,6 +42,10 @@ const totalDonations = euros.format(total);
         <li>
           <strong class="uppercase">Raised:</strong>
           {totalDonations}
+        </li>
+        <li>
+          <strong class="uppercase">Charities:</strong>
+          {totalCharities}
         </li>
       </ul>
       <h3 class="border-purple-mid mb-0! border-b text-left">

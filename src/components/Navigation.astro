@@ -11,11 +11,15 @@ import {
 } from "astro-navbar";
 import { SkipLink } from "accessible-astro-components";
 import { Icon } from "astro-icon/components";
+import config from "../config.ts";
 ---
 
 <header
   id="main-navigation"
-  class="text-teal-mid bg-arcane-800/55 fixed z-50 mt-10 w-full items-center pr-10 font-sans text-lg backdrop-blur-2xl lg:flex"
+  class:list={[
+    "text-teal-mid bg-arcane-800/55 fixed z-50 w-full items-center pr-10 font-sans text-lg backdrop-blur-2xl lg:flex",
+    config.bannerEnabled ? "mt-10" : "mt-0",
+  ]}
 >
   <SkipLink />
   <Astronav closeOnClick>
@@ -44,7 +48,7 @@ import { Icon } from "astro-icon/components";
             <button class="flex items-center">
               <span> About </span>
               <Icon
-                name="lucide:chevron-down"
+                name="pixelarticons:chevron-down"
                 class="mt-0.5 ml-1 h-4 w-4 group-open:rotate-180"
               />
             </button>
@@ -73,7 +77,7 @@ import { Icon } from "astro-icon/components";
                 <button class="flex items-center">
                   <span> Apply Here </span>
                   <Icon
-                    name="lucide:chevron-down"
+                    name="pixelarticons:chevron-down"
                     class="mt-0.5 ml-1 h-4 w-4 group-open:rotate-180"
                   />
                 </button>
@@ -117,7 +121,7 @@ import { Icon } from "astro-icon/components";
             <button class="flex items-center">
               <span> Pre-Order Info </span>
               <Icon
-                name="lucide:chevron-down"
+                name="pixelarticons:chevron-down"
                 class="mt-0.5 ml-1 h-4 w-4 group-open:rotate-180"
               />
             </button>

@@ -11,6 +11,7 @@ const pastYearsCollection = defineCollection({
       theme: z.string(),
       charityName: z.string(),
       charityLink: z.url(),
+      receiptLink: z.string().optional(),
       cover: image(),
       coverAlt: z.string(),
       amountUS: z.union([z.string(), z.number()]),
