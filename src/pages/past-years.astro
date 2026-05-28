@@ -23,6 +23,7 @@ const pastYears = (await getCollection("pastYears")).toSorted().reverse();
                 theme={pastYear.data.theme}
                 charityName={pastYear.data.charityName}
                 charityLink={pastYear.data.charityLink}
+                receiptLink={pastYear.data.receiptLink}
                 cover={pastYear.data.cover}
                 coverAlt={pastYear.data.coverAlt}
                 amountUS={pastYear.data.amountUS}

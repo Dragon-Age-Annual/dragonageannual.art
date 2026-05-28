@@ -38,10 +38,12 @@
   "dependencies": {
     "@astrojs/check": "^0.9.9",
     "@astrojs/mdx": "^5.0.6",
+    "@astrojs/netlify": "^7.0.10",
     "@astrojs/sitemap": "^3.7.3",
     "@fujocoded/zod-transform-socials": "^0.1.0",
     "@iconify-json/lucide": "^1.2.109",
     "@iconify-json/noto": "^1.2.7",
+    "@iconify-json/pixelarticons": "^1.2.6",
     "@iconify-json/simple-icons": "^1.2.84",
     "accessible-astro-components": "^5.3.0",
     "astro": "^6.3.8",

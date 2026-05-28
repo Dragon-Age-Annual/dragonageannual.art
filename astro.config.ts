@@ -3,6 +3,7 @@ import { defineConfig, fontProviders } from "astro/config";
 import icon from "astro-icon";
 import mdx from "@astrojs/mdx";
 import metaTags from "astro-meta-tags";
+import netlify from "@astrojs/netlify";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeSlug from "rehype-slug";
 import robotsTxt from "astro-robots-txt";
@@ -13,6 +14,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   site: "https://www.dragonageannual.art",
   compressHTML: true,
+
   fonts: [
     {
       provider: fontProviders.fontsource(),
@@ -61,11 +63,12 @@ export default defineConfig({
       },
     },
   ],
+
   integrations: [
     mdx(),
     icon({
       include: {
-        lucide: ["home", "chevron-down", "chevron-right"],
+        lucide: ["home"],
         noto: [
           "backhand-index-pointing-left",
           "backhand-index-pointing-right",
@@ -74,6 +77,7 @@ export default defineConfig({
           "fountain-pen",
           "bookmark-tabs",
         ],
+        pixelarticons: ["chevron-down", "chevron-right", "external-link"],
         // simple-icons needed for zod-transform-socials, but not shipped with plugin, so added here
         simpleIcons: ["*"],
       },
@@ -112,6 +116,7 @@ export default defineConfig({
     }),
     sitemap(),
   ],
+
   markdown: {
     remarkPlugins: [],
     rehypePlugins: [
@@ -135,4 +140,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+
+  adapter: netlify(),
 });

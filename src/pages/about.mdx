@@ -4,12 +4,13 @@ title: "About"
 description: "About Dragon Age Annual - how it started and who the mods are."
 ---
 
-import ModCard from "../components/ModCard.astro";
-import { getCollection } from "astro:content";
+export const prerender = false;
 
-export const daaMods = await getCollection("mods", (mod) =>
-  mod.data.mod_duties.includes("daa")
-);
+import ModCard from "../components/ModCard.astro";
+import { getLiveCollection } from "astro:content";
+
+export const { entries: daaMods, error: modsError } =
+  await getLiveCollection("mods");
 
 Dragon Age Annual is an unofficial charity calendar featuring fanworks from
 talented, volunteer Dragon Age fans— artists, writers, and more. DAA is a
@@ -58,15 +59,15 @@ each of you in the highest quality we can!
 ## Meet the Mods
 
 <section class="gap-x-3 md:grid md:grid-cols-2">
-{daaMods.map((mod) => (
 
-  <ModCard
-    name={mod.data.name}
-    avatar={mod.data.avatar}
-    roles={mod.data.roles}
-    links={mod.data.links}
-    mod_duties={mod.data.mod_duties}
-    bio={mod.data.bio}
-  />
-))}
+{daaMods.map((mod) => ( <ModCard
+      id={mod.data.id}
+      name={mod.data.name}
+      avatar={mod.data.avatar}
+      roles={mod.data.roles}
+      links={mod.data.links}
+      mod_duties={mod.data.mod_duties}
+      bio={mod.data.bio}
+    /> ))}
+
 </section>
