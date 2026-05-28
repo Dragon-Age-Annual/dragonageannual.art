@@ -2,8 +2,9 @@
 layout: "../layouts/MarkdownLayout.astro"
 title: "About"
 description: "About Dragon Age Annual - how it started and who the mods are."
-prerender: false
 ---
+
+export const prerender = false;
 
 import ModCard from "../components/ModCard.astro";
 import { getLiveCollection } from "astro:content";
