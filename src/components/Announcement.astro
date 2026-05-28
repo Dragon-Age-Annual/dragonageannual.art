@@ -1,11 +1,14 @@
 ---
 import { Icon } from "astro-icon/components";
+import config from "../config.ts";
 ---
 
-<div
-  class="bg-arcane-300 text-arcane-800 prose-daa fixed top-0 z-50 h-10 w-full p-1 text-center"
->
-  <Icon name="noto:backhand-index-pointing-right" class="inline" />
-  Applications Open! Apply by May 17, 2026!
-  <Icon name="noto:backhand-index-pointing-left" class="inline" />
-</div>
+{
+  config.bannerEnabled && (
+    <div class="bg-arcane-300 text-arcane-800 prose-daa fixed top-0 z-50 h-10 w-full p-1 text-center">
+      <Icon name={config.leftBannerIcon} class="inline" />
+      {config.bannerText}
+      <Icon name={config.rightBannerIcon} class="inline" />
+    </div>
+  )
+}
