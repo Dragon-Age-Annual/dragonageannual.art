@@ -1,8 +1,4 @@
-import {
-  SocialLinks,
-  transformSocial,
-} from "@fujocoded/zod-transform-socials/zod4";
-
+import { SocialLinks } from "@fujocoded/zod-transform-socials/zod4";
 import { avatarUrlForName } from "./utils/avatarURL";
 import { defineLiveCollection } from "astro:content";
 import { modsLoader } from "./content/loaders/mods-loader";

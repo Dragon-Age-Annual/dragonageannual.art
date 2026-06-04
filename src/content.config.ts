@@ -14,9 +14,18 @@ const pastYearsCollection = defineCollection({
       receiptLink: z.string().optional(),
       cover: image(),
       coverAlt: z.string(),
+      amountSEK: z.union([z.string(), z.number()]).optional(),
       amountUS: z.union([z.string(), z.number()]),
       amountEU: z.union([z.string(), z.number()]),
-      exchangeRate: z.number().positive().optional(),
+      exchangeRate: z.union([
+        z.number().positive(),
+        z
+          .object({
+            usdToEur: z.number().positive(),
+            usdToSek: z.number().positive(),
+          })
+          .optional(),
+      ]),
       exchangeDate: z.string().optional(),
     }),
 });
