@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import "dotenv/config";
 
 import fs from "fs";
@@ -12,8 +13,8 @@ if (!API_KEY) {
   process.exit(1);
 }
 
-// Fetch USD‑base historical quote using HistoricalResponse schema
-async function fetchRate(date) {
+// Fetch USD‑base historical quotes (USDSEK, USDEUR)
+async function fetchRates(date) {
   let current = new Date(date);
   if (isNaN(current.getTime())) {
     throw new Error(`Invalid exchangeDate format: ${date}`);
@@ -42,25 +43,28 @@ async function fetchRate(date) {
 
     const data = await res.json();
 
-    // HistoricalResponse schema: quotes.USDEUR
-    const eurQuote = data?.quotes?.USDEUR;
+    const usdToEur = data?.quotes?.USDEUR;
+    const usdToSek = data?.quotes?.USDSEK;
 
-    if (eurQuote) {
+    if (usdToEur && usdToSek) {
       if (iso !== date) {
         console.log(`    ↳ Using previous business day ${iso}`);
       }
-      return eurQuote;
+      return { usdToEur, usdToSek };
     }
 
     current.setDate(current.getDate() - 1);
   }
 
-  throw new Error(`No valid historical quote found within 7 days of ${date}.`);
+  throw new Error(
+    `No valid historical quotes found within 14 days of ${date}.`
+  );
 }
 
 function getDirection(data) {
-  if (typeof data.amountUS === "number") return "USD->EUR";
-  if (typeof data.amountEU === "number") return "EUR->USD";
+  if (typeof data.amountSEK === "number") return "SEK";
+  if (typeof data.amountUS === "number") return "USD";
+  if (typeof data.amountEU === "number") return "EUR";
   return null;
 }
 
@@ -75,8 +79,6 @@ async function run() {
 
     console.log(`\nProcessing ${file}...`);
 
-    // Skip if already converted
-
     if (!data.exchangeDate) {
       console.log("  ❌ Missing exchangeDate — skipping");
       continue;
@@ -84,64 +86,49 @@ async function run() {
 
     const direction = getDirection(data);
     if (!direction) {
-      console.log("  ❌ No numeric amountUS/amountEU — skipping");
+      console.log("  ❌ No numeric amount found — skipping");
       continue;
     }
 
-    const sourceAmount =
-      direction === "USD->EUR" ? data.amountUS : data.amountEU;
-
-    if (typeof sourceAmount !== "number") {
-      console.log("  ❌ Amount is not numeric (TBD?) — skipping");
-      continue;
-    }
-
-    if (direction === "USD->EUR" && typeof data.amountEU === "number") {
-      console.log("  ❌ Already converted (amountEU exists) — skipping");
-      continue;
-    }
-
-    if (direction === "EUR->USD" && typeof data.amountUS === "number") {
-      console.log("  ❌ Already converted (amountUS exists) — skipping");
-      continue;
-    }
-
-    console.log(
-      `  ➜ Fetching historical USD→EUR quote for ${data.exchangeDate}`
-    );
-
-    let usdToEur;
+    let usdToEur, usdToSek;
     try {
-      usdToEur = await fetchRate(data.exchangeDate);
+      ({ usdToEur, usdToSek } = await fetchRates(data.exchangeDate));
     } catch (err) {
       console.log(`  ❌ Error fetching rate: ${err.message}`);
       continue;
     }
 
-    let converted;
-    if (direction === "USD->EUR") {
-      // USD → EUR: multiply by USDEUR
-      converted = Math.round(sourceAmount * usdToEur);
-    } else {
-      // EUR → USD: divide by USDEUR
-      converted = Math.round(sourceAmount / usdToEur);
+    const newData = { ...data, exchangeRate: { usdToEur, usdToSek } };
+
+    // SEK → USD/EUR
+    if (direction === "SEK") {
+      const sek = data.amountSEK;
+
+      newData.amountEU = Math.round(sek * (usdToEur / usdToSek));
+      newData.amountUS = Math.round(sek * (1 / usdToSek));
+
+      console.log(`  ✔ SEK → EUR = ${newData.amountEU}`);
+      console.log(`  ✔ SEK → USD = ${newData.amountUS}`);
     }
 
-    const newData = {
-      ...data,
-      exchangeRate: usdToEur,
-      ...(direction === "USD->EUR"
-        ? { amountEU: converted }
-        : { amountUS: converted }),
-    };
+    // USD → EUR
+    if (direction === "USD") {
+      const usd = data.amountUS;
+      newData.amountEU = Math.round(usd * usdToEur);
+
+      console.log(`  ✔ USD → EUR = ${newData.amountEU}`);
+    }
+
+    // EUR → USD
+    if (direction === "EUR") {
+      const eur = data.amountEU;
+      newData.amountUS = Math.round(eur / usdToEur);
+
+      console.log(`  ✔ EUR → USD = ${newData.amountUS}`);
+    }
 
     const updated = matter.stringify(parsed.content, newData);
     fs.writeFileSync(filePath, updated);
-
-    console.log(
-      `  ✔ Updated ${direction === "USD->EUR" ? "amountEU" : "amountUS"} = ${converted}`
-    );
-    console.log(`  ✔ Rate used (USDEUR) = ${usdToEur}`);
   }
 
   console.log("\n✨ Done!");

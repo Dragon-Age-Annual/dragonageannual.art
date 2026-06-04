@@ -9,7 +9,7 @@ const pastYears = await getCollection("pastYears");
 const yearsRunning = pastYears.length;
 
 // Sum all EUR donations (skip TBD or missing)
-const euros = new Intl.NumberFormat("en-UK", {
+const euros = new Intl.NumberFormat("sv-SE", {
   style: "currency",
   currency: "EUR",
 });
