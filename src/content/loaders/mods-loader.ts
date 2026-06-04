@@ -20,8 +20,6 @@ interface CollectionFilter {
   event?: string;
 }
 
-const EVENT_FILTERS = ["arlathan", "discord", "dapoly", "daa", "board"];
-
 export function modsLoader(
   event: string
 ): LiveLoader<RawModRow, EntryFilter, CollectionFilter> {
