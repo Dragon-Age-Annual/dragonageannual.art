@@ -9,6 +9,7 @@ import rehypeSlug from "rehype-slug";
 import robotsTxt from "astro-robots-txt";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
+import { unified } from "@astrojs/markdown-remark";
 
 // https://astro.build/config
 export default defineConfig({
@@ -70,8 +71,9 @@ export default defineConfig({
       include: {
         lucide: ["home"],
         noto: [
-          "backhand-index-pointing-left",
-          "backhand-index-pointing-right",
+          "compass",
+          "file-folder",
+          "key",
           "sparkles",
           "artist-palette",
           "fountain-pen",
@@ -118,23 +120,19 @@ export default defineConfig({
   ],
 
   markdown: {
-    remarkPlugins: [],
-    rehypePlugins: [
-      rehypeSlug,
-      [
-        rehypeAutolinkHeadings,
-        {
-          behavior: "append",
-          content: {
-            type: "text",
-            value: " #",
+    processor: unified({
+      rehypePlugins: [
+        rehypeSlug,
+        [
+          rehypeAutolinkHeadings,
+          {
+            behavior: "append",
+            content: { type: "text", value: " #" },
+            properties: { className: ["anchor"] },
           },
-          properties: {
-            className: ["anchor"],
-          },
-        },
+        ],
       ],
-    ],
+    }),
   },
 
   vite: {
