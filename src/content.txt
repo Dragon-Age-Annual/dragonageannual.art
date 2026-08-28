@@ -1,0 +1,36 @@
+<h2>Themes and charities and apps... oh my!</h2>
+<p>
+          Dragon Age Annual is back for our sixth year, and we're excited to
+          share another installment of DAA with our fellow fans, new and old!
+        </p>
+
+        <p>
+          Based on the responses to our interest check, DAA {config.year} will be
+          raising money for <a href={config.charityLink}>{config.charityName}</a
+          > and the project theme will be {config.theme}. From cities to
+          fortresses to your companions' favorite watering hole, our calendar,
+          zine, and merchandise pack will celebrate <em>Th</em>e <em>D</em>ragon <em
+            >A</em
+          >ge <em>S</em>etting itself, along with the characters that embody it.
+        </p>
+
+        <h3 class="text-center">Contributor applications are open now!</h3>
+
+        <p>
+          We are looking for a team of artists, writers, beta readers, and
+          graphic designers to help produce DAA {config.year}. If you're a
+          Dragon Age fan creator interested in contributing to a fun and
+          rewarding project, check out our contributor guidelines and apply now!
+          Slots are open for cover, page, and comic artists, short & long form
+          writers, merchandise artists, and production support.
+        </p>
+
+        <p class="text-center">
+          <span class="font-display text-pink text-xl"
+            >Applications Close EOD Sunday, May 17th, Anywhere on Earth!</span
+          ><br />
+          <a
+            href="https://www.timeanddate.com/time/zones/aoe"
+            class="text-[0.9em]">See when that is in your timezone here.</a
+          >
+        </p>
