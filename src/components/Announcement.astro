@@ -7,7 +7,7 @@ import config from "../config.ts";
   config.bannerEnabled && (
     <div class="bg-arcane-300 text-arcane-800 prose-daa fixed top-0 z-50 h-10 w-full p-1 text-center">
       <Icon name={config.leftBannerIcon} class="inline" />
-      {config.bannerText}
+      <span set:html={config.bannerText}> </span>
       <Icon name={config.rightBannerIcon} class="inline" />
     </div>
   )
