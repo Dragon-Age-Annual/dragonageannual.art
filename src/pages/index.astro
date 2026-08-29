@@ -1,11 +1,14 @@
 ---
 import DefaultLayout from "../layouts/DefaultLayout.astro";
 import CallToAction from "../components/CallToAction.astro";
+import CommunityCopyProgress from "../components/Communitycopyprogress.astro";
 import About from "../components/About.astro";
 import { Image } from "astro:assets";
 import banner from "../assets/img/banner.png";
 import ProjectInfo from "../components/ProjectInfo.astro";
 import config from "../config.ts";
+
+export const prerender = false;
 ---
 
 <DefaultLayout
@@ -17,6 +20,7 @@ import config from "../config.ts";
     <div class="gap-10 lg:grid lg:grid-flow-row-dense lg:grid-cols-4">
       <!-- Main Text Column -->
       <div class="prose-daa lg:col-span-3">
+        <CommunityCopyProgress />
         <Image
           src={banner}
           alt="Dragon Age Annual"
@@ -46,7 +50,7 @@ import config from "../config.ts";
         <p>
           Check out the <a
             href="https://shop.dragonageannual.art/product-gallery"
-            >product previews</a
+            >product gallery</a
           > and <a href="https://shop.dragonageannual.art/compare-products"
             >compare products</a
           > in our shop. You can purchase multiple packs in a single order, so mix-and-match

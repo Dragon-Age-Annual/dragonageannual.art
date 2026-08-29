@@ -4,8 +4,8 @@ title: Community Copies
 description: Learn more about how Community Copies work for Dragon Age Annual.
 ---
 
-This year, we're excited to offer community copies of Dragon Age Annual 2027:
-Destinations! Read on to learn more, and find out how you could claim a free
+This year, we're excited to offer community copies of **Dragon Age Annual 2027:
+Destinations**! Read on to learn more, and find out how you could claim a free
 digital copy of the calendar.
 
 ## What are community copies?
