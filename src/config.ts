@@ -14,4 +14,7 @@ export default {
   theme: "Locations",
   charityName: "MSF Sweden | DWB",
   charityLink: "https://lakareutangranser.se/en/who-we-are",
+
+  // Landing Page Content
+  heroImage: "/shop_open.png",
 };
