@@ -140,4 +140,5 @@ export default defineConfig({
   },
 
   adapter: netlify(),
+  session: false,
 });
