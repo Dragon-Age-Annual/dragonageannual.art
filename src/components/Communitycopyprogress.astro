@@ -10,53 +10,44 @@
 import { getLiveCollection } from "astro:content";
 
 const { entries, error } = await getLiveCollection("communityCopies");
-if (error) console.error("communityCopies error:", error);
 const stats = entries?.[0]?.data;
 
 const euros = new Intl.NumberFormat("sv-SE", {
   style: "currency",
   currency: "EUR",
 });
-
 const DONATION_UNIT_EUR = euros.format(15);
-const progressPercent = stats
-  ? Math.round((stats.progressToNextCopyEur / DONATION_UNIT_EUR) * 100)
-  : 0;
 ---
 
-<div class="inline">
-  <div class="copy-progress">
-    {
-      error || !stats ? (
-        <p class="copy-progress__fallback">
-          Community copy count is temporarily unavailable — thank you to
-          everyone who's donated so far!
-        </p>
-      ) : (
-        <>
-          <div class="copy-progress__count">
-            <span class="copy-progress__number">{stats.copiesUnlocked}</span>
-            <span class="copy-progress__label">
-              {stats.copiesUnlocked === 1
-                ? "community copy"
-                : "community copies"}{" "}
-              donated
-            </span>
-          </div>
+<div class="copy-progress">
+  {
+    error || !stats ? (
+      <p class="copy-progress__fallback">
+        Community copy count is temporarily unavailable — thank you to everyone
+        who's donated so far!
+      </p>
+    ) : (
+      <>
+        <div class="copy-progress__count">
+          <span class="copy-progress__number">{stats.copiesUnlocked}</span>
+          <span class="copy-progress__label">
+            {stats.copiesUnlocked === 1 ? "community copy" : "community copies"}{" "}
+            donated
+          </span>
+        </div>
 
-          <p class="copy-progress__detail">
-            {euros.format(stats.totalDonatedEur)} donated in total.
-            {euros.format(stats.progressToNextCopyEur)} toward the next
-            {DONATION_UNIT_EUR} copy.
-            <strong class="text-arcane-300!">
-              Copies released in batches on Itch.io beginning on or around
-              December 16.
-            </strong>
-          </p>
-        </>
-      )
-    }
-  </div>
+        <p class="copy-progress__detail">
+          {euros.format(stats.totalDonatedEur)} donated in total.
+          {euros.format(stats.progressToNextCopyEur)} toward the next
+          {DONATION_UNIT_EUR} copy.
+          <strong class="text-arcane-300!">
+            Copies released in batches on Itch.io beginning on or around
+            December 16.
+          </strong>
+        </p>
+      </>
+    )
+  }
 </div>
 
 <style>

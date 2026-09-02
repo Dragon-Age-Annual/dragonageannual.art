@@ -1,10 +1,21 @@
 /**
  * Fetches and aggregates "Community Copy Donations" orders from Big Cartel.
  *
- * Every €15 in this product's orders = one free copy unlocked for the community.
+ * Every €15 in this product's orders = one free copy donated for the community.
  * This runs server-side only (inside the Astro live loader) — the credentials
  * here must never be bundled into client JS, which is why this whole thing
  * needs an adapter + prerender=false rather than a client-side fetch.
+ *
+ * Shape reference: https://developers.bigcartel.com/api/v1#orders
+ *
+ * Key things about Big Cartel's response shape:
+ * - Pagination uses `page[limit]` and `page[offset]`.
+ * - An order's line items are NOT embedded in the order. The order has
+ *   `relationships.items.data` — an array of {type: "order_line_items", id}
+ *   stubs — and the actual line item attributes (product_id, quantity, price,
+ *   total) live in the response's top-level `included` array, keyed by id.
+ * - `payment_status` (flat attribute) has real values: unpaid, pending,
+ *   completed, failed, invalid. "completed" = paid and counted.
  */
 
 const DONATION_UNIT_EUR = 15;
@@ -16,16 +27,12 @@ export interface DonationStats {
   lastUpdated: string;
 }
 
-/**
- * Replace the body of this function with your existing fulfillment-script
- * request logic (same Basic Auth headers, same base URL/subdomain pattern
- * you already have working). Keeping it isolated here means the aggregation
- * math below doesn't care how the orders were fetched.
- *
- * Expected return: an array of raw order objects from Big Cartel, already
- * paginated through to completion.
- */
-async function fetchAllOrders(): Promise<any[]> {
+interface FetchOrdersResult {
+  orders: any[];
+  lineItemsById: Map<string, any>;
+}
+
+async function fetchAllOrdersWithLineItems(): Promise<FetchOrdersResult> {
   const subdomain = import.meta.env.BIGCARTEL_SUBDOMAIN;
   const password = import.meta.env.BIGCARTEL_PASSWORD;
 
@@ -41,10 +48,11 @@ async function fetchAllOrders(): Promise<any[]> {
     Authorization: authHeader,
     Accept: "application/vnd.api+json",
     "Content-type": "application/vnd.api+json",
+    "User-Agent":
+      "DragonAgeAnnual Community Copy Counter/1.0 (https://dragonageannual.art)",
   };
 
-  // Step 1: resolve the numeric account ID. The /v1/accounts/{id}/... paths
-  // want Big Cartel's internal ID, not your subdomain string.
+  // Step 1: resolve the numeric account ID.
   const accountRes = await fetch("https://api.bigcartel.com/v1/accounts", {
     headers: commonHeaders,
   });
@@ -54,7 +62,6 @@ async function fetchAllOrders(): Promise<any[]> {
     );
   }
   const accountJson = await accountRes.json();
-  // JSON:API shape — adjust if logging shows something different.
   const accountId = Array.isArray(accountJson.data)
     ? accountJson.data[0]?.id
     : accountJson.data?.id;
@@ -65,14 +72,15 @@ async function fetchAllOrders(): Promise<any[]> {
     );
   }
 
-  // Step 2: paginate orders using JSON:API bracketed page params.
+  // Step 2: paginate orders using page[limit] / page[offset].
   const orders: any[] = [];
-  let page = 1;
-  const pageSize = 100;
+  const lineItemsById = new Map<string, any>();
+  const limit = 50;
+  let offset = 0;
 
   while (true) {
     const res = await fetch(
-      `https://api.bigcartel.com/v1/accounts/${accountId}/orders?page%5Bnumber%5D=${page}&page%5Bsize%5D=${pageSize}`,
+      `https://api.bigcartel.com/v1/accounts/${accountId}/orders?page%5Blimit%5D=${limit}&page%5Boffset%5D=${offset}`,
       { headers: commonHeaders }
     );
 
@@ -84,49 +92,33 @@ async function fetchAllOrders(): Promise<any[]> {
 
     const batch = await res.json();
     const pageOrders = Array.isArray(batch.data) ? batch.data : [];
-    orders.push(...pageOrders);
+    const included = Array.isArray(batch.included) ? batch.included : [];
 
-    if (pageOrders.length < pageSize) break;
-    page += 1;
+    for (const resource of included) {
+      if (resource.type === "order_line_items") {
+        lineItemsById.set(String(resource.id), resource);
+      }
+    }
+
+    if (pageOrders.length === 0) break;
+
+    orders.push(...pageOrders);
+    offset += limit;
+
+    if (offset > 50_000) {
+      console.warn(
+        "fetchAllOrdersWithLineItems: hit safety limit, stopping early."
+      );
+      break;
+    }
   }
 
-  return orders;
-}
-
-/**
- * JSON:API resources put custom fields under `attributes`, and often express
- * relations (like "which product") under `relationships` rather than a flat
- * `product_id`. These helpers check the flat shape first, then fall back to
- * the nested shape, so you don't have to guess up front which one Big Cartel
- * actually returns for orders/line-items specifically.
- */
-function field(obj: any, key: string): any {
-  return obj?.[key] ?? obj?.attributes?.[key];
-}
-
-function relatedProductId(lineItem: any): string | undefined {
-  return (
-    lineItem?.product_id ??
-    lineItem?.attributes?.product_id ??
-    lineItem?.relationships?.product?.data?.id
-  );
+  return { orders, lineItemsById };
 }
 
 function isCompletedOrder(order: any): boolean {
-  // e.g. exclude cancelled/refunded/unpaid orders
-  const status = String(
-    field(order, "status") ?? field(order, "payment_status") ?? ""
-  ).toLowerCase();
-  return !["cancelled", "canceled", "refunded", "unpaid"].includes(status);
-}
-
-function lineItemTotal(lineItem: any): number {
-  const total = field(lineItem, "total");
-  if (typeof total === "number") return total;
-  const qty = field(lineItem, "quantity") ?? 1;
-  const unitPrice =
-    field(lineItem, "price") ?? field(lineItem, "unit_price") ?? 0;
-  return qty * unitPrice;
+  const status = String(order?.attributes?.payment_status ?? "").toLowerCase();
+  return status === "completed";
 }
 
 export async function getDonationStats(): Promise<DonationStats> {
@@ -135,17 +127,21 @@ export async function getDonationStats(): Promise<DonationStats> {
     throw new Error("Missing BIGCARTEL_DONATION_PRODUCT_ID env var.");
   }
 
-  const orders = await fetchAllOrders();
+  const { orders, lineItemsById } = await fetchAllOrdersWithLineItems();
 
   let totalDonatedEur = 0;
 
   for (const order of orders) {
     if (!isCompletedOrder(order)) continue;
 
-    const lineItems = field(order, "line_items") ?? field(order, "items") ?? [];
-    for (const item of lineItems) {
-      if (String(relatedProductId(item)) === String(donationProductId)) {
-        totalDonatedEur += lineItemTotal(item);
+    const itemRefs = order?.relationships?.items?.data ?? [];
+    for (const ref of itemRefs) {
+      const lineItem = lineItemsById.get(String(ref.id));
+      if (!lineItem) continue;
+
+      const productId = lineItem.attributes?.product_id;
+      if (String(productId) === String(donationProductId)) {
+        totalDonatedEur += Number(lineItem.attributes?.total ?? 0);
       }
     }
   }
