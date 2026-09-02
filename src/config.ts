@@ -6,7 +6,7 @@ export default {
   leftBannerIcon: "noto:compass",
   rightBannerIcon: "noto:compass",
   bannerText:
-    '<span class="hidden md:inline">Go on an adventure with DAA 2027.</span> <a href="https://shop.dragonageannual.com" class="text-gold! hover:text-arcane-600!">Pre-Order Today!</a>',
+    '<span class="hidden md:inline">Go on an adventure with DAA 2027.</span> <a href="https://shop.dragonageannual.art" class="text-gold! hover:text-arcane-600!">Pre-Order Today!</a>',
 
   // Project Details
   year: "2027",
