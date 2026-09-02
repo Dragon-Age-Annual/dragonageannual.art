@@ -1,0 +1,144 @@
+---
+import DefaultLayout from "../layouts/DefaultLayout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<DefaultLayout
+  title="Itch.io Guide"
+  description="Learn about how digital fulfillment of our calendars & zines works on Itch.io."
+>
+  <div class="section">
+    <div class="prose-daa space-content my-12">
+      <h1>Itch.io Guide</h1>
+      <article class="itch-card">
+        <div class="card-title-banner">
+          <h2>
+            <Icon name="noto:key" class="inline" /> How to Redeem Your Itch.io Key
+          </h2>
+        </div>
+        <ol>
+          <li>
+            Open the email titled <strong>Your DAA 2027 Digital Key</strong>.
+          </li>
+          <li>Click the redemption link or copy/paste the key into Itch.io.</li>
+          <li>Log into your Itch.io account (or create one).</li>
+          <li>Click <strong>Claim</strong> to add the item to your library.</li>
+          <li>
+            Go to <strong>Profile → My Library → My Purchases</strong> to access your
+            downloads.
+          </li>
+        </ol>
+      </article>
+      <article class="itch-card">
+        <div class="card-title-banner">
+          <h2>
+            <Icon name="noto:file-folder" class="inline" /> Where to Find Your Downloads
+          </h2>
+        </div>
+        <ol>
+          <li>Log into Itch.io.</li>
+          <li>Open <strong>Profile → My Library → My Purchases</strong>.</li>
+          <li>Select your DAA 2027 item.</li>
+          <li>Scroll to the <strong>Downloads</strong> section.</li>
+        </ol>
+      </article>
+      <h2>FAQ</h2>
+      <details class="group">
+        <summary aria-expanded="false">I didn't get my code.</summary>
+        <p class="faq-a">
+          Please check your <strong>spam folder</strong>. Search for "DAA",
+          "Hanged Man Club", or "digital key". If you still don't see it,
+          contact us with your order number and the email used at checkout.
+        </p>
+      </details>
+      <details class="group">
+        <summary aria-expanded="false">When will I get my code?</summary>
+        <p class="faq-a">
+          We distribute digital keys <strong
+            >beginning on or around December 16</strong
+          >. Orders placed before that date will receive keys once distribution
+          begins. Orders placed after that date are sent in regular batches.
+        </p>
+      </details>
+      <details class="group">
+        <summary aria-expanded="false">Itch.io says I don't own this.</summary>
+        <p class="faq-a">
+          This usually means the key wasn't redeemed. Click your redemption link
+          again and make sure you're logged into the correct Itch.io account.
+        </p>
+      </details>
+      <details class="group">
+        <summary aria-expanded="false">Where are the extra files?</summary>
+        <p class="faq-a">
+          All files appear in the <strong>Downloads</strong> section of your Itch.io
+          purchase page. If you don't see them, refresh — Itch.io sometimes delays
+          file visibility by a few minutes.
+        </p>
+      </details>
+      <details class="group">
+        <summary aria-expanded="false">How do I download on mobile?</summary>
+        <p class="faq-a">
+          Itch.io supports mobile downloads, but ZIP files may require an unzip
+          app. iPhone: use the Files app. Android: use Files by Google or any
+          unzip tool.
+        </p>
+      </details>
+      <details class="group">
+        <summary aria-expanded="false">How do I re-download later?</summary>
+        <p class="faq-a">
+          You can re-download anytime from <strong
+            >Profile → My Library → My Purchases</strong
+          >. Your files never expire.
+        </p>
+      </details>
+      <details class="group">
+        <summary aria-expanded="false">My key doesn't work.</summary>
+        <p class="faq-a">
+          Double-check the key, ensure you're logged into the correct account,
+          and confirm it hasn't already been redeemed. If it still fails,
+          contact us with your order number and the key you received.
+        </p>
+      </details>
+    </div>
+  </div>
+</DefaultLayout>
+
+<style>
+  @reference "../styles/global.css";
+
+  article {
+    @apply border-gold bg-arcane-300 text-arcane-800 my-[1.6em] overflow-hidden rounded-lg border-2 px-[1.6em] pt-0 pb-[0.4em];
+  }
+
+  .card-title-banner {
+    @apply bg-arcane-800 mx-[-1.6em] mt-0 mb-[1.2em] px-[1em] py-[0.8em] text-center;
+  }
+
+  .card-title-banner h2 {
+    @apply text-daa-white! m-0 text-[1.2rem] font-bold tracking-[0.03em];
+  }
+
+  ol {
+    @apply mb-[1.5em] list-none pl-0 [counter-reset:daa-step];
+  }
+
+  ol li {
+    @apply before:bg-gold before:text-arcane-600 relative my-[1em] min-h-[1.8em] list-none! pl-[3em] leading-normal [counter-increment:daa-step] before:absolute before:top-[-0.15em] before:left-0 before:flex before:h-[1.8em] before:w-[1.8em] before:items-center before:justify-center before:rounded-full before:text-[0.95em] before:font-bold before:content-[counter(daa-step)];
+  }
+
+  details {
+    @apply border-gold bg-daa-white my-[0.8em] overflow-hidden rounded-md border-2;
+  }
+
+  summary {
+    @apply text-copper-deep after:text-copper-deep flex cursor-pointer list-none items-center justify-between gap-[0.6em] px-[1.2em] py-[0.9em] text-[1.05rem] font-bold transition-colors duration-150 marker:hidden after:shrink-0 after:text-[1.3em] after:leading-none after:transition-transform after:duration-200 after:content-['+'] group-open:after:rotate-45 hover:bg-[rgba(95,53,7,0.24)] max-md:px-[0.9em] max-md:py-[0.7em] max-md:text-[1rem] [&::-webkit-details-marker]:hidden;
+  }
+
+  .faq-a {
+    @apply text-arcane-800 px-[1.2em] py-[1.1em] text-[0.95rem] leading-[1.45] max-md:px-[0.9em] max-md:pt-[0.7em] max-md:pb-[0.9em] max-md:text-[0.9rem];
+  }
+
+  .faq-a strong {
+    @apply text-purple-mid;
+  }
+</style>

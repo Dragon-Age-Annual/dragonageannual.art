@@ -1,5 +1,4 @@
 ---
-import { DarkMode } from "accessible-astro-components";
 import { Image } from "astro:assets";
 import logo from "../assets/img/logo.svg";
 import {
@@ -64,140 +63,147 @@ import config from "../config.ts";
                 </ul>
               </div>
             </DropdownItems>
-            <!-- <li>
+          </Dropdown>
+          <!-- <li>
             <Icon name="noto:sparkles" class="inline" />
             <a href="https://forms.dragonageannual.art/2027Interest"
               >2027 Interest Check</a
             >
             <Icon name="noto:sparkles" class="inline" />
           </li> -->
-            <!-- Application -->
-            <li>
-              <Dropdown class="group">
-                <button class="flex items-center">
-                  <span> Apply Here </span>
-                  <Icon
-                    name="pixelarticons:chevron-down"
-                    class="mt-0.5 ml-1 h-4 w-4 group-open:rotate-180"
-                  />
-                </button>
-                <DropdownItems class="relative">
-                  <div class="dropdown">
-                    <ul class="list-style-none">
-                      <li>
-                        <a href="/before-you-apply">Before You Apply</a>
-                      </li>
-                      <li>
-                        <Icon class="inline" name="noto:artist-palette" />
-                        <a
-                          class="hover:text-pink hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3"
-                          href="https://forms.dragonageannual.art/r/441kNr"
-                          >Artists</a
-                        >
-                      </li>
-                      <li>
-                        <Icon class="inline" name="noto:fountain-pen" />
-                        <a
-                          class="hover:text-pink hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3"
-                          href="https://forms.dragonageannual.art/r/rj0V5o"
-                          >Writers</a
-                        >
-                      </li>
-                      <li>
-                        <Icon class="inline" name="noto:bookmark-tabs" />
-                        <a
-                          class="hover:text-pink hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3"
-                          href="https://forms.dragonageannual.art/r/5BlLd6"
-                          >Production Support</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </DropdownItems>
-              </Dropdown>
-              <!-- Sales Dropdown -->
-              <!-- <li>
-          <Dropdown class="group">
-            <button class="flex items-center">
-              <span> Pre-Order Info </span>
-              <Icon
-                name="pixelarticons:chevron-down"
-                class="mt-0.5 ml-1 h-4 w-4 group-open:rotate-180"
-              />
-            </button>
-            <DropdownItems class="relative">
-              <div class="dropdown">
-                <ul>
-                  <li>
-                    <a href="https://shop.dragonageannual.art">Shop</a>
-                  </li>
-                  <li>
-                    <a href="https://shop.dragonageannual.art/product-gallery"
-                      >Product Gallery</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://shop.dragonageannual.art/package-comparisons"
-                      >Pack Comparison</a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://shop.dragonageannual.art/our-contributors"
-                      >Our Contributors</a
-                    >
+          <!-- <!-- Application -->
+          <!-- <li>
+            <Dropdown class="group">
+              <button class="flex items-center">
+                <span> Apply Here </span>
+                <Icon
+                  name="pixelarticons:chevron-down"
+                  class="mt-0.5 ml-1 h-4 w-4 group-open:rotate-180"
+                />
+              </button>
+              <DropdownItems class="relative">
+                <div class="dropdown">
+                  <ul class="list-style-none">
                     <li>
+                      <a href="/before-you-apply">Before You Apply</a>
+                    </li>
+                    <li>
+                      <Icon class="inline" name="noto:artist-palette" />
                       <a
-                        href="https://shop.dragonageannual.art/community-copies"
-                        >Community Copies</a
+                        class="hover:text-pink hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3"
+                        href="https://forms.dragonageannual.art/r/441kNr"
+                        >Artists</a
                       >
                     </li>
                     <li>
-                      <a href="https://shop.dragonageannual.art/itch-io-faq"
-                        >Itch.io FAQ</a
+                      <Icon class="inline" name="noto:fountain-pen" />
+                      <a
+                        class="hover:text-pink hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3"
+                        href="https://forms.dragonageannual.art/r/rj0V5o"
+                        >Writers</a
+                      >
+                    </li>
+                    <li>
+                      <Icon class="inline" name="noto:bookmark-tabs" />
+                      <a
+                        class="hover:text-pink hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3"
+                        href="https://forms.dragonageannual.art/r/5BlLd6"
+                        >Production Support</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </DropdownItems>
+            </Dropdown> -->
+
+          <li>
+            <a href="/past-years">Past Years</a>
+          </li>
+          <!-- Sales Dropdown -->
+          <li>
+            <Dropdown class="group">
+              <button class="flex items-center">
+                <span> Pre-Order</span>
+                <Icon
+                  name="pixelarticons:chevron-down"
+                  class="mt-0.5 ml-1 h-4 w-4 group-open:rotate-180"
+                />
+              </button>
+              <DropdownItems class="relative">
+                <div class="dropdown">
+                  <ul>
+                    <li>
+                      <a href="/community-copies">Community Copies</a>
+                    </li>
+                    <li>
+                      <a href="https://shop.dragonageannual.art" target="_blank"
+                        >Shop</a
                       >
                     </li>
                     <li>
                       <a
-                        href="https://shop.dragonageannual.art/terms-conditions"
-                        >Terms & Conditions</a
+                        href="https://shop.dragonageannual.art/add-on-pack"
+                        target="_blank">Add-on Packs</a
                       >
                     </li>
-                  </li>
-                </ul>
-              </div>
-            </DropdownItems>
-          </Dropdown>
-        </li> -->
-              <li>
-                <a href="/past-years">Past Years</a>
-              </li>
-            </li>
-            <!-- TODO: Implement DarkMode component -->
-            <!-- <DarkMode class="lightswitch" /> -->
-          </Dropdown>
+                    <li>
+                      <a
+                        href="https://shop.dragonageannual.art/compare-products"
+                        target="_blank">Compare Products</a
+                      >
+                    </li>
+                    <a href="/itchio-guide">Itch.io Guide</a>
+                    <li>
+                      <a
+                        href="https://shop.dragonageannual.art/Credits"
+                        target="_blank">Credits</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shop.dragonageannual.art/policies/refunds"
+                        target="_blank">Returns and Refunds</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shop.dragonageannual.art/policies/shipping"
+                        target="_blank">Shipping and Delivery</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://shop.dragonageannual.art/policies/terms"
+                        target="_blank">Terms and Conditions</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </DropdownItems>
+            </Dropdown>
+          </li>
         </li>
       </ul>
-
-      <style>
-        @reference "../styles/global.css";
-        a,
-        button {
-          @apply hover:text-pink hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3;
-        }
-        .dropdown {
-          @apply text-teal-mid bg-arcane-300/98 dark:bg-arcane-600/99 border-gold absolute top-0 z-50 mt-3 rounded-md border p-5 shadow-xl/30;
-        }
-
-        li,
-        .lightswitch {
-          @apply ml-25 w-max border-0 lg:mt-1.5 lg:mr-1.5 lg:ml-0;
-        }
-
-        .dropdown li {
-          @apply ml-0!;
-        }
-      </style>
     </MenuItems>
   </Astronav>
+
+  <style>
+    @reference "../styles/global.css";
+    a,
+    button {
+      @apply hover:text-pink hover:underline hover:decoration-wavy hover:decoration-2 hover:underline-offset-3;
+    }
+    .dropdown {
+      @apply text-teal-mid bg-arcane-300/98 dark:bg-arcane-600/99 border-gold absolute top-0 z-50 mt-3 rounded-md border p-5 shadow-xl/30;
+    }
+
+    li,
+    .lightswitch {
+      @apply ml-25 w-max border-0 lg:mt-1.5 lg:mr-1.5 lg:ml-0;
+    }
+
+    .dropdown li {
+      @apply ml-0!;
+    }
+  </style>
 </header>

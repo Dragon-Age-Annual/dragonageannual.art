@@ -1,0 +1,88 @@
+---
+// IMPORTANT: any page that uses this component must opt out of prerendering,
+// since live collections only resolve during on-demand rendering:
+//
+//   export const prerender = false;
+//
+// (Astro won't let you set that from inside a component — it has to be in
+// the page/layout frontmatter itself.)
+
+import { getLiveCollection } from "astro:content";
+
+const { entries, error } = await getLiveCollection("communityCopies");
+if (error) console.error("communityCopies error:", error);
+const stats = entries?.[0]?.data;
+
+const euros = new Intl.NumberFormat("sv-SE", {
+  style: "currency",
+  currency: "EUR",
+});
+
+const DONATION_UNIT_EUR = euros.format(15);
+const progressPercent = stats
+  ? Math.round((stats.progressToNextCopyEur / DONATION_UNIT_EUR) * 100)
+  : 0;
+---
+
+<div class="inline">
+  <div class="copy-progress">
+    {
+      error || !stats ? (
+        <p class="copy-progress__fallback">
+          Community copy count is temporarily unavailable — thank you to
+          everyone who's donated so far!
+        </p>
+      ) : (
+        <>
+          <div class="copy-progress__count">
+            <span class="copy-progress__number">{stats.copiesUnlocked}</span>
+            <span class="copy-progress__label">
+              {stats.copiesUnlocked === 1
+                ? "community copy"
+                : "community copies"}{" "}
+              donated
+            </span>
+          </div>
+
+          <p class="copy-progress__detail">
+            {euros.format(stats.totalDonatedEur)} donated in total.
+            {euros.format(stats.progressToNextCopyEur)} toward the next
+            {DONATION_UNIT_EUR} copy.
+            <strong class="text-arcane-300!">
+              Copies released in batches on Itch.io beginning on or around
+              December 16.
+            </strong>
+          </p>
+        </>
+      )
+    }
+  </div>
+</div>
+
+<style>
+  @reference "../styles/global.css";
+
+  .copy-progress {
+    @apply border-gold flex flex-row justify-evenly gap-5 rounded-xl border-2 bg-transparent px-6 py-5;
+  }
+
+  .copy-progress__count {
+    @apply flex flex-row items-center gap-2.5;
+  }
+
+  .copy-progress__number {
+    @apply text-teal-mid font-mono text-4xl font-bold;
+  }
+
+  .copy-progress__label {
+    @apply font-serif;
+  }
+
+  .copy-progress__detail {
+    @apply text-daa-white/75 m-0 max-w-1/2 font-serif text-sm;
+  }
+
+  .copy-progress__fallback {
+    @apply text-daa-white text-center font-mono;
+  }
+</style>
